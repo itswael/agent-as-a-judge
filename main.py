@@ -1,17 +1,12 @@
-from src.dataset_loader import DatasetLoader
+from src.config_loader import MetricWeightConfig
 
 
 def main():
-    file_path = "data/sample.xlsx"
+    config = MetricWeightConfig("configs/metric_weights.yaml")
+    weights = config.load()
 
-    loader = DatasetLoader(file_path)
-    records = loader.load()
-
-    print(f"Loaded {len(records)} records")
-
-    if records:
-        print("First record:")
-        print(records[0])
+    print("Loaded metric weights:")
+    print(weights)
 
 
 if __name__ == "__main__":
