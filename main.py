@@ -1,18 +1,29 @@
 from src.judge_client import JudgeClient
-from metrics.conciseness import ConcisenessMetric
+from metrics.context_gain import ContextGainMetric
 
 
 def main():
     judge = JudgeClient()
-    metric = ConcisenessMetric(judge)
+    metric = ContextGainMetric(judge)
 
     question = "Should I apply urea to my rice crop before rain?"
-    answer = (
-        "Apply urea before light rain so it can dissolve into the soil. "
-        "Avoid applying before heavy rain because nitrogen may leach or run off."
+
+    minimum_context_answer = (
+        "Yes, you can apply urea before rain, but avoid heavy rain."
     )
 
-    result = metric.evaluate(question, answer)
+    agricultural_chatbot_answer = (
+        "Apply urea before light rain so it dissolves into the soil and becomes available "
+        "to rice roots. Avoid applying before heavy rain because nitrogen may leach or run off. "
+        "If your field is already saturated, wait until water drains before application."
+    )
+
+    result = metric.evaluate(
+        question,
+        minimum_context_answer,
+        agricultural_chatbot_answer,
+    )
+
     print(result)
 
 
