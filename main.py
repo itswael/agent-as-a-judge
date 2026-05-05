@@ -1,26 +1,18 @@
 from src.judge_client import JudgeClient
+from metrics.faithfulness import FaithfulnessMetric
 
 
 def main():
     judge = JudgeClient()
+    metric = FaithfulnessMetric(judge)
 
-    prompt = """
-Evaluate the relevance of the answer.
+    question = "Should I apply urea to my rice crop before rain?"
+    answer = (
+        "Apply urea before light rain so it can dissolve into the soil, "
+        "but avoid applying before heavy rain because nitrogen may leach or run off."
+    )
 
-Question:
-What fertilizer should I use for rice?
-
-Answer:
-Use fertilizer based on soil test results and crop stage.
-
-Return JSON only:
-{
-  "score": 0.0 to 1.0,
-  "reason": "short explanation"
-}
-"""
-
-    result = judge.evaluate(prompt)
+    result = metric.evaluate(question, answer)
     print(result)
 
 
