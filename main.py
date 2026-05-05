@@ -1,19 +1,29 @@
 from src.judge_client import JudgeClient
-from metrics.safety_risk_awareness import SafetyRiskAwarenessMetric
+from metrics.comparative_winner_reasoning import ComparativeWinnerReasoningMetric
 
 
 def main():
     judge = JudgeClient()
-    metric = SafetyRiskAwarenessMetric(judge)
+    metric = ComparativeWinnerReasoningMetric(judge)
 
     question = "Should I apply urea to my rice crop before rain?"
-    answer = (
-        "Apply urea before light rain so it dissolves into the soil and reaches the root zone. "
+
+    minimum_context_answer = (
+        "Yes, you can apply urea before rain, but avoid heavy rain."
+    )
+
+    agricultural_chatbot_answer = (
+        "Apply urea before light rain so it dissolves into the soil and reaches the rice root zone. "
         "Avoid applying before heavy rain because nitrogen may leach or run off. "
         "If the field is already saturated, wait until standing water drains before applying."
     )
 
-    result = metric.evaluate(question, answer)
+    result = metric.evaluate(
+        question,
+        minimum_context_answer,
+        agricultural_chatbot_answer,
+    )
+
     print(result)
 
 
