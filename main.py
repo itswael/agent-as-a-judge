@@ -1,10 +1,10 @@
 from src.judge_client import JudgeClient
-from metrics.faithfulness import FaithfulnessMetric
+from metrics.relevance import RelevanceMetric
 
 
 def main():
     judge = JudgeClient()
-    metric = FaithfulnessMetric(judge)
+    metric = RelevanceMetric(judge)
 
     question = "Should I apply urea to my rice crop before rain?"
     answer = (
