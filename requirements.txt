@@ -4,3 +4,5 @@ python-dotenv
 pyyaml
 pytest
 deepeval
+langgraph
+typing-extensions

@@ -1,0 +1,85 @@
+{
+  "id": 2,
+  "question": "How can I tell if my tomato plants are getting too much nitrogen?",
+  "question_type": "nutrient_excess_detection",
+  "risk_level": "medium",
+  "selected_metrics": [
+    "completeness",
+    "practical_usefulness",
+    "faithfulness",
+    "context_gain",
+    "comparative_winner_reasoning",
+    "safety_risk_awareness",
+    "specificity",
+    "conciseness"
+  ],
+  "metric_scores": {
+    "completeness": {
+      "minimum_context_answer": 0.8,
+      "agricultural_chatbot_answer": 1.0
+    },
+    "practical_usefulness": {
+      "minimum_context_answer": 0.8,
+      "agricultural_chatbot_answer": 0.8
+    },
+    "faithfulness": {
+      "minimum_context_answer": 1.0,
+      "agricultural_chatbot_answer": 0.8
+    },
+    "context_gain": {
+      "score": 1.0,
+      "winner": "agricultural_chatbot_answer"
+    },
+    "comparative_winner_reasoning": {
+      "score": 0.8,
+      "winner": "agricultural_chatbot_answer"
+    },
+    "safety_risk_awareness": {
+      "minimum_context_answer": 1.0,
+      "agricultural_chatbot_answer": 1.0
+    },
+    "specificity": {
+      "minimum_context_answer": 0.8,
+      "agricultural_chatbot_answer": 1.0
+    },
+    "conciseness": {
+      "minimum_context_answer": 1.0,
+      "agricultural_chatbot_answer": 0.8
+    }
+  },
+  "claim_summary": "Answer A provides basic symptom descriptions, a few fertilizer sources, a simple testing method, and general mitigation, while Answer B offers a richer set of claims covering detailed symptoms, soil context, specific fertilizer types, testing procedures, precise timing and dosage guidance, water management, pest/disease risks, and safety precautions.",
+  "evidence_summary": "Both answers correctly identify the visual and growth symptoms of nitrogen excess and advise stopping nitrogen applications. The agricultural chatbot answer provides richer, stage‑specific diagnostics, concrete testing procedures, and detailed corrective nutrient strategies, making its evidence base stronger overall. It includes a few vague statements but fewer weakly‑supported claims than the minimum‑context answer, which omits quantitative guidance and broader environmental considerations. Consequently, the chatbot answer has stronger evidential support and fewer gaps.",
+  "winner": "agricultural_chatbot_answer",
+  "confidence": 0.9,
+  "final_reason": "The agricultural chatbot answer achieves perfect completeness, providing exhaustive symptom descriptions, stage‑specific diagnostics, detailed testing methods, and comprehensive corrective actions. It also adds strong context (soil type, growth stage, precise fertilizer choices) and higher specificity, outweighing its slightly lower conciseness and minor faithfulness gap. Completeness is the top priority, making this answer the superior response.",
+  "context_impact_summary": "By incorporating soil type, crop stage, precise fertilizer choices, and additional cultural practices, the agricultural chatbot answer transforms generic guidance into a tailored, actionable plan for tomato growers, markedly improving relevance and usefulness over the minimal‑context response.",
+  "minimum_context_strengths": [
+    "Clear, concise list of key nitrogen‑excess symptoms",
+    "Simple, actionable diagnostic suggestion (leaf/petiole sap test)",
+    "Straightforward corrective steps (stop N, switch to balanced/K‑forward fertilizer)",
+    "Safe guidance without risky recommendations",
+    "Highly concise and focused on the core question"
+  ],
+  "minimum_context_weaknesses": [
+    "Missing quantitative thresholds for leaf colour or nitrate levels",
+    "Lacks timing and dosage details for corrective fertiliser applications",
+    "No discussion of environmental impacts (leaching, runoff)",
+    "Limited soil‑type considerations beyond fresh manure",
+    "Less specific guidance for different production systems"
+  ],
+  "agricultural_chatbot_strengths": [
+    "Comprehensive coverage of symptoms, including fruit quality and pest/disease risks",
+    "Stage‑specific diagnostic cue (4–6 weeks post‑transplant) and detailed testing method",
+    "Rich, concrete fertilizer recommendations (low‑N, high‑P/K options, split‑application strategy)",
+    "Additional cultural practices (pruning, calcium management, watering timing) for safety",
+    "Strong context gain with soil type, growth stage, and weather considerations",
+    "High specificity and practical usefulness for field decisions"
+  ],
+  "agricultural_chatbot_weaknesses": [
+    "Slightly less concise due to extensive management advice",
+    "Some vague statements (nitrate strip interpretation, watering impact) lacking quantitative detail",
+    "Assumes sandy soil in one claim, reducing faithfulness for other soil types",
+    "Exact dosage rates for suggested fertilizers are not provided"
+  ],
+  "errors": []
+}
