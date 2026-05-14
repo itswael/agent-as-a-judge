@@ -1,0 +1,81 @@
+{
+  "id": 0,
+  "question": "Are there any other organic fertilizers that work well with sesame?",
+  "question_type": "organic_fertilizer_recommendation",
+  "risk_level": "low",
+  "selected_metrics": [
+    "completeness",
+    "practical_usefulness",
+    "faithfulness",
+    "context_gain",
+    "comparative_winner_reasoning",
+    "safety_risk_awareness",
+    "specificity",
+    "conciseness"
+  ],
+  "metric_scores": {
+    "completeness": {
+      "minimum_context_answer": 1.0,
+      "agricultural_chatbot_answer": 1.0
+    },
+    "practical_usefulness": {
+      "minimum_context_answer": 0.8,
+      "agricultural_chatbot_answer": 0.9
+    },
+    "faithfulness": {
+      "minimum_context_answer": 1.0,
+      "agricultural_chatbot_answer": 0.5
+    },
+    "context_gain": {
+      "score": 1.0,
+      "winner": "agricultural_chatbot_answer"
+    },
+    "comparative_winner_reasoning": {
+      "score": 0.8,
+      "winner": "agricultural_chatbot_answer"
+    },
+    "safety_risk_awareness": {
+      "minimum_context_answer": 1.0,
+      "agricultural_chatbot_answer": 1.0
+    },
+    "specificity": {
+      "minimum_context_answer": 0.8,
+      "agricultural_chatbot_answer": 0.9
+    },
+    "conciseness": {
+      "minimum_context_answer": 0.8,
+      "agricultural_chatbot_answer": 0.5
+    }
+  },
+  "claim_summary": "Answer A gives a concise set of organic fertilizer options with clear dosage and timing notes, while Answer B provides a richer, more detailed collection of recommendations covering application methods, safety precautions, additional amendments like biochar, and explicit yield‑related timing advice.",
+  "evidence_summary": "Both answers present sound organic fertilizer options for sesame, but the agricultural chatbot answer offers greater breadth (including biochar and a mineral starter) while also containing more vague and weakly supported statements. The minimum‑context answer is more concise and its claims are uniformly well‑supported, though it also omits dosage specifics. Overall, the chatbot answer has stronger completeness but slightly higher risk of ambiguity, whereas the minimum‑context answer is more consistently evidence‑based with fewer uncertainties.",
+  "winner": "agricultural_chatbot_answer",
+  "confidence": 0.75,
+  "final_reason": "Both answers are equally complete, but the agricultural chatbot answer provides higher practical usefulness, richer contextual details, and greater specificity, which outweigh its lower faithfulness and conciseness. Since practical usefulness is the second‑most important criterion and it scores higher there, it is the overall better response.",
+  "context_impact_summary": "The agricultural chatbot answer enriches the basic list of organic fertilizers with soil‑type considerations, weather‑related tips, and innovative amendments like biochar, giving the farmer a more nuanced decision framework. This added context improves practical applicability despite some extra, less‑verified content.",
+  "minimum_context_strengths": [
+    "Lists a solid range of organic fertilizers relevant to sesame",
+    "Clear safety warnings about fresh manure and excess nitrogen",
+    "Relatively concise and easy to read",
+    "Claims are well‑supported by agronomic evidence"
+  ],
+  "minimum_context_weaknesses": [
+    "Missing quantitative application rates for many inputs",
+    "Limited contextual information (soil type, weather conditions)",
+    "Some recommendations are vague (e.g., \"modest dose\")",
+    "Less detailed timing and placement guidance compared to the other answer"
+  ],
+  "agricultural_chatbot_strengths": [
+    "Higher practical usefulness with actionable timing and placement tips",
+    "Adds valuable context such as soil type, dry‑season advice, and biochar use",
+    "More specific guidance on incorporation depth and seed‑row methods",
+    "Higher specificity scores and broader set of organic (and supplemental) options"
+  ],
+  "agricultural_chatbot_weaknesses": [
+    "Includes non‑organic inputs (bone meal, rock phosphate, mineral starter) that dilute the organic focus",
+    "Several statements are vague or weakly supported (e.g., biochar charging, fastest early response claim)",
+    "Less concise; the response is longer and contains extra details beyond the core question",
+    "Faithfulness score is lower due to inclusion of less‑verified recommendations"
+  ],
+  "errors": []
+}

@@ -1,0 +1,643 @@
+{
+  "id": 1,
+  "question": "Can I still add urea to my rice when it has started producing?",
+  "minimum_context_answer": "If the rice has already formed heads (panicles) and you can see flowering or grains starting to fill, do not add urea now. At this stage the crop has taken up most of the nitrogen it needs, so late urea gives little or no yield benefit and can instead cause lodging, increase disease and pest pressure, and delay maturity.\n\nThe only time a final nitrogen dose helps is just before the head emerges—at panicle initiation/early booting—when the panicle is still inside the stem and not yet visible. If your crop is already “producing” in the sense that heads are out or grains are forming, it’s too late for urea.\n\nFor future crops, plan urea in splits: a basal dose at planting/transplanting, another during active tillering, and the last at panicle initiation. Avoid applying nitrogen after heading.",
+  "agricultural_chatbot_answer": "You can still add urea if your rice is at panicle initiation or booting and the heads are just about to emerge, but once most panicles have come out and flowering/grain filling has begun, it’s better not to. A small nitrogen dose at booting can help grain number and size; after flowering it won’t increase yield, and it can cause lodging, more disease/insect pressure, and delay maturity.\n\nA quick way to decide: feel the top stem (the flag leaf sheath). If the panicle is still inside (booting) or only just emerging and you don’t yet see open flowers, you’re in the last useful window for a light topdress. If most heads are out and you can see flowering or small grains, skip the urea.\n\nIf you are still within that window and the crop looks a bit pale or thin, apply a light topdress—about one 50‑kg bag of urea per hectare (roughly half a bag per acre). Do not exceed this at this stage. How you apply matters:\n- In lowland/flooded rice: apply when the water is shallow or after briefly draining; broadcast in the cool of the day and re-flood lightly after a day or so. Avoid spreading onto deep standing water at midday to reduce losses.\n- In upland/non-flooded rice: place or lightly incorporate urea a little away from the plant base and cover it; apply just before a light rain or irrigate so it dissolves into the root zone. Avoid placing granules on wet leaves.\n\nWith your sandy loam soil and the generally dry seasonal outlook, only apply if you can ensure some moisture from irrigation or imminent light rain; otherwise the urea can be lost and won’t pay back. Also, avoid putting it down right before a heavy storm that could wash it away.\n\nIf the crop has already flowered and is filling grain, don’t add granular urea now. Focus instead on steady water management, weed and pest control, and plan to improve nitrogen management next crop by splitting nitrogen earlier (basal, active tillering, and panicle initiation) and building soil organic matter with compost/manure and residue retention so the crop has enough nitrogen before this late stage.",
+  "question_type": "fertilizer_timing",
+  "risk_level": "medium",
+  "selected_metrics": [
+    "completeness",
+    "practical_usefulness",
+    "faithfulness",
+    "context_gain",
+    "comparative_winner_reasoning",
+    "safety_risk_awareness",
+    "specificity",
+    "conciseness"
+  ],
+  "planner_output": {
+    "question_type": "fertilizer_timing",
+    "risk_level": "medium",
+    "selected_metrics": [
+      "completeness",
+      "practical_usefulness",
+      "faithfulness",
+      "context_gain",
+      "comparative_winner_reasoning",
+      "safety_risk_awareness",
+      "specificity",
+      "conciseness"
+    ],
+    "metric_rationale": {
+      "completeness": "Ensures each answer addresses all relevant aspects of urea application timing, dosage, and alternatives.",
+      "practical_usefulness": "Checks that the advice can be readily applied by the farmer in the field.",
+      "faithfulness": "Verifies that the information aligns with established agronomic science for rice nitrogen management.",
+      "context_gain": "Evaluates whether the answer adds useful context beyond the simple question (e.g., future planning, soil considerations).",
+      "comparative_winner_reasoning": "Provides a structured justification for selecting the better answer based on the other metrics.",
+      "safety_risk_awareness": "Identifies any mention of risks such as lodging, disease, environmental loss, or improper dosage.",
+      "specificity": "Assesses detail on timing (panicle initiation vs. heading), amount of urea, application method, and soil/irrigation conditions.",
+      "conciseness": "Ensures the answer is clear and not overly verbose for a straightforward question."
+    },
+    "evaluation_plan": [
+      "Assess completeness of each answer against the question requirements.",
+      "Check faithfulness of the content to agronomic best practices for rice nitrogen management.",
+      "Evaluate practical usefulness of the recommendations for immediate farmer action.",
+      "Review safety_risk_awareness: presence of risk warnings and mitigation advice.",
+      "Measure specificity: detail on timing, dosage, method, soil and irrigation considerations.",
+      "Rate conciseness: length relative to the simplicity of the question.",
+      "Determine context_gain: additional useful information beyond the direct answer.",
+      "Apply comparative_winner_reasoning to decide which answer overall performs best."
+    ],
+    "planner_reason": "The plan systematically covers all mandatory metrics, adds risk and detail checks relevant to fertilizer use, and orders evaluation from foundational correctness to practical and comparative judgment."
+  },
+  "claims": {
+    "minimum_context_claims": [
+      {
+        "claim": "If the rice has already formed heads (panicles) and you can see flowering or grains starting to fill, do not add urea now.",
+        "claim_type": "timing",
+        "importance": "high"
+      },
+      {
+        "claim": "Late urea gives little or no yield benefit.",
+        "claim_type": "yield",
+        "importance": "high"
+      },
+      {
+        "claim": "Late urea can cause lodging, increase disease and pest pressure, and delay maturity.",
+        "claim_type": "pest_disease",
+        "importance": "medium"
+      },
+      {
+        "claim": "The only time a final nitrogen dose helps is just before the head emerges—at panicle initiation/early booting—when the panicle is still inside the stem and not yet visible.",
+        "claim_type": "timing",
+        "importance": "high"
+      },
+      {
+        "claim": "Plan urea in splits: a basal dose at planting/transplanting, another during active tillering, and the last at panicle initiation.",
+        "claim_type": "fertilizer",
+        "importance": "medium"
+      },
+      {
+        "claim": "Avoid applying nitrogen after heading.",
+        "claim_type": "timing",
+        "importance": "high"
+      }
+    ],
+    "agricultural_chatbot_claims": [
+      {
+        "claim": "Urea can still be added if rice is at panicle initiation or booting and heads are just about to emerge, but not once most panicles have emerged and flowering/grain filling has begun.",
+        "claim_type": "timing",
+        "importance": "high"
+      },
+      {
+        "claim": "A small nitrogen dose at booting can help grain number and size.",
+        "claim_type": "yield",
+        "importance": "medium"
+      },
+      {
+        "claim": "After flowering, additional nitrogen will not increase yield and can cause lodging, more disease/insect pressure, and delay maturity.",
+        "claim_type": "pest_disease",
+        "importance": "medium"
+      },
+      {
+        "claim": "Apply a light topdress of about one 50‑kg bag of urea per hectare (roughly half a bag per acre) if the crop looks pale or thin.",
+        "claim_type": "dosage",
+        "importance": "high"
+      },
+      {
+        "claim": "Do not exceed the recommended light topdress amount at this stage.",
+        "claim_type": "safety",
+        "importance": "medium"
+      },
+      {
+        "claim": "In lowland/flooded rice, apply urea when water is shallow or after briefly draining, broadcast in the cool of the day, and re‑flood lightly after a day; avoid spreading onto deep standing water at midday.",
+        "claim_type": "method",
+        "importance": "medium"
+      },
+      {
+        "claim": "In upland/non‑flooded rice, place or lightly incorporate urea away from the plant base and cover it; apply just before a light rain or irrigate so it dissolves into the root zone; avoid placing granules on wet leaves.",
+        "claim_type": "method",
+        "importance": "medium"
+      },
+      {
+        "claim": "With sandy loam soil and a generally dry seasonal outlook, only apply urea if moisture from irrigation or imminent light rain can be ensured; otherwise the urea can be lost and won’t pay back.",
+        "claim_type": "soil",
+        "importance": "medium"
+      },
+      {
+        "claim": "Avoid applying urea right before a heavy storm that could wash it away.",
+        "claim_type": "safety",
+        "importance": "medium"
+      },
+      {
+        "claim": "Do not add granular urea once the crop has already flowered and is filling grain.",
+        "claim_type": "timing",
+        "importance": "high"
+      },
+      {
+        "claim": "Plan nitrogen management for the next crop by splitting nitrogen earlier (basal, active tillering, and panicle initiation).",
+        "claim_type": "fertilizer",
+        "importance": "medium"
+      },
+      {
+        "claim": "Build soil organic matter with compost/manure and residue retention to ensure sufficient nitrogen before late stages.",
+        "claim_type": "general",
+        "importance": "medium"
+      }
+    ],
+    "claim_summary": "Answer A gives a concise set of high‑level timing and dosage recommendations, while Answer B provides a richer set of claims covering timing, dosage, application methods, soil and water conditions, safety precautions, and expected yield effects."
+  },
+  "evidence_check": {
+    "minimum_context_answer": {
+      "supported_claims": [
+        "If the rice has already formed heads (panicles) and you can see flowering or grains starting to fill, do not add urea now.",
+        "Late urea can cause lodging, increase disease and pest pressure, and delay maturity.",
+        "The only time a final nitrogen dose helps is just before the head emerges—at panicle initiation/early booting—when the panicle is still inside the stem and not yet visible.",
+        "Plan urea in splits: a basal dose at planting/transplanting, another during active tillering, and the last at panicle initiation.",
+        "Avoid applying nitrogen after heading."
+      ],
+      "weakly_supported_claims": [],
+      "unsupported_claims": [],
+      "risky_claims": [],
+      "vague_claims": [
+        "Late urea gives little or no yield benefit."
+      ],
+      "missing_context": [
+        "Specific recommended dosage for a late‑stage urea top‑dress",
+        "Application method (broadcast, incorporation, timing relative to water level)",
+        "Soil moisture or irrigation requirements for effective N uptake",
+        "Guidance on how existing soil N status influences the decision"
+      ],
+      "evidence_summary": "All timing and risk statements align with established rice nitrogen management; the yield claim is generally true but lacks quantitative detail, making it slightly vague. The answer omits dosage, method, and moisture considerations needed for safe field implementation."
+    },
+    "agricultural_chatbot_answer": {
+      "supported_claims": [
+        "Urea can still be added if rice is at panicle initiation or booting and heads are just about to emerge, but not once most panicles have emerged and flowering/grain filling has begun.",
+        "After flowering, additional nitrogen will not increase yield and can cause lodging, more disease/insect pressure, and delay maturity.",
+        "Apply a light topdress of about one 50‑kg bag of urea per hectare (roughly half a bag per acre) if the crop looks pale or thin.",
+        "Do not exceed the recommended light topdress amount at this stage.",
+        "In lowland/flooded rice, apply urea when water is shallow or after briefly draining, broadcast in the cool of the day, and re‑flood lightly after a day; avoid spreading onto deep standing water at midday.",
+        "In upland/non‑flooded rice, place or lightly incorporate urea away from the plant base and cover it; apply just before a light rain or irrigate so it dissolves into the root zone; avoid placing granules on wet leaves.",
+        "With sandy loam soil and a generally dry seasonal outlook, only apply urea if moisture from irrigation or imminent light rain can be ensured; otherwise the urea can be lost and won’t pay back.",
+        "Avoid applying urea right before a heavy storm that could wash it away.",
+        "Do not add granular urea once the crop has already flowered and is filling grain.",
+        "Plan nitrogen management for the next crop by splitting nitrogen earlier (basal, active tillering, and panicle initiation).",
+        "Build soil organic matter with compost/manure and residue retention to ensure sufficient nitrogen before late stages."
+      ],
+      "weakly_supported_claims": [
+        "A small nitrogen dose at booting can help grain number and size."
+      ],
+      "unsupported_claims": [],
+      "risky_claims": [],
+      "vague_claims": [
+        "A small nitrogen dose at booting can help grain number and size.",
+        "Build soil organic matter with compost/manure and residue retention to ensure sufficient nitrogen before late stages."
+      ],
+      "missing_context": [
+        "Exact nitrogen amount (kg N) corresponding to the \"one 50‑kg bag\" recommendation",
+        "Precise timing window (days after panicle initiation) for the safe top‑dress",
+        "Soil test or existing N status guidance to decide if a late top‑dress is needed",
+        "Potential environmental loss rates (volatilization, leaching) under different water regimes"
+      ],
+      "evidence_summary": "The answer provides well‑aligned timing, dosage, and method guidance supported by agronomic practice. The claim about a \"small\" dose at booting is plausible but lacks quantitative backing, making it only weakly supported and somewhat vague. Overall the advice is comprehensive and safe."
+    },
+    "comparative_evidence_summary": "Both answers correctly state that urea should not be applied after heading and that the safe window is around panicle initiation. The agricultural chatbot answer offers stronger evidence through specific dosage, detailed application methods for flooded and upland systems, and safety precautions, though it includes a few vague or weakly supported statements. The minimum‑context answer is accurate but less detailed, missing key practical information such as dosage and moisture requirements. Consequently, the agricultural chatbot answer has stronger overall evidence support and fewer informational gaps."
+  },
+  "metric_results": {
+    "completeness": {
+      "minimum_context_answer": {
+        "score": 1.0,
+        "reason": "The answer fully addresses the farmer's question, explaining why adding urea after rice has started producing is not advisable, describing the appropriate timing for nitrogen applications, outlining risks of late application, and providing a clear future fertilization schedule."
+      },
+      "agricultural_chatbot_answer": {
+        "score": 1.0,
+        "reason": "The answer fully addresses timing, appropriate growth stage, dosage, application methods for different rice systems, cautions about risks, moisture requirements, and next steps, providing comprehensive guidance for the farmer."
+      }
+    },
+    "practical_usefulness": {
+      "minimum_context_answer": {
+        "score": 1.0,
+        "reason": "The answer clearly tells the farmer not to apply urea once panicles are visible, explains why, and provides concrete timing and split‑application guidance for future crops, making it directly actionable and easy to follow."
+      },
+      "agricultural_chatbot_answer": {
+        "score": 1.0,
+        "reason": "Provides clear, actionable timing, dosage, application method, and precautions tailored to field conditions, enabling a farmer to make an immediate decision."
+      }
+    },
+    "faithfulness": {
+      "minimum_context_answer": {
+        "score": 1.0,
+        "reason": "The answer directly addresses the farmer's question about applying urea after rice has started producing, correctly advises against late nitrogen application, explains realistic agronomic reasons, and offers appropriate future timing without unsupported or fabricated details."
+      },
+      "agricultural_chatbot_answer": {
+        "score": 0.5,
+        "reason": "The response addresses the question about timing of urea application, but it introduces specific fertilizer rates, soil type, and weather outlook that were not mentioned by the farmer, constituting unsupported recommendations and thus reducing faithfulness."
+      }
+    },
+    "context_gain": {
+      "score": 1.0,
+      "winner": "agricultural_chatbot_answer",
+      "reason": "Answer B adds detailed crop-stage checks, specific dosage, application methods for flooded vs upland rice, soil type considerations, weather outlook, and practical field-level tips, greatly enhancing farmer decision-making beyond the minimal guidance of Answer A."
+    },
+    "comparative_winner_reasoning": {
+      "score": 0.9,
+      "winner": "agricultural_chatbot_answer",
+      "reason": "Answer B provides more practical, specific guidance (diagnostic tip, dosage, application methods for different rice systems, soil moisture considerations) while still being accurate and safe. It adds valuable context and farmer-friendly details that Answer A lacks, making it more useful overall."
+    },
+    "safety_risk_awareness": {
+      "minimum_context_answer": {
+        "score": 1.0,
+        "reason": "The answer clearly advises against late urea application, explains risks such as lodging, disease, pest pressure, and delayed maturity, and provides safe timing guidelines for nitrogen use, demonstrating strong safety and risk awareness."
+      },
+      "agricultural_chatbot_answer": {
+        "score": 1.0,
+        "reason": "The answer provides clear, stage‑appropriate guidance, warns about over‑application, lodging, disease, runoff, and timing, and includes safe dosage and application methods, fully addressing safety and risk awareness."
+      }
+    },
+    "specificity": {
+      "minimum_context_answer": {
+        "score": 0.8,
+        "reason": "The answer provides concrete details about crop stage (panicle initiation, heading), timing of nitrogen applications, and a split application schedule. It avoids vague advice and gives actionable guidance, though it lacks specific dosage amounts, preventing a perfect score."
+      },
+      "agricultural_chatbot_answer": {
+        "score": 1.0,
+        "reason": "Provides concrete stage timing, dosage, application method, soil and weather considerations, and clear decision criteria, giving detailed guidance for the farmer."
+      }
+    },
+    "conciseness": {
+      "minimum_context_answer": {
+        "score": 1.0,
+        "reason": "The response directly answers the farmer's question, stays focused on nitrogen timing for rice, avoids unnecessary repetition, and provides only relevant, actionable details."
+      },
+      "agricultural_chatbot_answer": {
+        "score": 0.8,
+        "reason": "The answer is clear, focused on the timing and method of urea application, and avoids repetition. However, it adds some extra context (soil type, future nitrogen strategy) that, while useful, goes beyond the immediate question, making it slightly more verbose than necessary."
+      }
+    }
+  },
+  "final_decision": {
+    "winner": "minimum_context_answer",
+    "confidence": 0.85,
+    "final_reason": "Both answers are complete and practical, but the minimum_context answer is fully faithful to agronomic knowledge, whereas the agricultural chatbot answer includes unsupported dosage and soil recommendations, lowering its faithfulness. Faithfulness is the third‑most important metric after completeness and practicality, making the fully faithful answer the better choice despite its lower specificity and context gain.",
+    "minimum_context_strengths": [
+      "Complete coverage of timing and risks",
+      "Highly practical and actionable",
+      "Fully faithful to established rice nitrogen management",
+      "Clear safety warnings",
+      "Very concise and easy to read"
+    ],
+    "minimum_context_weaknesses": [
+      "No specific dosage amount for a late‑stage top‑dress",
+      "Missing detailed application method (broadcast vs. incorporation)",
+      "No guidance on soil moisture or existing N status"
+    ],
+    "agricultural_chatbot_strengths": [
+      "Very specific dosage and application method guidance",
+      "Adds useful context for flooded vs. upland systems and soil moisture",
+      "Strong safety and risk awareness",
+      "High specificity and practical detail"
+    ],
+    "agricultural_chatbot_weaknesses": [
+      "Contains unsupported or weakly supported recommendations, reducing faithfulness",
+      "Some statements are vague (e.g., \"small dose\")",
+      "Less concise due to extra contextual information"
+    ],
+    "most_influential_metrics": [
+      "faithfulness",
+      "completeness",
+      "practical_usefulness",
+      "specificity"
+    ],
+    "context_impact_summary": "The agricultural chatbot added extensive contextual details (dosage, method, soil type, weather) which improved specificity and context gain, but introduced recommendations not grounded in the farmer's situation, lowering faithfulness. The minimum_context answer stayed within well‑supported agronomic facts, preserving full faithfulness while being less detailed.",
+    "final_judgement_summary": "The minimum_context answer wins because it is completely faithful and safe, outweighing the richer but partially unsupported detail of the agricultural chatbot answer."
+  },
+  "trace": [
+    {
+      "agent": "evaluation_planner_agent",
+      "action": "planned_evaluation",
+      "output": {
+        "question_type": "fertilizer_timing",
+        "risk_level": "medium",
+        "selected_metrics": [
+          "completeness",
+          "practical_usefulness",
+          "faithfulness",
+          "context_gain",
+          "comparative_winner_reasoning",
+          "safety_risk_awareness",
+          "specificity",
+          "conciseness"
+        ],
+        "metric_rationale": {
+          "completeness": "Ensures each answer addresses all relevant aspects of urea application timing, dosage, and alternatives.",
+          "practical_usefulness": "Checks that the advice can be readily applied by the farmer in the field.",
+          "faithfulness": "Verifies that the information aligns with established agronomic science for rice nitrogen management.",
+          "context_gain": "Evaluates whether the answer adds useful context beyond the simple question (e.g., future planning, soil considerations).",
+          "comparative_winner_reasoning": "Provides a structured justification for selecting the better answer based on the other metrics.",
+          "safety_risk_awareness": "Identifies any mention of risks such as lodging, disease, environmental loss, or improper dosage.",
+          "specificity": "Assesses detail on timing (panicle initiation vs. heading), amount of urea, application method, and soil/irrigation conditions.",
+          "conciseness": "Ensures the answer is clear and not overly verbose for a straightforward question."
+        },
+        "evaluation_plan": [
+          "Assess completeness of each answer against the question requirements.",
+          "Check faithfulness of the content to agronomic best practices for rice nitrogen management.",
+          "Evaluate practical usefulness of the recommendations for immediate farmer action.",
+          "Review safety_risk_awareness: presence of risk warnings and mitigation advice.",
+          "Measure specificity: detail on timing, dosage, method, soil and irrigation considerations.",
+          "Rate conciseness: length relative to the simplicity of the question.",
+          "Determine context_gain: additional useful information beyond the direct answer.",
+          "Apply comparative_winner_reasoning to decide which answer overall performs best."
+        ],
+        "planner_reason": "The plan systematically covers all mandatory metrics, adds risk and detail checks relevant to fertilizer use, and orders evaluation from foundational correctness to practical and comparative judgment."
+      }
+    },
+    {
+      "agent": "claim_extractor_agent",
+      "action": "extracted_claims",
+      "output": {
+        "minimum_context_claims": [
+          {
+            "claim": "If the rice has already formed heads (panicles) and you can see flowering or grains starting to fill, do not add urea now.",
+            "claim_type": "timing",
+            "importance": "high"
+          },
+          {
+            "claim": "Late urea gives little or no yield benefit.",
+            "claim_type": "yield",
+            "importance": "high"
+          },
+          {
+            "claim": "Late urea can cause lodging, increase disease and pest pressure, and delay maturity.",
+            "claim_type": "pest_disease",
+            "importance": "medium"
+          },
+          {
+            "claim": "The only time a final nitrogen dose helps is just before the head emerges—at panicle initiation/early booting—when the panicle is still inside the stem and not yet visible.",
+            "claim_type": "timing",
+            "importance": "high"
+          },
+          {
+            "claim": "Plan urea in splits: a basal dose at planting/transplanting, another during active tillering, and the last at panicle initiation.",
+            "claim_type": "fertilizer",
+            "importance": "medium"
+          },
+          {
+            "claim": "Avoid applying nitrogen after heading.",
+            "claim_type": "timing",
+            "importance": "high"
+          }
+        ],
+        "agricultural_chatbot_claims": [
+          {
+            "claim": "Urea can still be added if rice is at panicle initiation or booting and heads are just about to emerge, but not once most panicles have emerged and flowering/grain filling has begun.",
+            "claim_type": "timing",
+            "importance": "high"
+          },
+          {
+            "claim": "A small nitrogen dose at booting can help grain number and size.",
+            "claim_type": "yield",
+            "importance": "medium"
+          },
+          {
+            "claim": "After flowering, additional nitrogen will not increase yield and can cause lodging, more disease/insect pressure, and delay maturity.",
+            "claim_type": "pest_disease",
+            "importance": "medium"
+          },
+          {
+            "claim": "Apply a light topdress of about one 50‑kg bag of urea per hectare (roughly half a bag per acre) if the crop looks pale or thin.",
+            "claim_type": "dosage",
+            "importance": "high"
+          },
+          {
+            "claim": "Do not exceed the recommended light topdress amount at this stage.",
+            "claim_type": "safety",
+            "importance": "medium"
+          },
+          {
+            "claim": "In lowland/flooded rice, apply urea when water is shallow or after briefly draining, broadcast in the cool of the day, and re‑flood lightly after a day; avoid spreading onto deep standing water at midday.",
+            "claim_type": "method",
+            "importance": "medium"
+          },
+          {
+            "claim": "In upland/non‑flooded rice, place or lightly incorporate urea away from the plant base and cover it; apply just before a light rain or irrigate so it dissolves into the root zone; avoid placing granules on wet leaves.",
+            "claim_type": "method",
+            "importance": "medium"
+          },
+          {
+            "claim": "With sandy loam soil and a generally dry seasonal outlook, only apply urea if moisture from irrigation or imminent light rain can be ensured; otherwise the urea can be lost and won’t pay back.",
+            "claim_type": "soil",
+            "importance": "medium"
+          },
+          {
+            "claim": "Avoid applying urea right before a heavy storm that could wash it away.",
+            "claim_type": "safety",
+            "importance": "medium"
+          },
+          {
+            "claim": "Do not add granular urea once the crop has already flowered and is filling grain.",
+            "claim_type": "timing",
+            "importance": "high"
+          },
+          {
+            "claim": "Plan nitrogen management for the next crop by splitting nitrogen earlier (basal, active tillering, and panicle initiation).",
+            "claim_type": "fertilizer",
+            "importance": "medium"
+          },
+          {
+            "claim": "Build soil organic matter with compost/manure and residue retention to ensure sufficient nitrogen before late stages.",
+            "claim_type": "general",
+            "importance": "medium"
+          }
+        ],
+        "claim_summary": "Answer A gives a concise set of high‑level timing and dosage recommendations, while Answer B provides a richer set of claims covering timing, dosage, application methods, soil and water conditions, safety precautions, and expected yield effects."
+      }
+    },
+    {
+      "agent": "evidence_checker_agent",
+      "action": "checked_evidence",
+      "output": {
+        "minimum_context_answer": {
+          "supported_claims": [
+            "If the rice has already formed heads (panicles) and you can see flowering or grains starting to fill, do not add urea now.",
+            "Late urea can cause lodging, increase disease and pest pressure, and delay maturity.",
+            "The only time a final nitrogen dose helps is just before the head emerges—at panicle initiation/early booting—when the panicle is still inside the stem and not yet visible.",
+            "Plan urea in splits: a basal dose at planting/transplanting, another during active tillering, and the last at panicle initiation.",
+            "Avoid applying nitrogen after heading."
+          ],
+          "weakly_supported_claims": [],
+          "unsupported_claims": [],
+          "risky_claims": [],
+          "vague_claims": [
+            "Late urea gives little or no yield benefit."
+          ],
+          "missing_context": [
+            "Specific recommended dosage for a late‑stage urea top‑dress",
+            "Application method (broadcast, incorporation, timing relative to water level)",
+            "Soil moisture or irrigation requirements for effective N uptake",
+            "Guidance on how existing soil N status influences the decision"
+          ],
+          "evidence_summary": "All timing and risk statements align with established rice nitrogen management; the yield claim is generally true but lacks quantitative detail, making it slightly vague. The answer omits dosage, method, and moisture considerations needed for safe field implementation."
+        },
+        "agricultural_chatbot_answer": {
+          "supported_claims": [
+            "Urea can still be added if rice is at panicle initiation or booting and heads are just about to emerge, but not once most panicles have emerged and flowering/grain filling has begun.",
+            "After flowering, additional nitrogen will not increase yield and can cause lodging, more disease/insect pressure, and delay maturity.",
+            "Apply a light topdress of about one 50‑kg bag of urea per hectare (roughly half a bag per acre) if the crop looks pale or thin.",
+            "Do not exceed the recommended light topdress amount at this stage.",
+            "In lowland/flooded rice, apply urea when water is shallow or after briefly draining, broadcast in the cool of the day, and re‑flood lightly after a day; avoid spreading onto deep standing water at midday.",
+            "In upland/non‑flooded rice, place or lightly incorporate urea away from the plant base and cover it; apply just before a light rain or irrigate so it dissolves into the root zone; avoid placing granules on wet leaves.",
+            "With sandy loam soil and a generally dry seasonal outlook, only apply urea if moisture from irrigation or imminent light rain can be ensured; otherwise the urea can be lost and won’t pay back.",
+            "Avoid applying urea right before a heavy storm that could wash it away.",
+            "Do not add granular urea once the crop has already flowered and is filling grain.",
+            "Plan nitrogen management for the next crop by splitting nitrogen earlier (basal, active tillering, and panicle initiation).",
+            "Build soil organic matter with compost/manure and residue retention to ensure sufficient nitrogen before late stages."
+          ],
+          "weakly_supported_claims": [
+            "A small nitrogen dose at booting can help grain number and size."
+          ],
+          "unsupported_claims": [],
+          "risky_claims": [],
+          "vague_claims": [
+            "A small nitrogen dose at booting can help grain number and size.",
+            "Build soil organic matter with compost/manure and residue retention to ensure sufficient nitrogen before late stages."
+          ],
+          "missing_context": [
+            "Exact nitrogen amount (kg N) corresponding to the \"one 50‑kg bag\" recommendation",
+            "Precise timing window (days after panicle initiation) for the safe top‑dress",
+            "Soil test or existing N status guidance to decide if a late top‑dress is needed",
+            "Potential environmental loss rates (volatilization, leaching) under different water regimes"
+          ],
+          "evidence_summary": "The answer provides well‑aligned timing, dosage, and method guidance supported by agronomic practice. The claim about a \"small\" dose at booting is plausible but lacks quantitative backing, making it only weakly supported and somewhat vague. Overall the advice is comprehensive and safe."
+        },
+        "comparative_evidence_summary": "Both answers correctly state that urea should not be applied after heading and that the safe window is around panicle initiation. The agricultural chatbot answer offers stronger evidence through specific dosage, detailed application methods for flooded and upland systems, and safety precautions, though it includes a few vague or weakly supported statements. The minimum‑context answer is accurate but less detailed, missing key practical information such as dosage and moisture requirements. Consequently, the agricultural chatbot answer has stronger overall evidence support and fewer informational gaps."
+      }
+    },
+    {
+      "agent": "metric_tool_agent",
+      "action": "executed_metric_tools",
+      "selected_metrics": [
+        "completeness",
+        "practical_usefulness",
+        "faithfulness",
+        "context_gain",
+        "comparative_winner_reasoning",
+        "safety_risk_awareness",
+        "specificity",
+        "conciseness"
+      ],
+      "output": {
+        "completeness": {
+          "minimum_context_answer": {
+            "score": 1.0,
+            "reason": "The answer fully addresses the farmer's question, explaining why adding urea after rice has started producing is not advisable, describing the appropriate timing for nitrogen applications, outlining risks of late application, and providing a clear future fertilization schedule."
+          },
+          "agricultural_chatbot_answer": {
+            "score": 1.0,
+            "reason": "The answer fully addresses timing, appropriate growth stage, dosage, application methods for different rice systems, cautions about risks, moisture requirements, and next steps, providing comprehensive guidance for the farmer."
+          }
+        },
+        "practical_usefulness": {
+          "minimum_context_answer": {
+            "score": 1.0,
+            "reason": "The answer clearly tells the farmer not to apply urea once panicles are visible, explains why, and provides concrete timing and split‑application guidance for future crops, making it directly actionable and easy to follow."
+          },
+          "agricultural_chatbot_answer": {
+            "score": 1.0,
+            "reason": "Provides clear, actionable timing, dosage, application method, and precautions tailored to field conditions, enabling a farmer to make an immediate decision."
+          }
+        },
+        "faithfulness": {
+          "minimum_context_answer": {
+            "score": 1.0,
+            "reason": "The answer directly addresses the farmer's question about applying urea after rice has started producing, correctly advises against late nitrogen application, explains realistic agronomic reasons, and offers appropriate future timing without unsupported or fabricated details."
+          },
+          "agricultural_chatbot_answer": {
+            "score": 0.5,
+            "reason": "The response addresses the question about timing of urea application, but it introduces specific fertilizer rates, soil type, and weather outlook that were not mentioned by the farmer, constituting unsupported recommendations and thus reducing faithfulness."
+          }
+        },
+        "context_gain": {
+          "score": 1.0,
+          "winner": "agricultural_chatbot_answer",
+          "reason": "Answer B adds detailed crop-stage checks, specific dosage, application methods for flooded vs upland rice, soil type considerations, weather outlook, and practical field-level tips, greatly enhancing farmer decision-making beyond the minimal guidance of Answer A."
+        },
+        "comparative_winner_reasoning": {
+          "score": 0.9,
+          "winner": "agricultural_chatbot_answer",
+          "reason": "Answer B provides more practical, specific guidance (diagnostic tip, dosage, application methods for different rice systems, soil moisture considerations) while still being accurate and safe. It adds valuable context and farmer-friendly details that Answer A lacks, making it more useful overall."
+        },
+        "safety_risk_awareness": {
+          "minimum_context_answer": {
+            "score": 1.0,
+            "reason": "The answer clearly advises against late urea application, explains risks such as lodging, disease, pest pressure, and delayed maturity, and provides safe timing guidelines for nitrogen use, demonstrating strong safety and risk awareness."
+          },
+          "agricultural_chatbot_answer": {
+            "score": 1.0,
+            "reason": "The answer provides clear, stage‑appropriate guidance, warns about over‑application, lodging, disease, runoff, and timing, and includes safe dosage and application methods, fully addressing safety and risk awareness."
+          }
+        },
+        "specificity": {
+          "minimum_context_answer": {
+            "score": 0.8,
+            "reason": "The answer provides concrete details about crop stage (panicle initiation, heading), timing of nitrogen applications, and a split application schedule. It avoids vague advice and gives actionable guidance, though it lacks specific dosage amounts, preventing a perfect score."
+          },
+          "agricultural_chatbot_answer": {
+            "score": 1.0,
+            "reason": "Provides concrete stage timing, dosage, application method, soil and weather considerations, and clear decision criteria, giving detailed guidance for the farmer."
+          }
+        },
+        "conciseness": {
+          "minimum_context_answer": {
+            "score": 1.0,
+            "reason": "The response directly answers the farmer's question, stays focused on nitrogen timing for rice, avoids unnecessary repetition, and provides only relevant, actionable details."
+          },
+          "agricultural_chatbot_answer": {
+            "score": 0.8,
+            "reason": "The answer is clear, focused on the timing and method of urea application, and avoids repetition. However, it adds some extra context (soil type, future nitrogen strategy) that, while useful, goes beyond the immediate question, making it slightly more verbose than necessary."
+          }
+        }
+      }
+    },
+    {
+      "agent": "final_decision_agent",
+      "action": "generated_final_decision",
+      "output": {
+        "winner": "minimum_context_answer",
+        "confidence": 0.85,
+        "final_reason": "Both answers are complete and practical, but the minimum_context answer is fully faithful to agronomic knowledge, whereas the agricultural chatbot answer includes unsupported dosage and soil recommendations, lowering its faithfulness. Faithfulness is the third‑most important metric after completeness and practicality, making the fully faithful answer the better choice despite its lower specificity and context gain.",
+        "minimum_context_strengths": [
+          "Complete coverage of timing and risks",
+          "Highly practical and actionable",
+          "Fully faithful to established rice nitrogen management",
+          "Clear safety warnings",
+          "Very concise and easy to read"
+        ],
+        "minimum_context_weaknesses": [
+          "No specific dosage amount for a late‑stage top‑dress",
+          "Missing detailed application method (broadcast vs. incorporation)",
+          "No guidance on soil moisture or existing N status"
+        ],
+        "agricultural_chatbot_strengths": [
+          "Very specific dosage and application method guidance",
+          "Adds useful context for flooded vs. upland systems and soil moisture",
+          "Strong safety and risk awareness",
+          "High specificity and practical detail"
+        ],
+        "agricultural_chatbot_weaknesses": [
+          "Contains unsupported or weakly supported recommendations, reducing faithfulness",
+          "Some statements are vague (e.g., \"small dose\")",
+          "Less concise due to extra contextual information"
+        ],
+        "most_influential_metrics": [
+          "faithfulness",
+          "completeness",
+          "practical_usefulness",
+          "specificity"
+        ],
+        "context_impact_summary": "The agricultural chatbot added extensive contextual details (dosage, method, soil type, weather) which improved specificity and context gain, but introduced recommendations not grounded in the farmer's situation, lowering faithfulness. The minimum_context answer stayed within well‑supported agronomic facts, preserving full faithfulness while being less detailed.",
+        "final_judgement_summary": "The minimum_context answer wins because it is completely faithful and safe, outweighing the richer but partially unsupported detail of the agricultural chatbot answer."
+      }
+    }
+  ],
+  "errors": []
+}

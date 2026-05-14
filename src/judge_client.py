@@ -10,29 +10,31 @@ load_dotenv()
 
 
 class JudgeClient:
-    def __init__(self, model: str = "gpt-5"):
+    def __init__(self, model: str = "gpt-oss-120b"):
         self.api_key = os.getenv("OPENAI_API_KEY")
-        self.client_id = os.getenv("CLIENT_ID")
-        self.client_secret = os.getenv("CLIENT_SECRET")
+        # temp
+        # self.client_id = os.getenv("CLIENT_ID")
+        # self.client_secret = os.getenv("CLIENT_SECRET")
 
         if not self.api_key:
             raise ValueError("OPENAI_API_KEY is missing in .env")
 
-        if not self.client_id:
-            raise ValueError("CLIENT_ID is missing in .env")
+        # if not self.client_id:
+        #     raise ValueError("CLIENT_ID is missing in .env")
 
-        if not self.client_secret:
-            raise ValueError("CLIENT_SECRET is missing in .env")
+        # if not self.client_secret:
+        #     raise ValueError("CLIENT_SECRET is missing in .env")
 
         self.llm = ChatOpenAI(
-            model="gpt-5",
+            model="gpt-oss-120b",
             temperature=0.2,
             openai_api_key=os.getenv("OPENAI_API_KEY"),
             openai_api_base="https://api.ai.it.ufl.edu/v1",
-            default_headers={
-                "Client-ID"    : os.getenv("CLIENT_ID"),
-                "Client-Secret": os.getenv("CLIENT_SECRET"),
-            }
+            # temp disabled
+            # default_headers={
+                # "Client-ID"    : os.getenv("CLIENT_ID"),
+                # "Client-Secret": os.getenv("CLIENT_SECRET"),
+            # }
         )
 
     def evaluate(self, prompt: str) -> dict:

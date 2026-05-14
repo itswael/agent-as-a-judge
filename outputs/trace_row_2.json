@@ -1,0 +1,777 @@
+{
+  "id": 2,
+  "question": "How can I tell if my tomato plants are getting too much nitrogen?",
+  "minimum_context_answer": "Too much nitrogen in tomatoes shows up first as very vigorous, dark green, and soft growth. Plants get tall with long spaces between leaves, produce thick, sappy stems and lots of suckers, and the canopy becomes very dense. Flowering is delayed, clusters are sparse, and blooms may abort, so you see plenty of leaves but few fruits setting.\n\nOlder leaves can develop physiological leaf roll while staying green and turgid, especially on very vigorous plants; this is different from disease because the leaves are not spotted or yellow. The lush, shaded canopy can also make fruits slower to color and more watery with poorer flavor. Such soft growth is more attractive to pests like aphids and more susceptible to fungal problems. Compared with nitrogen deficiency (which yellows older leaves), excess nitrogen keeps leaves very green and pushes rapid vegetative growth at the expense of flowering.\n\nIf these signs match what you see, review recent fertiliser or manure use. Heavy or frequent applications of urea, ammonium fertilisers, or fresh poultry manure commonly cause this. To confirm, a simple leaf or petiole sap test for nitrate can be done through a local lab or advisory service.\n\nIf you suspect excess nitrogen, stop nitrogen applications and switch to a more balanced or potassium‑forward fertiliser to support flowering and fruiting. Keep watering steady to avoid further stress, and avoid heavy pruning, which can worsen leaf roll on vigorous plants. As growth balances, flowering and fruit set should improve.",
+  "agricultural_chatbot_answer": "Too much nitrogen in tomatoes shows up as plants that look very healthy on top but are slow to give you flowers and fruit. The most common signs are very lush, dark green foliage and thick, soft stems with long distances between leaves. Plants grow fast and tall, the canopy becomes dense, and leaves can droop slightly from succulent growth. Flowering is delayed, flowers may drop, and fruit set is poor or late, so you see plenty of leaves but few clusters. Fruits that do form may be watery, bland, and more prone to cracking. Lush canopies also attract aphids and whiteflies and create a humid microclimate that favors foliar diseases. In contrast, nitrogen deficiency gives pale or yellowing lower leaves, thin stems, slow growth, and earlier but weak flowering; this helps you distinguish the two.\n\nThink about recent fertilizer and manure use and the timing of growth spurts. In sandy soil like yours, a heavy topdress of urea or CAN, or fresh manure, can push a rapid flush of vegetative growth within a week, especially when there is enough moisture. If your plants are 4–6 weeks after transplanting and still making leaf and stem growth with few or no flower clusters, suspect excess nitrogen. If you have access to simple nitrate test strips for sap, you can squeeze sap from the petiole of the most recently fully expanded leaf in mid‑morning and compare; consistently very high readings for your crop stage confirm excess, but even without a test, the growth pattern is a strong clue.\n\nIf you suspect too much nitrogen, pause all nitrogen applications for now. Do not topdress with urea, CAN, or high‑N foliar feeds. Instead, shift nutrition toward flowering and fruiting by using low‑N, higher‑P and higher‑K options around the root zone, such as single superphosphate for phosphorus and sulfate of potash for potassium, or an NPK where the first number (N) is clearly the smallest. Maintain steady but not excessive watering; nitrogen plus frequent heavy watering drives more leaf growth, so with some rainy days expected, avoid extra irrigation on those days. If the canopy is very dense, you can lightly remove a few excess side shoots and old leaves low in the canopy to improve light and airflow, but avoid hard pruning that can stress plants or expose fruit to sunscald. If you start seeing blossom‑end rot on early fruits, supply calcium without adding more nitrogen—gypsum to the soil or a labeled foliar calcium can help—while keeping soil moisture even.\n\nFor the rest of the season, manage nitrogen in small, well‑timed doses. Apply modest basal nitrogen and then make split applications only up to early fruit set; once the first clusters are setting, keep nitrogen light and prioritize potassium to support fruit quality. In sandy soils, smaller, more frequent doses are safer than big single applications. Time any fertilizer so rain or irrigation can water it in, but try to avoid applying nitrogen right before heavier rains to reduce losses. Building organic matter with compost or well‑decomposed manure and mulch will also buffer nitrogen supply and make it easier to avoid both deficiency and excess. If you’d like, tell me the exact age of your crop and what fertilizers you’ve applied so far, and I can help fine‑tune the next steps.",
+  "question_type": "nutrient_excess_detection",
+  "risk_level": "medium",
+  "selected_metrics": [
+    "completeness",
+    "practical_usefulness",
+    "faithfulness",
+    "context_gain",
+    "comparative_winner_reasoning",
+    "safety_risk_awareness",
+    "specificity",
+    "conciseness"
+  ],
+  "planner_output": {
+    "question_type": "nutrient_excess_detection",
+    "risk_level": "medium",
+    "selected_metrics": [
+      "completeness",
+      "practical_usefulness",
+      "faithfulness",
+      "context_gain",
+      "comparative_winner_reasoning",
+      "safety_risk_awareness",
+      "specificity",
+      "conciseness"
+    ],
+    "metric_rationale": {
+      "completeness": "Check that the answer covers all relevant signs, diagnostic methods, and mitigation steps for excess nitrogen.",
+      "practical_usefulness": "Ensure the guidance can be readily applied by the farmer in the field.",
+      "faithfulness": "Verify that the information aligns with established agronomic knowledge about nitrogen management.",
+      "context_gain": "Assess how well the answer builds on the specific context of tomato plants and nitrogen excess.",
+      "comparative_winner_reasoning": "Provide a reasoned judgment on which answer better satisfies the question overall.",
+      "safety_risk_awareness": "The question involves fertilizer use, so the answer must acknowledge risks of over‑application and environmental/economic impacts.",
+      "specificity": "The question seeks detailed cues (timing, growth stage, symptoms) to identify excess nitrogen.",
+      "conciseness": "Both answers are lengthy; evaluate whether they stay focused without unnecessary verbosity."
+    },
+    "evaluation_plan": [
+      "Step 1: Evaluate each answer for completeness and specificity, confirming all diagnostic signs, testing options, and stage‑specific recommendations are present.",
+      "Step 2: Assess practical usefulness and safety_risk_awareness, ensuring actionable steps and risk mitigation are clearly communicated.",
+      "Step 3: Check faithfulness and context_gain, then apply comparative_winner_reasoning to determine which answer best balances accuracy, relevance, and conciseness."
+    ],
+    "planner_reason": "The plan systematically checks coverage, actionable detail, risk awareness, and correctness before comparing the two answers, while also rewarding brevity where appropriate."
+  },
+  "claims": {
+    "minimum_context_claims": [
+      {
+        "claim": "Too much nitrogen in tomatoes shows up first as very vigorous, dark green, and soft growth.",
+        "claim_type": "general",
+        "importance": "medium"
+      },
+      {
+        "claim": "Plants get tall with long spaces between leaves, produce thick, sappy stems and lots of suckers, and the canopy becomes very dense.",
+        "claim_type": "general",
+        "importance": "medium"
+      },
+      {
+        "claim": "Flowering is delayed, clusters are sparse, and blooms may abort, so you see plenty of leaves but few fruits setting.",
+        "claim_type": "yield",
+        "importance": "high"
+      },
+      {
+        "claim": "Older leaves can develop physiological leaf roll while staying green and turgid, especially on very vigorous plants; this is different from disease because the leaves are not spotted or yellow.",
+        "claim_type": "pest_disease",
+        "importance": "medium"
+      },
+      {
+        "claim": "The lush, shaded canopy can also make fruits slower to color and more watery with poorer flavor.",
+        "claim_type": "yield",
+        "importance": "medium"
+      },
+      {
+        "claim": "Such soft growth is more attractive to pests like aphids and more susceptible to fungal problems.",
+        "claim_type": "pest_disease",
+        "importance": "medium"
+      },
+      {
+        "claim": "Heavy or frequent applications of urea, ammonium fertilisers, or fresh poultry manure commonly cause excess nitrogen symptoms.",
+        "claim_type": "fertilizer",
+        "importance": "high"
+      },
+      {
+        "claim": "A simple leaf or petiole sap test for nitrate can be done through a local lab or advisory service.",
+        "claim_type": "method",
+        "importance": "medium"
+      },
+      {
+        "claim": "If you suspect excess nitrogen, stop nitrogen applications and switch to a more balanced or potassium‑forward fertiliser to support flowering and fruiting.",
+        "claim_type": "fertilizer",
+        "importance": "high"
+      },
+      {
+        "claim": "Keep watering steady to avoid further stress, and avoid heavy pruning, which can worsen leaf roll on vigorous plants.",
+        "claim_type": "water",
+        "importance": "medium"
+      }
+    ],
+    "agricultural_chatbot_claims": [
+      {
+        "claim": "Too much nitrogen in tomatoes shows up as plants that look very healthy on top but are slow to give you flowers and fruit.",
+        "claim_type": "general",
+        "importance": "medium"
+      },
+      {
+        "claim": "The most common signs are very lush, dark green foliage and thick, soft stems with long distances between leaves.",
+        "claim_type": "general",
+        "importance": "medium"
+      },
+      {
+        "claim": "Plants grow fast and tall, the canopy becomes dense, and leaves can droop slightly from succulent growth.",
+        "claim_type": "general",
+        "importance": "medium"
+      },
+      {
+        "claim": "Flowering is delayed, flowers may drop, and fruit set is poor or late, so you see plenty of leaves but few clusters.",
+        "claim_type": "yield",
+        "importance": "high"
+      },
+      {
+        "claim": "Fruits that do form may be watery, bland, and more prone to cracking.",
+        "claim_type": "yield",
+        "importance": "medium"
+      },
+      {
+        "claim": "Lush canopies also attract aphids and whiteflies and create a humid microclimate that favors foliar diseases.",
+        "claim_type": "pest_disease",
+        "importance": "medium"
+      },
+      {
+        "claim": "In sandy soil, a heavy topdress of urea or CAN, or fresh manure, can push a rapid flush of vegetative growth within a week, especially when there is enough moisture.",
+        "claim_type": "fertilizer",
+        "importance": "high"
+      },
+      {
+        "claim": "If your plants are 4–6 weeks after transplanting and still making leaf and stem growth with few or no flower clusters, suspect excess nitrogen.",
+        "claim_type": "crop_stage",
+        "importance": "medium"
+      },
+      {
+        "claim": "Simple nitrate test strips can be used on petiole sap taken mid‑morning; consistently very high readings confirm excess nitrogen for the crop stage.",
+        "claim_type": "method",
+        "importance": "medium"
+      },
+      {
+        "claim": "If you suspect too much nitrogen, pause all nitrogen applications for now.",
+        "claim_type": "fertilizer",
+        "importance": "high"
+      },
+      {
+        "claim": "Do not topdress with urea, CAN, or high‑N foliar feeds.",
+        "claim_type": "fertilizer",
+        "importance": "high"
+      },
+      {
+        "claim": "Shift nutrition toward flowering and fruiting by using low‑N, higher‑P and higher‑K options such as single superphosphate, sulfate of potash, or an NPK where the first number (N) is the smallest.",
+        "claim_type": "fertilizer",
+        "importance": "high"
+      },
+      {
+        "claim": "Maintain steady but not excessive watering; avoid extra irrigation on rainy days because nitrogen plus heavy watering drives more leaf growth.",
+        "claim_type": "water",
+        "importance": "medium"
+      },
+      {
+        "claim": "If the canopy is very dense, lightly remove a few excess side shoots and old leaves low in the canopy to improve light and airflow, but avoid hard pruning that can stress plants or cause sunscald.",
+        "claim_type": "method",
+        "importance": "medium"
+      },
+      {
+        "claim": "If blossom‑end rot appears, supply calcium (e.g., gypsum or foliar calcium) without adding more nitrogen, while keeping soil moisture even.",
+        "claim_type": "pest_disease",
+        "importance": "medium"
+      },
+      {
+        "claim": "Manage nitrogen in small, well‑timed doses: apply modest basal nitrogen, then split applications only up to early fruit set; after first clusters set, keep nitrogen light and prioritize potassium.",
+        "claim_type": "dosage",
+        "importance": "high"
+      },
+      {
+        "claim": "In sandy soils, smaller, more frequent nitrogen doses are safer than big single applications.",
+        "claim_type": "dosage",
+        "importance": "medium"
+      },
+      {
+        "claim": "Time any fertilizer so rain or irrigation can water it in, but avoid applying nitrogen right before heavier rains to reduce losses.",
+        "claim_type": "timing",
+        "importance": "medium"
+      },
+      {
+        "claim": "Building organic matter with compost or well‑decomposed manure and mulch buffers nitrogen supply and helps avoid both deficiency and excess.",
+        "claim_type": "soil",
+        "importance": "medium"
+      }
+    ],
+    "claim_summary": "Answer A provides basic symptom descriptions, a few fertilizer sources, a simple testing method, and general mitigation, while Answer B offers a richer set of claims covering detailed symptoms, soil context, specific fertilizer types, testing procedures, precise timing and dosage guidance, water management, pest/disease risks, and safety precautions."
+  },
+  "evidence_check": {
+    "minimum_context_answer": {
+      "supported_claims": [
+        "Too much nitrogen in tomatoes shows up first as very vigorous, dark green, and soft growth.",
+        "Plants get tall with long spaces between leaves, produce thick, sappy stems and lots of suckers, and the canopy becomes very dense.",
+        "Flowering is delayed, clusters are sparse, and blooms may abort, so you see plenty of leaves but few fruits setting.",
+        "The lush, shaded canopy can also make fruits slower to color and more watery with poorer flavor.",
+        "Such soft growth is more attractive to pests like aphids and more susceptible to fungal problems.",
+        "Heavy or frequent applications of urea, ammonium fertilisers, or fresh poultry manure commonly cause excess nitrogen symptoms.",
+        "A simple leaf or petiole sap test for nitrate can be done through a local lab or advisory service.",
+        "If you suspect excess nitrogen, stop nitrogen applications and switch to a more balanced or potassium‑forward fertiliser to support flowering and fruiting."
+      ],
+      "weakly_supported_claims": [
+        "Older leaves can develop physiological leaf roll while staying green and turgid, especially on very vigorous plants; this is different from disease because the leaves are not spotted or yellow.",
+        "Keep watering steady to avoid further stress, and avoid heavy pruning, which can worsen leaf roll on vigorous plants."
+      ],
+      "unsupported_claims": [],
+      "risky_claims": [],
+      "vague_claims": [],
+      "missing_context": [
+        "Quantitative thresholds for leaf colour or nitrate levels to confirm excess nitrogen.",
+        "Specific timing and frequency for corrective fertilizer applications (e.g., how much potassium‑forward fertilizer to apply).",
+        "Potential environmental impacts such as nitrate leaching or greenhouse‑gas emissions.",
+        "Guidance for different soil types beyond poultry manure (e.g., loam, clay).",
+        "Integration with organic or low‑input production systems."
+      ],
+      "evidence_summary": "The answer provides well‑established symptoms of nitrogen excess, common fertilizer sources, and basic corrective actions, all aligned with agronomic knowledge. A few statements (leaf roll, pruning advice) are less directly supported, and the answer lacks quantitative guidance and broader environmental context."
+    },
+    "agricultural_chatbot_answer": {
+      "supported_claims": [
+        "Too much nitrogen in tomatoes shows up as plants that look very healthy on top but are slow to give you flowers and fruit.",
+        "The most common signs are very lush, dark green foliage and thick, soft stems with long distances between leaves.",
+        "Plants grow fast and tall, the canopy becomes dense, and leaves can droop slightly from succulent growth.",
+        "Flowering is delayed, flowers may drop, and fruit set is poor or late, so you see plenty of leaves but few clusters.",
+        "Fruits that do form may be watery, bland, and more prone to cracking.",
+        "Lush canopies also attract aphids and whiteflies and create a humid microclimate that favors foliar diseases.",
+        "In sandy soil, a heavy topdress of urea or CAN, or fresh manure, can push a rapid flush of vegetative growth within a week, especially when there is enough moisture.",
+        "If your plants are 4–6 weeks after transplanting and still making leaf and stem growth with few or no flower clusters, suspect excess nitrogen.",
+        "If you suspect too much nitrogen, pause all nitrogen applications for now.",
+        "Do not topdress with urea, CAN, or high‑N foliar feeds.",
+        "Shift nutrition toward flowering and fruiting by using low‑N, higher‑P and higher‑K options such as single superphosphate, sulfate of potash, or an NPK where the first number (N) is the smallest.",
+        "If the canopy is very dense, lightly remove a few excess side shoots and old leaves low in the canopy to improve light and airflow, but avoid hard pruning that can stress plants or cause sunscald.",
+        "If blossom‑end rot appears, supply calcium (e.g., gypsum or foliar calcium) without adding more nitrogen, while keeping soil moisture even.",
+        "Manage nitrogen in small, well‑timed doses: apply modest basal nitrogen, then split applications only up to early fruit set; after first clusters set, keep nitrogen light and prioritize potassium.",
+        "In sandy soils, smaller, more frequent nitrogen doses are safer than big single applications.",
+        "Time any fertilizer so rain or irrigation can water it in, but avoid applying nitrogen right before heavier rains to reduce losses.",
+        "Building organic matter with compost or well‑decomposed manure and mulch buffers nitrogen supply and helps avoid both deficiency and excess."
+      ],
+      "weakly_supported_claims": [
+        "Simple nitrate test strips can be used on petiole sap taken mid‑morning; consistently very high readings confirm excess nitrogen for the crop stage.",
+        "Maintain steady but not excessive watering; avoid extra irrigation on rainy days because nitrogen plus heavy watering drives more leaf growth."
+      ],
+      "unsupported_claims": [],
+      "risky_claims": [],
+      "vague_claims": [
+        "Simple nitrate test strips can be used on petiole sap taken mid‑morning; consistently very high readings confirm excess nitrogen for the crop stage.",
+        "Maintain steady but not excessive watering; avoid extra irrigation on rainy days because nitrogen plus heavy watering drives more leaf growth."
+      ],
+      "missing_context": [
+        "Exact nitrate concentration thresholds that define \"very high\" readings.",
+        "Recommended rates (kg/ha or g/plant) for the suggested low‑N, high‑K/P fertilizers.",
+        "Potential leaching or runoff risks associated with the previously applied high‑N fertilizers.",
+        "Guidance for growers using organic amendments other than fresh manure."
+      ],
+      "evidence_summary": "The answer covers a comprehensive set of symptoms, stage‑specific diagnostics, testing methods, and detailed mitigation steps that are consistent with agronomic best practices. Most claims are well‑supported; a couple of recommendations (nitrate strip interpretation and watering impact) lack quantitative detail, making them slightly vague."
+    },
+    "comparative_evidence_summary": "Both answers correctly identify the visual and growth symptoms of nitrogen excess and advise stopping nitrogen applications. The agricultural chatbot answer provides richer, stage‑specific diagnostics, concrete testing procedures, and detailed corrective nutrient strategies, making its evidence base stronger overall. It includes a few vague statements but fewer weakly‑supported claims than the minimum‑context answer, which omits quantitative guidance and broader environmental considerations. Consequently, the chatbot answer has stronger evidential support and fewer gaps."
+  },
+  "metric_results": {
+    "completeness": {
+      "minimum_context_answer": {
+        "score": 0.8,
+        "reason": "The answer identifies key visual symptoms of excess nitrogen, suggests a diagnostic test, and provides clear corrective actions (stop N applications, switch to balanced fertilizer, maintain watering, avoid heavy pruning). However, it lacks specific guidance on timing of interventions, recommended nitrogen application rates, how to adjust fertilizer ratios, and detailed next steps such as soil testing or leaching excess nitrogen, which are important for complete farmer guidance."
+      },
+      "agricultural_chatbot_answer": {
+        "score": 1.0,
+        "reason": "The answer thoroughly explains symptoms, diagnostic methods, immediate corrective actions, future nitrogen management, timing, risks, and additional cultural practices, covering all key aspects a farmer needs."
+      }
+    },
+    "practical_usefulness": {
+      "minimum_context_answer": {
+        "score": 0.8,
+        "reason": "The answer clearly lists observable symptoms of excess nitrogen, advises reviewing recent fertilizer applications, suggests a simple leaf sap test, and provides concrete next steps (stop nitrogen, switch to balanced/potassium-forward fertilizer, maintain steady watering, avoid heavy pruning). While actionable, it lacks specific dosage rates or timing details, preventing a perfect score."
+      },
+      "agricultural_chatbot_answer": {
+        "score": 0.8,
+        "reason": "The answer gives clear, actionable signs of excess nitrogen, practical steps to confirm the problem, and specific management actions (pause N, shift to P/K, pruning, calcium, timing of future N applications). While it lacks exact dosage amounts, it provides sufficient guidance for a farmer to make field-level decisions."
+      }
+    },
+    "faithfulness": {
+      "minimum_context_answer": {
+        "score": 1.0,
+        "reason": "The answer directly addresses how to identify excess nitrogen in tomato plants, lists observable symptoms, suggests realistic diagnostic steps, and offers practical, grounded management advice without unsupported claims."
+      },
+      "agricultural_chatbot_answer": {
+        "score": 0.8,
+        "reason": "The answer directly addresses how to identify excess nitrogen in tomatoes with realistic signs and detection methods, staying grounded in agricultural practice. It adds some extra management advice, which is relevant, but makes a minor unsupported assumption about the soil being sandy."
+      }
+    },
+    "context_gain": {
+      "score": 1.0,
+      "winner": "agricultural_chatbot_answer",
+      "reason": "Answer B adds soil type, growth stage timing, specific fertilizer choices, weather‑related watering advice, pruning tips, calcium management, split‑application strategy, and invites farmer details, greatly enhancing decision‑making over Answer A."
+    },
+    "comparative_winner_reasoning": {
+      "score": 0.8,
+      "winner": "agricultural_chatbot_answer",
+      "reason": "Both answers are accurate and relevant, but Answer B provides richer context, more specific fertilizer recommendations, detailed safety guidance, and actionable steps (pruning, calcium management, timing of applications). While slightly less concise, its greater completeness, practicality, and farmer‑friendly tone make it the better overall response."
+    },
+    "safety_risk_awareness": {
+      "minimum_context_answer": {
+        "score": 1.0,
+        "reason": "The answer safely identifies excess nitrogen symptoms, warns about over‑application risks, advises stopping nitrogen inputs, suggests balanced fertilisation and testing, and avoids any unsafe recommendations."
+      },
+      "agricultural_chatbot_answer": {
+        "score": 1.0,
+        "reason": "The answer provides clear, safe guidance on identifying excess nitrogen, advises stopping nitrogen applications, recommends balanced nutrition, warns about over-watering, rain timing, and potential disease/pest issues, and avoids any harmful or risky practices."
+      }
+    },
+    "specificity": {
+      "minimum_context_answer": {
+        "score": 0.8,
+        "reason": "The answer provides concrete symptoms, specific fertilizer types, a diagnostic leaf sap test, and actionable steps (stop N applications, switch to balanced/K‑forward fertilizer, adjust watering and pruning). While it lacks exact dosage thresholds or precise timing, it offers detailed, practical guidance relevant to the question."
+      },
+      "agricultural_chatbot_answer": {
+        "score": 1.0,
+        "reason": "Provides concrete signs, timing (4–6 weeks post‑transplant), soil type, specific fertilizer types and dosages, testing method, and detailed management steps, giving ample detail for farmer decision."
+      }
+    },
+    "conciseness": {
+      "minimum_context_answer": {
+        "score": 1.0,
+        "reason": "The answer directly addresses how to identify excess nitrogen in tomato plants, stays focused on relevant symptoms, diagnostic tips, and corrective actions without unrelated information or unnecessary repetition."
+      },
+      "agricultural_chatbot_answer": {
+        "score": 0.8,
+        "reason": "The answer clearly explains how to identify excess nitrogen with specific symptoms and testing tips, staying on topic. However, it includes extensive management recommendations that go beyond the core question, making it somewhat verbose."
+      }
+    }
+  },
+  "final_decision": {
+    "winner": "agricultural_chatbot_answer",
+    "confidence": 0.9,
+    "final_reason": "The agricultural chatbot answer achieves perfect completeness, providing exhaustive symptom descriptions, stage‑specific diagnostics, detailed testing methods, and comprehensive corrective actions. It also adds strong context (soil type, growth stage, precise fertilizer choices) and higher specificity, outweighing its slightly lower conciseness and minor faithfulness gap. Completeness is the top priority, making this answer the superior response.",
+    "minimum_context_strengths": [
+      "Clear, concise list of key nitrogen‑excess symptoms",
+      "Simple, actionable diagnostic suggestion (leaf/petiole sap test)",
+      "Straightforward corrective steps (stop N, switch to balanced/K‑forward fertilizer)",
+      "Safe guidance without risky recommendations",
+      "Highly concise and focused on the core question"
+    ],
+    "minimum_context_weaknesses": [
+      "Missing quantitative thresholds for leaf colour or nitrate levels",
+      "Lacks timing and dosage details for corrective fertiliser applications",
+      "No discussion of environmental impacts (leaching, runoff)",
+      "Limited soil‑type considerations beyond fresh manure",
+      "Less specific guidance for different production systems"
+    ],
+    "agricultural_chatbot_strengths": [
+      "Comprehensive coverage of symptoms, including fruit quality and pest/disease risks",
+      "Stage‑specific diagnostic cue (4–6 weeks post‑transplant) and detailed testing method",
+      "Rich, concrete fertilizer recommendations (low‑N, high‑P/K options, split‑application strategy)",
+      "Additional cultural practices (pruning, calcium management, watering timing) for safety",
+      "Strong context gain with soil type, growth stage, and weather considerations",
+      "High specificity and practical usefulness for field decisions"
+    ],
+    "agricultural_chatbot_weaknesses": [
+      "Slightly less concise due to extensive management advice",
+      "Some vague statements (nitrate strip interpretation, watering impact) lacking quantitative detail",
+      "Assumes sandy soil in one claim, reducing faithfulness for other soil types",
+      "Exact dosage rates for suggested fertilizers are not provided"
+    ],
+    "most_influential_metrics": [
+      "completeness",
+      "context_gain",
+      "specificity",
+      "practical_usefulness"
+    ],
+    "context_impact_summary": "By incorporating soil type, crop stage, precise fertilizer choices, and additional cultural practices, the agricultural chatbot answer transforms generic guidance into a tailored, actionable plan for tomato growers, markedly improving relevance and usefulness over the minimal‑context response.",
+    "final_judgement_summary": "The agricultural chatbot answer wins due to its superior completeness and richer contextual detail, delivering a more thorough and practical solution despite a modest loss in conciseness."
+  },
+  "trace": [
+    {
+      "agent": "evaluation_planner_agent",
+      "action": "planned_evaluation",
+      "output": {
+        "question_type": "nutrient_excess_detection",
+        "risk_level": "medium",
+        "selected_metrics": [
+          "completeness",
+          "practical_usefulness",
+          "faithfulness",
+          "context_gain",
+          "comparative_winner_reasoning",
+          "safety_risk_awareness",
+          "specificity",
+          "conciseness"
+        ],
+        "metric_rationale": {
+          "completeness": "Check that the answer covers all relevant signs, diagnostic methods, and mitigation steps for excess nitrogen.",
+          "practical_usefulness": "Ensure the guidance can be readily applied by the farmer in the field.",
+          "faithfulness": "Verify that the information aligns with established agronomic knowledge about nitrogen management.",
+          "context_gain": "Assess how well the answer builds on the specific context of tomato plants and nitrogen excess.",
+          "comparative_winner_reasoning": "Provide a reasoned judgment on which answer better satisfies the question overall.",
+          "safety_risk_awareness": "The question involves fertilizer use, so the answer must acknowledge risks of over‑application and environmental/economic impacts.",
+          "specificity": "The question seeks detailed cues (timing, growth stage, symptoms) to identify excess nitrogen.",
+          "conciseness": "Both answers are lengthy; evaluate whether they stay focused without unnecessary verbosity."
+        },
+        "evaluation_plan": [
+          "Step 1: Evaluate each answer for completeness and specificity, confirming all diagnostic signs, testing options, and stage‑specific recommendations are present.",
+          "Step 2: Assess practical usefulness and safety_risk_awareness, ensuring actionable steps and risk mitigation are clearly communicated.",
+          "Step 3: Check faithfulness and context_gain, then apply comparative_winner_reasoning to determine which answer best balances accuracy, relevance, and conciseness."
+        ],
+        "planner_reason": "The plan systematically checks coverage, actionable detail, risk awareness, and correctness before comparing the two answers, while also rewarding brevity where appropriate."
+      }
+    },
+    {
+      "agent": "claim_extractor_agent",
+      "action": "extracted_claims",
+      "output": {
+        "minimum_context_claims": [
+          {
+            "claim": "Too much nitrogen in tomatoes shows up first as very vigorous, dark green, and soft growth.",
+            "claim_type": "general",
+            "importance": "medium"
+          },
+          {
+            "claim": "Plants get tall with long spaces between leaves, produce thick, sappy stems and lots of suckers, and the canopy becomes very dense.",
+            "claim_type": "general",
+            "importance": "medium"
+          },
+          {
+            "claim": "Flowering is delayed, clusters are sparse, and blooms may abort, so you see plenty of leaves but few fruits setting.",
+            "claim_type": "yield",
+            "importance": "high"
+          },
+          {
+            "claim": "Older leaves can develop physiological leaf roll while staying green and turgid, especially on very vigorous plants; this is different from disease because the leaves are not spotted or yellow.",
+            "claim_type": "pest_disease",
+            "importance": "medium"
+          },
+          {
+            "claim": "The lush, shaded canopy can also make fruits slower to color and more watery with poorer flavor.",
+            "claim_type": "yield",
+            "importance": "medium"
+          },
+          {
+            "claim": "Such soft growth is more attractive to pests like aphids and more susceptible to fungal problems.",
+            "claim_type": "pest_disease",
+            "importance": "medium"
+          },
+          {
+            "claim": "Heavy or frequent applications of urea, ammonium fertilisers, or fresh poultry manure commonly cause excess nitrogen symptoms.",
+            "claim_type": "fertilizer",
+            "importance": "high"
+          },
+          {
+            "claim": "A simple leaf or petiole sap test for nitrate can be done through a local lab or advisory service.",
+            "claim_type": "method",
+            "importance": "medium"
+          },
+          {
+            "claim": "If you suspect excess nitrogen, stop nitrogen applications and switch to a more balanced or potassium‑forward fertiliser to support flowering and fruiting.",
+            "claim_type": "fertilizer",
+            "importance": "high"
+          },
+          {
+            "claim": "Keep watering steady to avoid further stress, and avoid heavy pruning, which can worsen leaf roll on vigorous plants.",
+            "claim_type": "water",
+            "importance": "medium"
+          }
+        ],
+        "agricultural_chatbot_claims": [
+          {
+            "claim": "Too much nitrogen in tomatoes shows up as plants that look very healthy on top but are slow to give you flowers and fruit.",
+            "claim_type": "general",
+            "importance": "medium"
+          },
+          {
+            "claim": "The most common signs are very lush, dark green foliage and thick, soft stems with long distances between leaves.",
+            "claim_type": "general",
+            "importance": "medium"
+          },
+          {
+            "claim": "Plants grow fast and tall, the canopy becomes dense, and leaves can droop slightly from succulent growth.",
+            "claim_type": "general",
+            "importance": "medium"
+          },
+          {
+            "claim": "Flowering is delayed, flowers may drop, and fruit set is poor or late, so you see plenty of leaves but few clusters.",
+            "claim_type": "yield",
+            "importance": "high"
+          },
+          {
+            "claim": "Fruits that do form may be watery, bland, and more prone to cracking.",
+            "claim_type": "yield",
+            "importance": "medium"
+          },
+          {
+            "claim": "Lush canopies also attract aphids and whiteflies and create a humid microclimate that favors foliar diseases.",
+            "claim_type": "pest_disease",
+            "importance": "medium"
+          },
+          {
+            "claim": "In sandy soil, a heavy topdress of urea or CAN, or fresh manure, can push a rapid flush of vegetative growth within a week, especially when there is enough moisture.",
+            "claim_type": "fertilizer",
+            "importance": "high"
+          },
+          {
+            "claim": "If your plants are 4–6 weeks after transplanting and still making leaf and stem growth with few or no flower clusters, suspect excess nitrogen.",
+            "claim_type": "crop_stage",
+            "importance": "medium"
+          },
+          {
+            "claim": "Simple nitrate test strips can be used on petiole sap taken mid‑morning; consistently very high readings confirm excess nitrogen for the crop stage.",
+            "claim_type": "method",
+            "importance": "medium"
+          },
+          {
+            "claim": "If you suspect too much nitrogen, pause all nitrogen applications for now.",
+            "claim_type": "fertilizer",
+            "importance": "high"
+          },
+          {
+            "claim": "Do not topdress with urea, CAN, or high‑N foliar feeds.",
+            "claim_type": "fertilizer",
+            "importance": "high"
+          },
+          {
+            "claim": "Shift nutrition toward flowering and fruiting by using low‑N, higher‑P and higher‑K options such as single superphosphate, sulfate of potash, or an NPK where the first number (N) is the smallest.",
+            "claim_type": "fertilizer",
+            "importance": "high"
+          },
+          {
+            "claim": "Maintain steady but not excessive watering; avoid extra irrigation on rainy days because nitrogen plus heavy watering drives more leaf growth.",
+            "claim_type": "water",
+            "importance": "medium"
+          },
+          {
+            "claim": "If the canopy is very dense, lightly remove a few excess side shoots and old leaves low in the canopy to improve light and airflow, but avoid hard pruning that can stress plants or cause sunscald.",
+            "claim_type": "method",
+            "importance": "medium"
+          },
+          {
+            "claim": "If blossom‑end rot appears, supply calcium (e.g., gypsum or foliar calcium) without adding more nitrogen, while keeping soil moisture even.",
+            "claim_type": "pest_disease",
+            "importance": "medium"
+          },
+          {
+            "claim": "Manage nitrogen in small, well‑timed doses: apply modest basal nitrogen, then split applications only up to early fruit set; after first clusters set, keep nitrogen light and prioritize potassium.",
+            "claim_type": "dosage",
+            "importance": "high"
+          },
+          {
+            "claim": "In sandy soils, smaller, more frequent nitrogen doses are safer than big single applications.",
+            "claim_type": "dosage",
+            "importance": "medium"
+          },
+          {
+            "claim": "Time any fertilizer so rain or irrigation can water it in, but avoid applying nitrogen right before heavier rains to reduce losses.",
+            "claim_type": "timing",
+            "importance": "medium"
+          },
+          {
+            "claim": "Building organic matter with compost or well‑decomposed manure and mulch buffers nitrogen supply and helps avoid both deficiency and excess.",
+            "claim_type": "soil",
+            "importance": "medium"
+          }
+        ],
+        "claim_summary": "Answer A provides basic symptom descriptions, a few fertilizer sources, a simple testing method, and general mitigation, while Answer B offers a richer set of claims covering detailed symptoms, soil context, specific fertilizer types, testing procedures, precise timing and dosage guidance, water management, pest/disease risks, and safety precautions."
+      }
+    },
+    {
+      "agent": "evidence_checker_agent",
+      "action": "checked_evidence",
+      "output": {
+        "minimum_context_answer": {
+          "supported_claims": [
+            "Too much nitrogen in tomatoes shows up first as very vigorous, dark green, and soft growth.",
+            "Plants get tall with long spaces between leaves, produce thick, sappy stems and lots of suckers, and the canopy becomes very dense.",
+            "Flowering is delayed, clusters are sparse, and blooms may abort, so you see plenty of leaves but few fruits setting.",
+            "The lush, shaded canopy can also make fruits slower to color and more watery with poorer flavor.",
+            "Such soft growth is more attractive to pests like aphids and more susceptible to fungal problems.",
+            "Heavy or frequent applications of urea, ammonium fertilisers, or fresh poultry manure commonly cause excess nitrogen symptoms.",
+            "A simple leaf or petiole sap test for nitrate can be done through a local lab or advisory service.",
+            "If you suspect excess nitrogen, stop nitrogen applications and switch to a more balanced or potassium‑forward fertiliser to support flowering and fruiting."
+          ],
+          "weakly_supported_claims": [
+            "Older leaves can develop physiological leaf roll while staying green and turgid, especially on very vigorous plants; this is different from disease because the leaves are not spotted or yellow.",
+            "Keep watering steady to avoid further stress, and avoid heavy pruning, which can worsen leaf roll on vigorous plants."
+          ],
+          "unsupported_claims": [],
+          "risky_claims": [],
+          "vague_claims": [],
+          "missing_context": [
+            "Quantitative thresholds for leaf colour or nitrate levels to confirm excess nitrogen.",
+            "Specific timing and frequency for corrective fertilizer applications (e.g., how much potassium‑forward fertilizer to apply).",
+            "Potential environmental impacts such as nitrate leaching or greenhouse‑gas emissions.",
+            "Guidance for different soil types beyond poultry manure (e.g., loam, clay).",
+            "Integration with organic or low‑input production systems."
+          ],
+          "evidence_summary": "The answer provides well‑established symptoms of nitrogen excess, common fertilizer sources, and basic corrective actions, all aligned with agronomic knowledge. A few statements (leaf roll, pruning advice) are less directly supported, and the answer lacks quantitative guidance and broader environmental context."
+        },
+        "agricultural_chatbot_answer": {
+          "supported_claims": [
+            "Too much nitrogen in tomatoes shows up as plants that look very healthy on top but are slow to give you flowers and fruit.",
+            "The most common signs are very lush, dark green foliage and thick, soft stems with long distances between leaves.",
+            "Plants grow fast and tall, the canopy becomes dense, and leaves can droop slightly from succulent growth.",
+            "Flowering is delayed, flowers may drop, and fruit set is poor or late, so you see plenty of leaves but few clusters.",
+            "Fruits that do form may be watery, bland, and more prone to cracking.",
+            "Lush canopies also attract aphids and whiteflies and create a humid microclimate that favors foliar diseases.",
+            "In sandy soil, a heavy topdress of urea or CAN, or fresh manure, can push a rapid flush of vegetative growth within a week, especially when there is enough moisture.",
+            "If your plants are 4–6 weeks after transplanting and still making leaf and stem growth with few or no flower clusters, suspect excess nitrogen.",
+            "If you suspect too much nitrogen, pause all nitrogen applications for now.",
+            "Do not topdress with urea, CAN, or high‑N foliar feeds.",
+            "Shift nutrition toward flowering and fruiting by using low‑N, higher‑P and higher‑K options such as single superphosphate, sulfate of potash, or an NPK where the first number (N) is the smallest.",
+            "If the canopy is very dense, lightly remove a few excess side shoots and old leaves low in the canopy to improve light and airflow, but avoid hard pruning that can stress plants or cause sunscald.",
+            "If blossom‑end rot appears, supply calcium (e.g., gypsum or foliar calcium) without adding more nitrogen, while keeping soil moisture even.",
+            "Manage nitrogen in small, well‑timed doses: apply modest basal nitrogen, then split applications only up to early fruit set; after first clusters set, keep nitrogen light and prioritize potassium.",
+            "In sandy soils, smaller, more frequent nitrogen doses are safer than big single applications.",
+            "Time any fertilizer so rain or irrigation can water it in, but avoid applying nitrogen right before heavier rains to reduce losses.",
+            "Building organic matter with compost or well‑decomposed manure and mulch buffers nitrogen supply and helps avoid both deficiency and excess."
+          ],
+          "weakly_supported_claims": [
+            "Simple nitrate test strips can be used on petiole sap taken mid‑morning; consistently very high readings confirm excess nitrogen for the crop stage.",
+            "Maintain steady but not excessive watering; avoid extra irrigation on rainy days because nitrogen plus heavy watering drives more leaf growth."
+          ],
+          "unsupported_claims": [],
+          "risky_claims": [],
+          "vague_claims": [
+            "Simple nitrate test strips can be used on petiole sap taken mid‑morning; consistently very high readings confirm excess nitrogen for the crop stage.",
+            "Maintain steady but not excessive watering; avoid extra irrigation on rainy days because nitrogen plus heavy watering drives more leaf growth."
+          ],
+          "missing_context": [
+            "Exact nitrate concentration thresholds that define \"very high\" readings.",
+            "Recommended rates (kg/ha or g/plant) for the suggested low‑N, high‑K/P fertilizers.",
+            "Potential leaching or runoff risks associated with the previously applied high‑N fertilizers.",
+            "Guidance for growers using organic amendments other than fresh manure."
+          ],
+          "evidence_summary": "The answer covers a comprehensive set of symptoms, stage‑specific diagnostics, testing methods, and detailed mitigation steps that are consistent with agronomic best practices. Most claims are well‑supported; a couple of recommendations (nitrate strip interpretation and watering impact) lack quantitative detail, making them slightly vague."
+        },
+        "comparative_evidence_summary": "Both answers correctly identify the visual and growth symptoms of nitrogen excess and advise stopping nitrogen applications. The agricultural chatbot answer provides richer, stage‑specific diagnostics, concrete testing procedures, and detailed corrective nutrient strategies, making its evidence base stronger overall. It includes a few vague statements but fewer weakly‑supported claims than the minimum‑context answer, which omits quantitative guidance and broader environmental considerations. Consequently, the chatbot answer has stronger evidential support and fewer gaps."
+      }
+    },
+    {
+      "agent": "metric_tool_agent",
+      "action": "executed_metric_tools",
+      "selected_metrics": [
+        "completeness",
+        "practical_usefulness",
+        "faithfulness",
+        "context_gain",
+        "comparative_winner_reasoning",
+        "safety_risk_awareness",
+        "specificity",
+        "conciseness"
+      ],
+      "output": {
+        "completeness": {
+          "minimum_context_answer": {
+            "score": 0.8,
+            "reason": "The answer identifies key visual symptoms of excess nitrogen, suggests a diagnostic test, and provides clear corrective actions (stop N applications, switch to balanced fertilizer, maintain watering, avoid heavy pruning). However, it lacks specific guidance on timing of interventions, recommended nitrogen application rates, how to adjust fertilizer ratios, and detailed next steps such as soil testing or leaching excess nitrogen, which are important for complete farmer guidance."
+          },
+          "agricultural_chatbot_answer": {
+            "score": 1.0,
+            "reason": "The answer thoroughly explains symptoms, diagnostic methods, immediate corrective actions, future nitrogen management, timing, risks, and additional cultural practices, covering all key aspects a farmer needs."
+          }
+        },
+        "practical_usefulness": {
+          "minimum_context_answer": {
+            "score": 0.8,
+            "reason": "The answer clearly lists observable symptoms of excess nitrogen, advises reviewing recent fertilizer applications, suggests a simple leaf sap test, and provides concrete next steps (stop nitrogen, switch to balanced/potassium-forward fertilizer, maintain steady watering, avoid heavy pruning). While actionable, it lacks specific dosage rates or timing details, preventing a perfect score."
+          },
+          "agricultural_chatbot_answer": {
+            "score": 0.8,
+            "reason": "The answer gives clear, actionable signs of excess nitrogen, practical steps to confirm the problem, and specific management actions (pause N, shift to P/K, pruning, calcium, timing of future N applications). While it lacks exact dosage amounts, it provides sufficient guidance for a farmer to make field-level decisions."
+          }
+        },
+        "faithfulness": {
+          "minimum_context_answer": {
+            "score": 1.0,
+            "reason": "The answer directly addresses how to identify excess nitrogen in tomato plants, lists observable symptoms, suggests realistic diagnostic steps, and offers practical, grounded management advice without unsupported claims."
+          },
+          "agricultural_chatbot_answer": {
+            "score": 0.8,
+            "reason": "The answer directly addresses how to identify excess nitrogen in tomatoes with realistic signs and detection methods, staying grounded in agricultural practice. It adds some extra management advice, which is relevant, but makes a minor unsupported assumption about the soil being sandy."
+          }
+        },
+        "context_gain": {
+          "score": 1.0,
+          "winner": "agricultural_chatbot_answer",
+          "reason": "Answer B adds soil type, growth stage timing, specific fertilizer choices, weather‑related watering advice, pruning tips, calcium management, split‑application strategy, and invites farmer details, greatly enhancing decision‑making over Answer A."
+        },
+        "comparative_winner_reasoning": {
+          "score": 0.8,
+          "winner": "agricultural_chatbot_answer",
+          "reason": "Both answers are accurate and relevant, but Answer B provides richer context, more specific fertilizer recommendations, detailed safety guidance, and actionable steps (pruning, calcium management, timing of applications). While slightly less concise, its greater completeness, practicality, and farmer‑friendly tone make it the better overall response."
+        },
+        "safety_risk_awareness": {
+          "minimum_context_answer": {
+            "score": 1.0,
+            "reason": "The answer safely identifies excess nitrogen symptoms, warns about over‑application risks, advises stopping nitrogen inputs, suggests balanced fertilisation and testing, and avoids any unsafe recommendations."
+          },
+          "agricultural_chatbot_answer": {
+            "score": 1.0,
+            "reason": "The answer provides clear, safe guidance on identifying excess nitrogen, advises stopping nitrogen applications, recommends balanced nutrition, warns about over-watering, rain timing, and potential disease/pest issues, and avoids any harmful or risky practices."
+          }
+        },
+        "specificity": {
+          "minimum_context_answer": {
+            "score": 0.8,
+            "reason": "The answer provides concrete symptoms, specific fertilizer types, a diagnostic leaf sap test, and actionable steps (stop N applications, switch to balanced/K‑forward fertilizer, adjust watering and pruning). While it lacks exact dosage thresholds or precise timing, it offers detailed, practical guidance relevant to the question."
+          },
+          "agricultural_chatbot_answer": {
+            "score": 1.0,
+            "reason": "Provides concrete signs, timing (4–6 weeks post‑transplant), soil type, specific fertilizer types and dosages, testing method, and detailed management steps, giving ample detail for farmer decision."
+          }
+        },
+        "conciseness": {
+          "minimum_context_answer": {
+            "score": 1.0,
+            "reason": "The answer directly addresses how to identify excess nitrogen in tomato plants, stays focused on relevant symptoms, diagnostic tips, and corrective actions without unrelated information or unnecessary repetition."
+          },
+          "agricultural_chatbot_answer": {
+            "score": 0.8,
+            "reason": "The answer clearly explains how to identify excess nitrogen with specific symptoms and testing tips, staying on topic. However, it includes extensive management recommendations that go beyond the core question, making it somewhat verbose."
+          }
+        }
+      }
+    },
+    {
+      "agent": "final_decision_agent",
+      "action": "generated_final_decision",
+      "output": {
+        "winner": "agricultural_chatbot_answer",
+        "confidence": 0.9,
+        "final_reason": "The agricultural chatbot answer achieves perfect completeness, providing exhaustive symptom descriptions, stage‑specific diagnostics, detailed testing methods, and comprehensive corrective actions. It also adds strong context (soil type, growth stage, precise fertilizer choices) and higher specificity, outweighing its slightly lower conciseness and minor faithfulness gap. Completeness is the top priority, making this answer the superior response.",
+        "minimum_context_strengths": [
+          "Clear, concise list of key nitrogen‑excess symptoms",
+          "Simple, actionable diagnostic suggestion (leaf/petiole sap test)",
+          "Straightforward corrective steps (stop N, switch to balanced/K‑forward fertilizer)",
+          "Safe guidance without risky recommendations",
+          "Highly concise and focused on the core question"
+        ],
+        "minimum_context_weaknesses": [
+          "Missing quantitative thresholds for leaf colour or nitrate levels",
+          "Lacks timing and dosage details for corrective fertiliser applications",
+          "No discussion of environmental impacts (leaching, runoff)",
+          "Limited soil‑type considerations beyond fresh manure",
+          "Less specific guidance for different production systems"
+        ],
+        "agricultural_chatbot_strengths": [
+          "Comprehensive coverage of symptoms, including fruit quality and pest/disease risks",
+          "Stage‑specific diagnostic cue (4–6 weeks post‑transplant) and detailed testing method",
+          "Rich, concrete fertilizer recommendations (low‑N, high‑P/K options, split‑application strategy)",
+          "Additional cultural practices (pruning, calcium management, watering timing) for safety",
+          "Strong context gain with soil type, growth stage, and weather considerations",
+          "High specificity and practical usefulness for field decisions"
+        ],
+        "agricultural_chatbot_weaknesses": [
+          "Slightly less concise due to extensive management advice",
+          "Some vague statements (nitrate strip interpretation, watering impact) lacking quantitative detail",
+          "Assumes sandy soil in one claim, reducing faithfulness for other soil types",
+          "Exact dosage rates for suggested fertilizers are not provided"
+        ],
+        "most_influential_metrics": [
+          "completeness",
+          "context_gain",
+          "specificity",
+          "practical_usefulness"
+        ],
+        "context_impact_summary": "By incorporating soil type, crop stage, precise fertilizer choices, and additional cultural practices, the agricultural chatbot answer transforms generic guidance into a tailored, actionable plan for tomato growers, markedly improving relevance and usefulness over the minimal‑context response.",
+        "final_judgement_summary": "The agricultural chatbot answer wins due to its superior completeness and richer contextual detail, delivering a more thorough and practical solution despite a modest loss in conciseness."
+      }
+    }
+  ],
+  "errors": []
+}
