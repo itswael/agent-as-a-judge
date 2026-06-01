@@ -1,8 +1,7 @@
 from metrics.faithfulness import FaithfulnessMetric
 from metrics.conciseness import ConcisenessMetric
 from metrics.context_gain import ContextGainMetric
-from metrics.practical_usefulness import PracticalUsefulnessMetric
-from metrics.completeness import CompletenessMetric
+from metrics.actionability import ActionabilityMetric
 from metrics.specificity import SpecificityMetric
 from metrics.safety_risk_awareness import SafetyRiskAwarenessMetric
 from metrics.comparative_winner_reasoning import ComparativeWinnerReasoningMetric
@@ -15,8 +14,7 @@ class EvaluationOrchestrator:
         self.single_answer_metrics = [
             FaithfulnessMetric(self.judge_client),
             ConcisenessMetric(self.judge_client),
-            PracticalUsefulnessMetric(self.judge_client),
-            CompletenessMetric(self.judge_client),
+            ActionabilityMetric(self.judge_client),
             SpecificityMetric(self.judge_client),
             SafetyRiskAwarenessMetric(self.judge_client),
         ]

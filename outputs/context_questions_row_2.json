@@ -1,0 +1,117 @@
+{
+  "id": 2,
+  "question": "I am a peanut grower in Peanut Basin, Senegal. For this season, how much yield can I expect?",
+  "main_question_1_without_vs_with_context": {
+    "without_context_summary": "Answer A gives only a generic regional yield range (1.5–2.5 t ha⁻¹) and generic advice to monitor moisture, pests and apply fertilizer on time. It acknowledges missing details and asks the farmer for more information, but provides no farm‑specific estimate or concrete management rates.",
+    "with_context_summary": "Answer B incorporates inferred ground‑truth context (low organic matter and nitrogen, below‑normal seasonal rain, location in the Peanut Basin) and temporal context (early vegetative stage, imminent dry spell). It translates these factors into a tailored yield estimate (1.0–1.3 t ha⁻¹, 3–4 t total) and supplies precise nitrogen and organic amendment rates, plus immediate actions (irrigation, mulch, weed control).",
+    "response_change_summary": "The context‑rich answer moves from a vague range and a request for more data to a concrete, location‑specific yield projection with detailed, actionable nutrient and water management steps, directly answering the farmer’s question."
+  },
+  "main_question_2_which_gate_context_added_most_value": {
+    "most_valuable_gate_context": {
+      "category": "G",
+      "reason": "Ground‑truth context supplied the critical soil nutrient deficits and drought outlook that directly lowered the yield estimate and dictated the specific nitrogen and organic amendment rates."
+    },
+    "context_value_ranking": [
+      {
+        "category": "G",
+        "rank": 1,
+        "reason": "Highest contribution to specificity, practical usefulness, and decision quality by defining the biophysical limits of the farm."
+      },
+      {
+        "category": "T",
+        "rank": 2,
+        "reason": "Crucial for timing of interventions; improves actionability and safety of recommendations."
+      },
+      {
+        "category": "A",
+        "rank": 3,
+        "reason": "Adds modest realism about resource limits but is not central to the yield estimate."
+      },
+      {
+        "category": "E",
+        "rank": 4,
+        "reason": "Not needed for a pure yield projection; its absence does not harm the answer."
+      }
+    ],
+    "overall_context_value_score": 0.5,
+    "context_value_conclusion": "Inferred GATE context transformed a vague, non‑committal reply into a concrete, actionable yield forecast. Ground‑truth (soil, location, weather) and temporal (crop stage, forecast) information provided the greatest benefit, while action context was only modestly leveraged and end‑value context was unnecessary for this specific question."
+  },
+  "main_question_3_how_context_improved_specificity_and_usefulness": {
+    "specificity_improvement": {
+      "without_context_specificity": "moderate (regional range only, no farm‑level detail)",
+      "with_context_specificity": "high (exact yield band, per‑ha and total tonnage, linked to soil and weather conditions)",
+      "improvement_summary": "Ground‑truth and temporal context turned a broad regional estimate into a farm‑specific projection tied to measured deficiencies and forecasted rain.",
+      "specificity_gain_score": 0.5
+    },
+    "practical_usefulness_improvement": null,
+    "decision_quality_improvement": {
+      "without_context_decision_quality": "limited; farmer must supply more data before making decisions",
+      "with_context_decision_quality": "substantially better; farmer receives a realistic yield expectation and a clear input plan aligned with current constraints",
+      "improvement_summary": "The inferred G and T contexts produce a decision‑support answer that can be acted on immediately, reducing uncertainty.",
+      "decision_quality_gain_score": 0.7
+    }
+  },
+  "main_question_4_context_utilization_quality": {
+    "gate_context_impact": {
+      "G": {
+        "used": true,
+        "value_score": 0.9,
+        "impact_on_response": "Provides soil deficiency (low organic matter, N), location, and seasonal drought outlook, which shape the lower yield estimate and the recommended nitrogen/compost rates.",
+        "decision_quality_impact": "Enables the farmer to adjust inputs to the actual soil and weather constraints, improving the relevance and effectiveness of the advice.",
+        "utilization_quality": "high",
+        "value_reason": "Ground‑truth context is the primary driver of the specific yield projection and input recommendations."
+      },
+      "A": {
+        "used": true,
+        "value_score": 0.4,
+        "impact_on_response": "Mentions limited fertilizer/organic amendment availability and suggests actions that fit a resource‑constrained situation.",
+        "decision_quality_impact": "Adds modest realism about what the farmer can feasibly implement, but does not deeply explore socioeconomic or affordability aspects.",
+        "utilization_quality": "medium",
+        "value_reason": "Action context is present but only lightly addressed; it improves realism without being central."
+      },
+      "T": {
+        "used": true,
+        "value_score": 0.7,
+        "impact_on_response": "Identifies the crop’s early vegetative stage and the imminent dry spell, prompting timely nitrogen application and moisture‑conserving practices.",
+        "decision_quality_impact": "Helps the farmer time interventions correctly, increasing the likelihood of achieving the projected yield.",
+        "utilization_quality": "high",
+        "value_reason": "Temporal cues directly shape the timing of fertilizer and irrigation recommendations."
+      },
+      "E": {
+        "used": false,
+        "value_score": 0.0,
+        "impact_on_response": "No explicit end‑value context (e.g., profit focus, sustainability goals) is reflected beyond the generic aim of achieving a yield.",
+        "decision_quality_impact": "Absent end‑value framing limits alignment with farmer’s broader objectives.",
+        "utilization_quality": "not_needed",
+        "value_reason": "End‑value context was not required for the specific yield‑estimation question and was therefore omitted."
+      }
+    },
+    "context_utilization_analysis": {
+      "available_context_used": true,
+      "utilization_quality": "high",
+      "properly_used_gate_contexts": [
+        "G",
+        "T"
+      ],
+      "underused_gate_contexts": [
+        "A"
+      ],
+      "overused_or_speculative_contexts": [
+        "E"
+      ],
+      "context_utilization_reason": "The chatbot grounded most of its claims in the supplied soil, location, and weather data (G) and used the crop stage and forecast (T) to tailor recommendations. Action constraints (A) were mentioned but not fully explored, and no unnecessary end‑value speculation was added."
+    },
+    "weak_or_unhelpful_context_usage": [
+      {
+        "gate_category": "E",
+        "issue": "End‑value context was omitted; while not harmful, its absence means the advice does not address possible profit or sustainability goals the farmer might have."
+      }
+    ]
+  },
+  "final_outcome": {
+    "winner": "agricultural_chatbot_answer",
+    "confidence": 0.85,
+    "reason": "The agricultural chatbot answer delivers a far more specific, farm‑level yield estimate and concrete, context‑driven management actions, directly addressing the farmer’s request. Although it lacks explicit safety cautions, its superiority in specificity and actionability outweighs the modest safety shortfall, making it the better overall response."
+  },
+  "errors": []
+}

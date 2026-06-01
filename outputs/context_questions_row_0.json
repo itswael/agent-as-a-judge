@@ -1,0 +1,121 @@
+{
+  "id": 0,
+  "question": "It is the middle of June and my maize field is infested with Fall Army Worm. How can I control it?",
+  "main_question_1_without_vs_with_context": {
+    "without_context_summary": "Answer A gives a solid integrated‑pest‑management plan for Fall Armyworm in mid‑June maize, covering scouting, hand‑picking, Bt or neem bio‑insecticides, economic‑threshold‑based chemical options, timing (cooler part of day), resistance management and post‑treatment scouting. It lacks any reference to the farmer’s specific crop stage, recent weather, farm size, soil conditions or longer‑term goals.",
+    "with_context_summary": "Answer B tailors the advice to the inferred context: the maize is at knee‑high to early tasseling, a nine‑day rainy spell is forecast, the soil is slightly acidic (pH 5.8) and holds water well, and the farm is a small‑scale (3 ha) operation. Recommendations therefore stress early‑instar biopesticides (neem 2 % v/v, Bt at label rate), timing the spray for dry periods within 24 h of rain, avoiding extra nitrogen, and optionally using a short‑acting synthetic only if infestation is heavy. It also adds a future‑oriented suggestion to plant a resistant hybrid.",
+    "response_change_summary": "The context‑rich answer narrows the guidance to the farmer’s exact growth stage, imminent rain, soil chemistry and farm size, resulting in more precise dosage, timing and fertilizer advice. The minimum‑context answer is broader, offering generic thresholds and product classes without these fine‑tuned adjustments."
+  },
+  "main_question_2_which_gate_context_added_most_value": {
+    "most_valuable_gate_context": {
+      "category": "T",
+      "reason": "Rain forecast and growth‑stage timing directly dictate when and how sprays will work, making temporal context the key driver of specificity, safety and practical usefulness."
+    },
+    "context_value_ranking": [
+      {
+        "category": "T",
+        "rank": 1,
+        "reason": "Timing of application under rain conditions is critical for efficacy and safety."
+      },
+      {
+        "category": "G",
+        "rank": 2,
+        "reason": "Soil pH and crop stage refine product selection and fertilizer advice."
+      },
+      {
+        "category": "A",
+        "rank": 3,
+        "reason": "Farm size and resource constraints shape the recommendation toward low‑cost biopesticides."
+      },
+      {
+        "category": "E",
+        "rank": 4,
+        "reason": "Long‑term sustainability goals are useful but not central to the immediate pest‑control query."
+      }
+    ],
+    "overall_context_value_score": 0.78,
+    "context_value_conclusion": "Inferred GATE context substantially refines the pest‑control advice. Temporal data (rain forecast) provides the biggest boost by dictating safe and effective spray windows. Ground‑truth data (crop stage, soil pH) further tailors product choice and fertilizer guidance. Action context is acknowledged but could be deeper, while end‑value context adds peripheral, somewhat speculative suggestions. Overall, the context‑rich answer offers higher decision quality without compromising safety."
+  },
+  "main_question_3_how_context_improved_specificity_and_usefulness": {
+    "specificity_improvement": {
+      "without_context_specificity": "moderate (score 0.8) – generic thresholds and product classes, no stage‑ or weather‑specific details.",
+      "with_context_specificity": "moderate‑high (score ~0.9) – includes exact growth stage, rain window, soil pH, and precise neem dosage.",
+      "improvement_summary": "Temporal and ground‑truth context add concrete timing windows and dosage numbers, turning a generic plan into a field‑specific protocol.",
+      "specificity_gain_score": 0.1
+    },
+    "practical_usefulness_improvement": null,
+    "decision_quality_improvement": {
+      "without_context_decision_quality": "good but generic; may lead to sub‑optimal timing or product choice.",
+      "with_context_decision_quality": "better; recommendations are aligned with current weather, crop stage and soil, reducing risk of ineffective treatment.",
+      "improvement_summary": "Temporal and ground‑truth context raise the relevance of each recommendation, improving the farmer’s ability to make an informed, low‑risk decision.",
+      "decision_quality_gain_score": 0.2
+    }
+  },
+  "main_question_4_context_utilization_quality": {
+    "gate_context_impact": {
+      "G": {
+        "used": true,
+        "value_score": 0.78,
+        "impact_on_response": "Provides crop stage, soil pH and moisture information, allowing the recommendation of neem dosage, caution about nitrogen, and choice of biopesticides that perform well in moist, slightly acidic soils.",
+        "decision_quality_impact": "Improves decision quality by matching control tactics to the plant’s vulnerable stage and soil conditions, reducing risk of ineffective applications.",
+        "utilization_quality": "high",
+        "value_reason": "Ground‑truth context directly informs product choice, dosage and fertilizer management, making the advice more targeted."
+      },
+      "A": {
+        "used": true,
+        "value_score": 0.65,
+        "impact_on_response": "Mentions the farm is small (3 ha) and resources are limited, steering the recommendation toward cheap biopesticides and avoiding expensive synthetic programs.",
+        "decision_quality_impact": "Helps the farmer select affordable, low‑risk options appropriate for a smallholder, but the impact is less critical than timing or soil information.",
+        "utilization_quality": "medium",
+        "value_reason": "Action context is relevant but only modestly changes the core IPM steps."
+      },
+      "T": {
+        "used": true,
+        "value_score": 0.88,
+        "impact_on_response": "Incorporates a nine‑day rain forecast and advises spraying when foliage can dry for at least 24 h, which is essential for Bt/neem efficacy and to avoid wash‑off.",
+        "decision_quality_impact": "Greatly enhances the practicality and safety of applications; mistimed sprays could be wasted or increase residue risk.",
+        "utilization_quality": "high",
+        "value_reason": "Temporal context is the most decisive factor for timing of sprays and therefore the most valuable addition."
+      },
+      "E": {
+        "used": true,
+        "value_score": 0.55,
+        "impact_on_response": "Adds sustainability‑oriented suggestions such as avoiding over‑fertilisation, planting resistant hybrids next season, and aligning actions with farm resources.",
+        "decision_quality_impact": "Provides longer‑term strategic guidance, but for the immediate pest‑control question it is peripheral and partly speculative.",
+        "utilization_quality": "low",
+        "value_reason": "End‑value context is present but over‑extended; the hybrid recommendation is not directly actionable for the current infestation."
+      }
+    },
+    "context_utilization_analysis": {
+      "available_context_used": true,
+      "utilization_quality": "high",
+      "properly_used_gate_contexts": [
+        "G",
+        "T"
+      ],
+      "underused_gate_contexts": [
+        "A"
+      ],
+      "overused_or_speculative_contexts": [
+        "E"
+      ],
+      "context_utilization_reason": "The chatbot leveraged ground‑truth and temporal data effectively to sharpen timing and product choice. Action context was acknowledged but not fully exploited (e.g., no cost comparison). End‑value context introduced a forward‑looking hybrid suggestion that, while well‑meaning, is not essential for the immediate control decision and borders on speculation."
+    },
+    "weak_or_unhelpful_context_usage": [
+      {
+        "gate_category": "E",
+        "issue": "Suggestion to plant a FAW‑resistant hybrid next season is speculative and not directly useful for the immediate infestation control."
+      },
+      {
+        "gate_category": "A",
+        "issue": "Resource constraints are mentioned but not quantified (e.g., no cost comparison), so the action context is under‑exploited."
+      }
+    ]
+  },
+  "final_outcome": {
+    "winner": "minimum_context_answer",
+    "confidence": 0.75,
+    "reason": "Both answers are equally specific, but the minimum‑context answer provides higher actionability (score 1.0 vs 0.9) and perfect safety awareness (score 1.0 vs 0.8). The agricultural chatbot answer, while well‑grounded in context, introduces a risky recommendation (chlorpyrifos) and contains vague safety statements, which lowers its overall suitability. Therefore, the answer with higher actionable and safer guidance is preferred."
+  },
+  "errors": []
+}

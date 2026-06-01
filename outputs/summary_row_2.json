@@ -1,85 +1,129 @@
 {
   "id": 2,
-  "question": "How can I tell if my tomato plants are getting too much nitrogen?",
-  "question_type": "nutrient_excess_detection",
-  "risk_level": "medium",
-  "selected_metrics": [
-    "completeness",
-    "practical_usefulness",
-    "faithfulness",
-    "context_gain",
-    "comparative_winner_reasoning",
-    "safety_risk_awareness",
-    "specificity",
-    "conciseness"
-  ],
-  "metric_scores": {
-    "completeness": {
-      "minimum_context_answer": 0.8,
-      "agricultural_chatbot_answer": 1.0
+  "question": "I am a peanut grower in Peanut Basin, Senegal. For this season, how much yield can I expect?",
+  "final_decision": {
+    "winner": "agricultural_chatbot_answer",
+    "confidence": 0.85,
+    "reason": "The agricultural chatbot answer delivers a far more specific, farm‑level yield estimate and concrete, context‑driven management actions, directly addressing the farmer’s request. Although it lacks explicit safety cautions, its superiority in specificity and actionability outweighs the modest safety shortfall, making it the better overall response."
+  },
+  "metric_reasoning": {
+    "specificity": {
+      "minimum_context": {
+        "score": 0.5,
+        "reason": "The answer gives a concrete regional yield range (1.5–2.5 t ha⁻¹) and mentions factors affecting it, which adds some specificity. However, it does not provide a tailored estimate for the farmer’s season and relies on a request for more data, leaving the core question only partially answered."
+      },
+      "agricultural_chatbot": {
+        "score": 1.0,
+        "reason": "The answer directly answers the farmer's yield question with concrete ranges (1.0‑1.3 t ha⁻¹, 0.6‑0.8 t ha⁻¹) and translates them to total tonnage for the 3 ha farm. It references the specific crop (peanut), location (Peanut Basin, Senegal), soil condition, rainfall deficit, and provides precise management inputs (N rates, compost amounts) that justify the yield estimate, covering all relevant aspects without vague statements."
+      }
     },
-    "practical_usefulness": {
-      "minimum_context_answer": 0.8,
-      "agricultural_chatbot_answer": 0.8
-    },
-    "faithfulness": {
-      "minimum_context_answer": 1.0,
-      "agricultural_chatbot_answer": 0.8
-    },
-    "context_gain": {
-      "score": 1.0,
-      "winner": "agricultural_chatbot_answer"
+    "actionability": {
+      "minimum_context": {
+        "score": 0.2,
+        "reason": "The answer provides a broad regional yield range but cannot give a farm‑specific estimate and offers only generic management reminders (monitor moisture, scout pests, apply fertilizer). It lacks concrete 4R details (no specific source, rate, timing, or placement) and does not enable the farmer to make a concrete field‑level decision about expected yield. Context about typical yields is present but does not translate into actionable guidance."
+      },
+      "agricultural_chatbot": {
+        "score": 1.0,
+        "reason": "The answer gives a concrete yield range and actionable management steps. It specifies the right source (N fertilizer, compost/manure), right rate (50‑75 kg N/ha planting, 100‑150 kg N/ha top‑dress, 5‑10 t compost/ha), right time (top‑dress at V4‑V6, immediate soil amendment), and right place (soil application, mulch). Recommendations are clear, realistic for Senegal’s Peanut Basin, and consider the farmer’s low organic matter and dry forecast, making the guidance practical and implementable."
+      }
     },
     "comparative_winner_reasoning": {
       "score": 0.8,
-      "winner": "agricultural_chatbot_answer"
+      "winner": "agricultural_chatbot_answer",
+      "reason": "Answer B provides more specific yield estimates, concrete fertilizer and organic amendment rates, and clear actionable steps tailored to the season, enhancing decision support. While it introduces some assumptions not given by the farmer, the added context improves specificity and actionability without compromising safety. Answer A is more cautious but less specific and actionable."
     },
     "safety_risk_awareness": {
-      "minimum_context_answer": 1.0,
-      "agricultural_chatbot_answer": 1.0
-    },
-    "specificity": {
-      "minimum_context_answer": 0.8,
-      "agricultural_chatbot_answer": 1.0
+      "minimum_context": {
+        "score": 1.0,
+        "reason": "The answer avoids giving unsafe or overly specific advice, emphasizes variability, and recommends monitoring soil moisture, pest scouting, and timely fertilizer use, showing strong risk awareness without risky recommendations."
+      },
+      "agricultural_chatbot": {
+        "score": 0.2,
+        "reason": "The answer recommends a nitrogen program for peanuts without warning that excessive N can reduce yields, cause lodging, and lead to leaching, despite peanuts' nitrogen-fixing ability. It lacks cautions, label references, or mitigation steps, making the advice risky and insufficiently risk-aware."
+      }
     },
     "conciseness": {
-      "minimum_context_answer": 1.0,
-      "agricultural_chatbot_answer": 0.8
+      "minimum_context": {
+        "score": 1.0,
+        "reason": "The answer gives a realistic yield range, explains why a precise figure requires more data, and offers practical, focused advice. It includes necessary context without unnecessary detail, avoids repetition, and remains decision‑supportive."
+      },
+      "agricultural_chatbot": {
+        "score": 0.8,
+        "reason": "The answer provides a clear, context‑specific yield estimate and useful actions to achieve it. It includes relevant soil and weather details, but adds some detailed fertilizer recommendations that, while helpful, are slightly beyond the core question, making it a bit more verbose than strictly necessary."
+      }
     }
   },
-  "claim_summary": "Answer A provides basic symptom descriptions, a few fertilizer sources, a simple testing method, and general mitigation, while Answer B offers a richer set of claims covering detailed symptoms, soil context, specific fertilizer types, testing procedures, precise timing and dosage guidance, water management, pest/disease risks, and safety precautions.",
-  "evidence_summary": "Both answers correctly identify the visual and growth symptoms of nitrogen excess and advise stopping nitrogen applications. The agricultural chatbot answer provides richer, stage‑specific diagnostics, concrete testing procedures, and detailed corrective nutrient strategies, making its evidence base stronger overall. It includes a few vague statements but fewer weakly‑supported claims than the minimum‑context answer, which omits quantitative guidance and broader environmental considerations. Consequently, the chatbot answer has stronger evidential support and fewer gaps.",
-  "winner": "agricultural_chatbot_answer",
-  "confidence": 0.9,
-  "final_reason": "The agricultural chatbot answer achieves perfect completeness, providing exhaustive symptom descriptions, stage‑specific diagnostics, detailed testing methods, and comprehensive corrective actions. It also adds strong context (soil type, growth stage, precise fertilizer choices) and higher specificity, outweighing its slightly lower conciseness and minor faithfulness gap. Completeness is the top priority, making this answer the superior response.",
-  "context_impact_summary": "By incorporating soil type, crop stage, precise fertilizer choices, and additional cultural practices, the agricultural chatbot answer transforms generic guidance into a tailored, actionable plan for tomato growers, markedly improving relevance and usefulness over the minimal‑context response.",
-  "minimum_context_strengths": [
-    "Clear, concise list of key nitrogen‑excess symptoms",
-    "Simple, actionable diagnostic suggestion (leaf/petiole sap test)",
-    "Straightforward corrective steps (stop N, switch to balanced/K‑forward fertilizer)",
-    "Safe guidance without risky recommendations",
-    "Highly concise and focused on the core question"
-  ],
-  "minimum_context_weaknesses": [
-    "Missing quantitative thresholds for leaf colour or nitrate levels",
-    "Lacks timing and dosage details for corrective fertiliser applications",
-    "No discussion of environmental impacts (leaching, runoff)",
-    "Limited soil‑type considerations beyond fresh manure",
-    "Less specific guidance for different production systems"
-  ],
-  "agricultural_chatbot_strengths": [
-    "Comprehensive coverage of symptoms, including fruit quality and pest/disease risks",
-    "Stage‑specific diagnostic cue (4–6 weeks post‑transplant) and detailed testing method",
-    "Rich, concrete fertilizer recommendations (low‑N, high‑P/K options, split‑application strategy)",
-    "Additional cultural practices (pruning, calcium management, watering timing) for safety",
-    "Strong context gain with soil type, growth stage, and weather considerations",
-    "High specificity and practical usefulness for field decisions"
-  ],
-  "agricultural_chatbot_weaknesses": [
-    "Slightly less concise due to extensive management advice",
-    "Some vague statements (nitrate strip interpretation, watering impact) lacking quantitative detail",
-    "Assumes sandy soil in one claim, reducing faithfulness for other soil types",
-    "Exact dosage rates for suggested fertilizers are not provided"
-  ],
+  "context_impact": {
+    "overall_context_value_score": 0.5,
+    "most_valuable_gate_context": {
+      "category": "G",
+      "reason": "Ground‑truth context supplied the critical soil nutrient deficits and drought outlook that directly lowered the yield estimate and dictated the specific nitrogen and organic amendment rates."
+    },
+    "context_value_ranking": [
+      {
+        "category": "G",
+        "rank": 1,
+        "reason": "Highest contribution to specificity, practical usefulness, and decision quality by defining the biophysical limits of the farm."
+      },
+      {
+        "category": "T",
+        "rank": 2,
+        "reason": "Crucial for timing of interventions; improves actionability and safety of recommendations."
+      },
+      {
+        "category": "A",
+        "rank": 3,
+        "reason": "Adds modest realism about resource limits but is not central to the yield estimate."
+      },
+      {
+        "category": "E",
+        "rank": 4,
+        "reason": "Not needed for a pure yield projection; its absence does not harm the answer."
+      }
+    ],
+    "why_context_matters": "Inferred GATE context transformed a vague, non‑committal reply into a concrete, actionable yield forecast. Ground‑truth (soil, location, weather) and temporal (crop stage, forecast) information provided the greatest benefit, while action context was only modestly leveraged and end‑value context was unnecessary for this specific question."
+  },
+  "context_change": {
+    "without_context": "Answer A gives only a generic regional yield range (1.5–2.5 t ha⁻¹) and generic advice to monitor moisture, pests and apply fertilizer on time. It acknowledges missing details and asks the farmer for more information, but provides no farm‑specific estimate or concrete management rates.",
+    "with_context": "Answer B incorporates inferred ground‑truth context (low organic matter and nitrogen, below‑normal seasonal rain, location in the Peanut Basin) and temporal context (early vegetative stage, imminent dry spell). It translates these factors into a tailored yield estimate (1.0–1.3 t ha⁻¹, 3–4 t total) and supplies precise nitrogen and organic amendment rates, plus immediate actions (irrigation, mulch, weed control).",
+    "response_change": "The context‑rich answer moves from a vague range and a request for more data to a concrete, location‑specific yield projection with detailed, actionable nutrient and water management steps, directly answering the farmer’s question."
+  },
+  "specificity_and_usefulness": {
+    "specificity_improvement": {
+      "without_context_specificity": "moderate (regional range only, no farm‑level detail)",
+      "with_context_specificity": "high (exact yield band, per‑ha and total tonnage, linked to soil and weather conditions)",
+      "improvement_summary": "Ground‑truth and temporal context turned a broad regional estimate into a farm‑specific projection tied to measured deficiencies and forecasted rain.",
+      "specificity_gain_score": 0.5
+    },
+    "actionability_improvement": {
+      "without_context_actionability": "low (generic monitoring advice, no concrete rates or timing)",
+      "with_context_actionability": "high (specific N rates, compost amounts, timing of top‑dress, mulch recommendation)",
+      "improvement_summary": "Context enabled the provision of 4R‑style fertilizer recommendations and immediate moisture‑conserving actions.",
+      "actionability_gain_score": 0.8
+    }
+  },
+  "strengths_and_weaknesses": {
+    "minimum_context_strengths": [
+      "Provides a realistic regional yield range",
+      "Emphasizes safety by avoiding risky quantitative advice",
+      "Very concise and easy to read"
+    ],
+    "minimum_context_weaknesses": [
+      "Low specificity – no farm‑specific yield estimate",
+      "Minimal actionability – only generic monitoring suggestions",
+      "Fails to incorporate the supplied soil, weather, and crop‑stage data"
+    ],
+    "agricultural_chatbot_strengths": [
+      "High specificity with concrete per‑ha and total yield numbers",
+      "Actionable 4R‑style fertilizer and organic amendment recommendations",
+      "Effectively leverages ground‑truth (soil, weather) and temporal context",
+      "Addresses water stress and provides immediate mitigation steps"
+    ],
+    "agricultural_chatbot_weaknesses": [
+      "Safety risk awareness is low – no warning about potential nitrogen over‑application",
+      "Yield numbers are weakly supported and carry some risk",
+      "Slightly less concise due to detailed dosage information"
+    ]
+  },
   "errors": []
 }
