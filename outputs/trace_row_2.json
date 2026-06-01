@@ -1,416 +1,452 @@
 {
   "id": 2,
-  "question": "How can I tell if my tomato plants are getting too much nitrogen?",
-  "minimum_context_answer": "Too much nitrogen in tomatoes shows up first as very vigorous, dark green, and soft growth. Plants get tall with long spaces between leaves, produce thick, sappy stems and lots of suckers, and the canopy becomes very dense. Flowering is delayed, clusters are sparse, and blooms may abort, so you see plenty of leaves but few fruits setting.\n\nOlder leaves can develop physiological leaf roll while staying green and turgid, especially on very vigorous plants; this is different from disease because the leaves are not spotted or yellow. The lush, shaded canopy can also make fruits slower to color and more watery with poorer flavor. Such soft growth is more attractive to pests like aphids and more susceptible to fungal problems. Compared with nitrogen deficiency (which yellows older leaves), excess nitrogen keeps leaves very green and pushes rapid vegetative growth at the expense of flowering.\n\nIf these signs match what you see, review recent fertiliser or manure use. Heavy or frequent applications of urea, ammonium fertilisers, or fresh poultry manure commonly cause this. To confirm, a simple leaf or petiole sap test for nitrate can be done through a local lab or advisory service.\n\nIf you suspect excess nitrogen, stop nitrogen applications and switch to a more balanced or potassium‑forward fertiliser to support flowering and fruiting. Keep watering steady to avoid further stress, and avoid heavy pruning, which can worsen leaf roll on vigorous plants. As growth balances, flowering and fruit set should improve.",
-  "agricultural_chatbot_answer": "Too much nitrogen in tomatoes shows up as plants that look very healthy on top but are slow to give you flowers and fruit. The most common signs are very lush, dark green foliage and thick, soft stems with long distances between leaves. Plants grow fast and tall, the canopy becomes dense, and leaves can droop slightly from succulent growth. Flowering is delayed, flowers may drop, and fruit set is poor or late, so you see plenty of leaves but few clusters. Fruits that do form may be watery, bland, and more prone to cracking. Lush canopies also attract aphids and whiteflies and create a humid microclimate that favors foliar diseases. In contrast, nitrogen deficiency gives pale or yellowing lower leaves, thin stems, slow growth, and earlier but weak flowering; this helps you distinguish the two.\n\nThink about recent fertilizer and manure use and the timing of growth spurts. In sandy soil like yours, a heavy topdress of urea or CAN, or fresh manure, can push a rapid flush of vegetative growth within a week, especially when there is enough moisture. If your plants are 4–6 weeks after transplanting and still making leaf and stem growth with few or no flower clusters, suspect excess nitrogen. If you have access to simple nitrate test strips for sap, you can squeeze sap from the petiole of the most recently fully expanded leaf in mid‑morning and compare; consistently very high readings for your crop stage confirm excess, but even without a test, the growth pattern is a strong clue.\n\nIf you suspect too much nitrogen, pause all nitrogen applications for now. Do not topdress with urea, CAN, or high‑N foliar feeds. Instead, shift nutrition toward flowering and fruiting by using low‑N, higher‑P and higher‑K options around the root zone, such as single superphosphate for phosphorus and sulfate of potash for potassium, or an NPK where the first number (N) is clearly the smallest. Maintain steady but not excessive watering; nitrogen plus frequent heavy watering drives more leaf growth, so with some rainy days expected, avoid extra irrigation on those days. If the canopy is very dense, you can lightly remove a few excess side shoots and old leaves low in the canopy to improve light and airflow, but avoid hard pruning that can stress plants or expose fruit to sunscald. If you start seeing blossom‑end rot on early fruits, supply calcium without adding more nitrogen—gypsum to the soil or a labeled foliar calcium can help—while keeping soil moisture even.\n\nFor the rest of the season, manage nitrogen in small, well‑timed doses. Apply modest basal nitrogen and then make split applications only up to early fruit set; once the first clusters are setting, keep nitrogen light and prioritize potassium to support fruit quality. In sandy soils, smaller, more frequent doses are safer than big single applications. Time any fertilizer so rain or irrigation can water it in, but try to avoid applying nitrogen right before heavier rains to reduce losses. Building organic matter with compost or well‑decomposed manure and mulch will also buffer nitrogen supply and make it easier to avoid both deficiency and excess. If you’d like, tell me the exact age of your crop and what fertilizers you’ve applied so far, and I can help fine‑tune the next steps.",
-  "question_type": "nutrient_excess_detection",
+  "question": "I am a peanut grower in Peanut Basin, Senegal. For this season, how much yield can I expect?",
+  "minimum_context_answer": "The amount of peanuts you can harvest this season depends on many factors that are not captured in the brief information you provided. In the Kaolack (Peanut Basin) region, typical yields for well‑managed farms range from about 1.5 t ha⁻¹ to 2.5 t ha⁻¹, but actual results can be higher or lower depending on the variety you planted, the quality of the seed, planting density, fertilizer use, pest and disease pressure, and the rainfall pattern you have experienced so far.\n\nBecause I do not have details on the specific cultivar, the inputs you are applying, the condition of your fields, or the weather trends for the current growing season, I cannot give you a precise figure for your farm. If you can share information such as the seed variety, planting date, fertilizer program, and any observations of pests or water stress, I can narrow the estimate and suggest management adjustments to help you reach the upper end of the typical yield range. \n\nIn the meantime, monitoring soil moisture, scouting for early signs of leaf spot or nematodes, and ensuring timely fertilizer applications are the most reliable ways to maximize your peanut harvest in Kaolack. Feel free to provide more details, and I’ll be glad to refine the yield projection for you.",
+  "agricultural_chatbot_answer": "You’re most likely still in the early vegetative stage – seedlings are just getting established and the crop will need a good boost of nutrients and moisture to reach its potential. In the Peanut Basin, a well‑managed peanut field on fertile, well‑watered soils can give 1.5 – 2.5 t ha⁻¹, but the conditions you’ve described pull the expectation down. Your soil is very low in organic matter and nitrogen, and the seasonal forecast is below normal with no rain in the coming days, so water stress will be a limiting factor unless you can capture any early showers or apply supplemental irrigation.\n\nIf you follow the recommended nitrogen program (about 50–75 kg N ha⁻¹ at planting and a top‑dress of 100–150 kg N ha⁻¹ around V4‑V6) and add 5–10 t ha⁻¹ of compost or manure to raise organic matter, you can expect roughly 1.0 – 1.3 t ha⁻¹ of marketable peanuts. On your 3 ha farm that translates to about 3 – 4 t of grain at harvest. If fertilizer and organic amendments are limited, yields could fall to 0.6 – 0.8 t ha⁻¹, so the most important actions now are to secure the nitrogen applications and, if possible, retain any crop residues as mulch to conserve soil moisture. Keeping the field weed‑free and monitoring for early pest pressure will also help protect the modest yield you can achieve under the drier season.",
+  "question_type": "yield_estimation",
   "risk_level": "medium",
   "selected_metrics": [
-    "completeness",
-    "practical_usefulness",
-    "faithfulness",
-    "context_gain",
+    "specificity",
+    "actionability",
     "comparative_winner_reasoning",
     "safety_risk_awareness",
-    "specificity",
     "conciseness"
   ],
+  "agronomic_categories": [
+    "Crop Management",
+    "Nutrition",
+    "Water",
+    "Soils"
+  ],
+  "benchmark_metric_mapping": {
+    "agronomic_specificity": "specificity",
+    "field_actionability": "actionability",
+    "information_efficiency": "conciseness",
+    "agronomic_risk_awareness": "safety_risk_awareness",
+    "comparative_decision_quality": "comparative_winner_reasoning"
+  },
   "planner_output": {
-    "question_type": "nutrient_excess_detection",
+    "question_type": "yield_estimation",
+    "agronomic_categories": [
+      "Crop Management",
+      "Nutrition",
+      "Water",
+      "Soils"
+    ],
     "risk_level": "medium",
     "selected_metrics": [
-      "completeness",
-      "practical_usefulness",
-      "faithfulness",
-      "context_gain",
+      "specificity",
+      "actionability",
       "comparative_winner_reasoning",
       "safety_risk_awareness",
-      "specificity",
       "conciseness"
     ],
+    "benchmark_metric_mapping": {
+      "agronomic_specificity": "specificity",
+      "field_actionability": "actionability",
+      "information_efficiency": "conciseness",
+      "agronomic_risk_awareness": "safety_risk_awareness",
+      "comparative_decision_quality": "comparative_winner_reasoning"
+    },
     "metric_rationale": {
-      "completeness": "Check that the answer covers all relevant signs, diagnostic methods, and mitigation steps for excess nitrogen.",
-      "practical_usefulness": "Ensure the guidance can be readily applied by the farmer in the field.",
-      "faithfulness": "Verify that the information aligns with established agronomic knowledge about nitrogen management.",
-      "context_gain": "Assess how well the answer builds on the specific context of tomato plants and nitrogen excess.",
-      "comparative_winner_reasoning": "Provide a reasoned judgment on which answer better satisfies the question overall.",
-      "safety_risk_awareness": "The question involves fertilizer use, so the answer must acknowledge risks of over‑application and environmental/economic impacts.",
-      "specificity": "The question seeks detailed cues (timing, growth stage, symptoms) to identify excess nitrogen.",
-      "conciseness": "Both answers are lengthy; evaluate whether they stay focused without unnecessary verbosity."
+      "specificity": "The question asks for a quantitative yield expectation; we need to judge how precisely each answer addresses that.",
+      "actionability": "Both answers provide management steps; we must evaluate how useful and implementable those recommendations are.",
+      "comparative_winner_reasoning": "We must determine which answer gives a better overall recommendation based on the provided context.",
+      "safety_risk_awareness": "Answers mention fertilizer rates, water stress, and potential crop damage, so awareness of agronomic and economic risks is essential.",
+      "conciseness": "The query is simple; we need to check that answers are not overly verbose while still covering needed detail."
     },
     "evaluation_plan": [
-      "Step 1: Evaluate each answer for completeness and specificity, confirming all diagnostic signs, testing options, and stage‑specific recommendations are present.",
-      "Step 2: Assess practical usefulness and safety_risk_awareness, ensuring actionable steps and risk mitigation are clearly communicated.",
-      "Step 3: Check faithfulness and context_gain, then apply comparative_winner_reasoning to determine which answer best balances accuracy, relevance, and conciseness."
+      "Step 1: Evaluate each answer for agronomic_specificity (precision of yield estimate).",
+      "Step 2: Evaluate field_actionability (practicality of recommended actions).",
+      "Step 3: Assess agronomic_risk_awareness (identification of fertilizer, water, and yield risk).",
+      "Step 4: Measure information_efficiency (brevity relative to the simple question).",
+      "Step 5: Apply comparative_decision_quality to decide which answer is overall superior."
     ],
-    "planner_reason": "The plan systematically checks coverage, actionable detail, risk awareness, and correctness before comparing the two answers, while also rewarding brevity where appropriate."
+    "planner_reason": "The question seeks a clear yield forecast and actionable guidance; therefore we assess precision, practicality, risk awareness, brevity, and overall comparative quality."
   },
   "claims": {
     "minimum_context_claims": [
       {
-        "claim": "Too much nitrogen in tomatoes shows up first as very vigorous, dark green, and soft growth.",
-        "claim_type": "general",
-        "importance": "medium"
-      },
-      {
-        "claim": "Plants get tall with long spaces between leaves, produce thick, sappy stems and lots of suckers, and the canopy becomes very dense.",
-        "claim_type": "general",
-        "importance": "medium"
-      },
-      {
-        "claim": "Flowering is delayed, clusters are sparse, and blooms may abort, so you see plenty of leaves but few fruits setting.",
-        "claim_type": "yield",
-        "importance": "high"
-      },
-      {
-        "claim": "Older leaves can develop physiological leaf roll while staying green and turgid, especially on very vigorous plants; this is different from disease because the leaves are not spotted or yellow.",
-        "claim_type": "pest_disease",
-        "importance": "medium"
-      },
-      {
-        "claim": "The lush, shaded canopy can also make fruits slower to color and more watery with poorer flavor.",
+        "claim": "Typical yields for well‑managed farms in the Kaolack (Peanut Basin) region range from about 1.5 t ha⁻¹ to 2.5 t ha⁻¹.",
         "claim_type": "yield",
         "importance": "medium"
       },
       {
-        "claim": "Such soft growth is more attractive to pests like aphids and more susceptible to fungal problems.",
-        "claim_type": "pest_disease",
-        "importance": "medium"
-      },
-      {
-        "claim": "Heavy or frequent applications of urea, ammonium fertilisers, or fresh poultry manure commonly cause excess nitrogen symptoms.",
+        "claim": "Ensuring timely fertilizer applications is one of the most reliable ways to maximize peanut harvest in Kaolack.",
         "claim_type": "fertilizer",
         "importance": "high"
       },
       {
-        "claim": "A simple leaf or petiole sap test for nitrate can be done through a local lab or advisory service.",
-        "claim_type": "method",
-        "importance": "medium"
-      },
-      {
-        "claim": "If you suspect excess nitrogen, stop nitrogen applications and switch to a more balanced or potassium‑forward fertiliser to support flowering and fruiting.",
-        "claim_type": "fertilizer",
-        "importance": "high"
-      },
-      {
-        "claim": "Keep watering steady to avoid further stress, and avoid heavy pruning, which can worsen leaf roll on vigorous plants.",
-        "claim_type": "water",
+        "claim": "Monitoring soil moisture and scouting for early signs of leaf spot or nematodes helps maximize peanut yield.",
+        "claim_type": "general",
         "importance": "medium"
       }
     ],
     "agricultural_chatbot_claims": [
       {
-        "claim": "Too much nitrogen in tomatoes shows up as plants that look very healthy on top but are slow to give you flowers and fruit.",
-        "claim_type": "general",
-        "importance": "medium"
-      },
-      {
-        "claim": "The most common signs are very lush, dark green foliage and thick, soft stems with long distances between leaves.",
-        "claim_type": "general",
-        "importance": "medium"
-      },
-      {
-        "claim": "Plants grow fast and tall, the canopy becomes dense, and leaves can droop slightly from succulent growth.",
-        "claim_type": "general",
-        "importance": "medium"
-      },
-      {
-        "claim": "Flowering is delayed, flowers may drop, and fruit set is poor or late, so you see plenty of leaves but few clusters.",
-        "claim_type": "yield",
-        "importance": "high"
-      },
-      {
-        "claim": "Fruits that do form may be watery, bland, and more prone to cracking.",
-        "claim_type": "yield",
-        "importance": "medium"
-      },
-      {
-        "claim": "Lush canopies also attract aphids and whiteflies and create a humid microclimate that favors foliar diseases.",
-        "claim_type": "pest_disease",
-        "importance": "medium"
-      },
-      {
-        "claim": "In sandy soil, a heavy topdress of urea or CAN, or fresh manure, can push a rapid flush of vegetative growth within a week, especially when there is enough moisture.",
-        "claim_type": "fertilizer",
-        "importance": "high"
-      },
-      {
-        "claim": "If your plants are 4–6 weeks after transplanting and still making leaf and stem growth with few or no flower clusters, suspect excess nitrogen.",
+        "claim": "The crop is currently in the early vegetative stage, with seedlings just getting established.",
         "claim_type": "crop_stage",
         "importance": "medium"
       },
       {
-        "claim": "Simple nitrate test strips can be used on petiole sap taken mid‑morning; consistently very high readings confirm excess nitrogen for the crop stage.",
-        "claim_type": "method",
+        "claim": "Well‑managed peanut fields on fertile, well‑watered soils in the Peanut Basin can yield 1.5 – 2.5 t ha⁻¹.",
+        "claim_type": "yield",
         "importance": "medium"
       },
       {
-        "claim": "If you suspect too much nitrogen, pause all nitrogen applications for now.",
-        "claim_type": "fertilizer",
-        "importance": "high"
-      },
-      {
-        "claim": "Do not topdress with urea, CAN, or high‑N foliar feeds.",
-        "claim_type": "fertilizer",
-        "importance": "high"
-      },
-      {
-        "claim": "Shift nutrition toward flowering and fruiting by using low‑N, higher‑P and higher‑K options such as single superphosphate, sulfate of potash, or an NPK where the first number (N) is the smallest.",
-        "claim_type": "fertilizer",
-        "importance": "high"
-      },
-      {
-        "claim": "Maintain steady but not excessive watering; avoid extra irrigation on rainy days because nitrogen plus heavy watering drives more leaf growth.",
-        "claim_type": "water",
-        "importance": "medium"
-      },
-      {
-        "claim": "If the canopy is very dense, lightly remove a few excess side shoots and old leaves low in the canopy to improve light and airflow, but avoid hard pruning that can stress plants or cause sunscald.",
-        "claim_type": "method",
-        "importance": "medium"
-      },
-      {
-        "claim": "If blossom‑end rot appears, supply calcium (e.g., gypsum or foliar calcium) without adding more nitrogen, while keeping soil moisture even.",
-        "claim_type": "pest_disease",
-        "importance": "medium"
-      },
-      {
-        "claim": "Manage nitrogen in small, well‑timed doses: apply modest basal nitrogen, then split applications only up to early fruit set; after first clusters set, keep nitrogen light and prioritize potassium.",
-        "claim_type": "dosage",
-        "importance": "high"
-      },
-      {
-        "claim": "In sandy soils, smaller, more frequent nitrogen doses are safer than big single applications.",
-        "claim_type": "dosage",
-        "importance": "medium"
-      },
-      {
-        "claim": "Time any fertilizer so rain or irrigation can water it in, but avoid applying nitrogen right before heavier rains to reduce losses.",
-        "claim_type": "timing",
-        "importance": "medium"
-      },
-      {
-        "claim": "Building organic matter with compost or well‑decomposed manure and mulch buffers nitrogen supply and helps avoid both deficiency and excess.",
+        "claim": "The soil is very low in organic matter and nitrogen.",
         "claim_type": "soil",
+        "importance": "high"
+      },
+      {
+        "claim": "The seasonal forecast is below normal with no rain in the coming days, leading to water stress unless supplemental irrigation is applied.",
+        "claim_type": "water",
+        "importance": "high"
+      },
+      {
+        "claim": "Recommended nitrogen application is about 50–75 kg N ha⁻¹ at planting.",
+        "claim_type": "dosage",
+        "importance": "high"
+      },
+      {
+        "claim": "A top‑dress of 100–150 kg N ha⁻¹ should be applied around the V4‑V6 growth stage.",
+        "claim_type": "dosage",
+        "importance": "high"
+      },
+      {
+        "claim": "Add 5–10 t ha⁻¹ of compost or manure to raise organic matter.",
+        "claim_type": "fertilizer",
+        "importance": "medium"
+      },
+      {
+        "claim": "Following these nitrogen and organic amendment rates can produce roughly 1.0 – 1.3 t ha⁻¹ of marketable peanuts.",
+        "claim_type": "yield",
+        "importance": "high"
+      },
+      {
+        "claim": "On a 3 ha farm this corresponds to about 3 – 4 t of grain at harvest.",
+        "claim_type": "yield",
+        "importance": "medium"
+      },
+      {
+        "claim": "If fertilizer and organic amendments are limited, yields could fall to 0.6 – 0.8 t ha⁻¹.",
+        "claim_type": "yield",
+        "importance": "medium"
+      },
+      {
+        "claim": "Retaining crop residues as mulch helps conserve soil moisture.",
+        "claim_type": "method",
+        "importance": "medium"
+      },
+      {
+        "claim": "Keeping the field weed‑free helps protect the modest yield.",
+        "claim_type": "method",
+        "importance": "medium"
+      },
+      {
+        "claim": "Monitoring for early pest pressure helps protect the yield.",
+        "claim_type": "pest_disease",
         "importance": "medium"
       }
     ],
-    "claim_summary": "Answer A provides basic symptom descriptions, a few fertilizer sources, a simple testing method, and general mitigation, while Answer B offers a richer set of claims covering detailed symptoms, soil context, specific fertilizer types, testing procedures, precise timing and dosage guidance, water management, pest/disease risks, and safety precautions."
+    "claim_summary": "Answer A provides only a broad typical yield range and a general recommendation to apply fertilizer timely, whereas Answer B offers many specific, actionable claims about crop stage, soil deficiencies, detailed nitrogen dosages and timing, organic amendment rates, water stress, and precise yield expectations, making it richer and more detailed."
   },
   "evidence_check": {
     "minimum_context_answer": {
       "supported_claims": [
-        "Too much nitrogen in tomatoes shows up first as very vigorous, dark green, and soft growth.",
-        "Plants get tall with long spaces between leaves, produce thick, sappy stems and lots of suckers, and the canopy becomes very dense.",
-        "Flowering is delayed, clusters are sparse, and blooms may abort, so you see plenty of leaves but few fruits setting.",
-        "The lush, shaded canopy can also make fruits slower to color and more watery with poorer flavor.",
-        "Such soft growth is more attractive to pests like aphids and more susceptible to fungal problems.",
-        "Heavy or frequent applications of urea, ammonium fertilisers, or fresh poultry manure commonly cause excess nitrogen symptoms.",
-        "A simple leaf or petiole sap test for nitrate can be done through a local lab or advisory service.",
-        "If you suspect excess nitrogen, stop nitrogen applications and switch to a more balanced or potassium‑forward fertiliser to support flowering and fruiting."
+        "Ensuring timely fertilizer applications is one of the most reliable ways to maximize peanut harvest in Kaolack.",
+        "Monitoring soil moisture and scouting for early signs of leaf spot or nematodes helps maximize peanut yield."
       ],
+      "context_supported_claims": [],
       "weakly_supported_claims": [
-        "Older leaves can develop physiological leaf roll while staying green and turgid, especially on very vigorous plants; this is different from disease because the leaves are not spotted or yellow.",
-        "Keep watering steady to avoid further stress, and avoid heavy pruning, which can worsen leaf roll on vigorous plants."
+        "Typical yields for well‑managed farms in the Kaolack (Peanut Basin) region range from about 1.5 t ha⁻¹ to 2.5 t ha⁻¹."
       ],
       "unsupported_claims": [],
       "risky_claims": [],
       "vague_claims": [],
       "missing_context": [
-        "Quantitative thresholds for leaf colour or nitrate levels to confirm excess nitrogen.",
-        "Specific timing and frequency for corrective fertilizer applications (e.g., how much potassium‑forward fertilizer to apply).",
-        "Potential environmental impacts such as nitrate leaching or greenhouse‑gas emissions.",
-        "Guidance for different soil types beyond poultry manure (e.g., loam, clay).",
-        "Integration with organic or low‑input production systems."
+        "soil organic matter and nitrogen levels",
+        "current weather and rainfall forecast",
+        "seasonal water availability",
+        "actual crop growth stage",
+        "field‑specific management history"
       ],
-      "evidence_summary": "The answer provides well‑established symptoms of nitrogen excess, common fertilizer sources, and basic corrective actions, all aligned with agronomic knowledge. A few statements (leaf roll, pruning advice) are less directly supported, and the answer lacks quantitative guidance and broader environmental context."
+      "context_grounding_summary": "The answer relies only on general agronomic knowledge; it does not use the limited latitude/longitude beyond naming the region, and provides no evidence from the minimal context.",
+      "evidence_summary": "Fertilizer timing and pest monitoring are well‑grounded by standard practice, while the yield range is an external estimate not derived from the given location data."
     },
     "agricultural_chatbot_answer": {
       "supported_claims": [
-        "Too much nitrogen in tomatoes shows up as plants that look very healthy on top but are slow to give you flowers and fruit.",
-        "The most common signs are very lush, dark green foliage and thick, soft stems with long distances between leaves.",
-        "Plants grow fast and tall, the canopy becomes dense, and leaves can droop slightly from succulent growth.",
-        "Flowering is delayed, flowers may drop, and fruit set is poor or late, so you see plenty of leaves but few clusters.",
-        "Fruits that do form may be watery, bland, and more prone to cracking.",
-        "Lush canopies also attract aphids and whiteflies and create a humid microclimate that favors foliar diseases.",
-        "In sandy soil, a heavy topdress of urea or CAN, or fresh manure, can push a rapid flush of vegetative growth within a week, especially when there is enough moisture.",
-        "If your plants are 4–6 weeks after transplanting and still making leaf and stem growth with few or no flower clusters, suspect excess nitrogen.",
-        "If you suspect too much nitrogen, pause all nitrogen applications for now.",
-        "Do not topdress with urea, CAN, or high‑N foliar feeds.",
-        "Shift nutrition toward flowering and fruiting by using low‑N, higher‑P and higher‑K options such as single superphosphate, sulfate of potash, or an NPK where the first number (N) is the smallest.",
-        "If the canopy is very dense, lightly remove a few excess side shoots and old leaves low in the canopy to improve light and airflow, but avoid hard pruning that can stress plants or cause sunscald.",
-        "If blossom‑end rot appears, supply calcium (e.g., gypsum or foliar calcium) without adding more nitrogen, while keeping soil moisture even.",
-        "Manage nitrogen in small, well‑timed doses: apply modest basal nitrogen, then split applications only up to early fruit set; after first clusters set, keep nitrogen light and prioritize potassium.",
-        "In sandy soils, smaller, more frequent nitrogen doses are safer than big single applications.",
-        "Time any fertilizer so rain or irrigation can water it in, but avoid applying nitrogen right before heavier rains to reduce losses.",
-        "Building organic matter with compost or well‑decomposed manure and mulch buffers nitrogen supply and helps avoid both deficiency and excess."
+        "Well‑managed peanut fields on fertile, well‑watered soils in the Peanut Basin can yield 1.5 – 2.5 t ha⁻¹.",
+        "Recommended nitrogen application is about 50–75 kg N ha⁻¹ at planting.",
+        "A top‑dress of 100–150 kg N ha⁻¹ should be applied around the V4‑V6 growth stage.",
+        "Add 5–10 t ha⁻¹ of compost or manure to raise organic matter.",
+        "Retaining crop residues as mulch helps conserve soil moisture.",
+        "Keeping the field weed‑free helps protect the modest yield.",
+        "Monitoring for early pest pressure helps protect the yield."
+      ],
+      "context_supported_claims": [
+        "The crop is currently in the early vegetative stage, with seedlings just getting established.",
+        "The soil is very low in organic matter and nitrogen.",
+        "The seasonal forecast is below normal with no rain in the coming days, leading to water stress unless supplemental irrigation is applied."
       ],
       "weakly_supported_claims": [
-        "Simple nitrate test strips can be used on petiole sap taken mid‑morning; consistently very high readings confirm excess nitrogen for the crop stage.",
-        "Maintain steady but not excessive watering; avoid extra irrigation on rainy days because nitrogen plus heavy watering drives more leaf growth."
+        "Following these nitrogen and organic amendment rates can produce roughly 1.0 – 1.3 t ha⁻¹ of marketable peanuts.",
+        "On a 3 ha farm this corresponds to about 3 – 4 t of grain at harvest.",
+        "If fertilizer and organic amendments are limited, yields could fall to 0.6 – 0.8 t ha⁻¹."
       ],
       "unsupported_claims": [],
-      "risky_claims": [],
-      "vague_claims": [
-        "Simple nitrate test strips can be used on petiole sap taken mid‑morning; consistently very high readings confirm excess nitrogen for the crop stage.",
-        "Maintain steady but not excessive watering; avoid extra irrigation on rainy days because nitrogen plus heavy watering drives more leaf growth."
+      "risky_claims": [
+        "Following these nitrogen and organic amendment rates can produce roughly 1.0 – 1.3 t ha⁻¹ of marketable peanuts.",
+        "On a 3 ha farm this corresponds to about 3 – 4 t of grain at harvest.",
+        "If fertilizer and organic amendments are limited, yields could fall to 0.6 – 0.8 t ha⁻¹."
       ],
+      "vague_claims": [],
       "missing_context": [
-        "Exact nitrate concentration thresholds that define \"very high\" readings.",
-        "Recommended rates (kg/ha or g/plant) for the suggested low‑N, high‑K/P fertilizers.",
-        "Potential leaching or runoff risks associated with the previously applied high‑N fertilizers.",
-        "Guidance for growers using organic amendments other than fresh manure."
+        "precise soil test values for phosphorus and potassium",
+        "actual irrigation capacity and water source",
+        "detailed pest and disease pressure levels",
+        "field history of previous crops",
+        "economic considerations for fertilizer purchase"
       ],
-      "evidence_summary": "The answer covers a comprehensive set of symptoms, stage‑specific diagnostics, testing methods, and detailed mitigation steps that are consistent with agronomic best practices. Most claims are well‑supported; a couple of recommendations (nitrate strip interpretation and watering impact) lack quantitative detail, making them slightly vague."
+      "context_grounding_summary": "The answer heavily leverages the provided weather forecast, seasonal drought outlook, and soil nutrient deficiencies, grounding many claims in the supplied context. Additional dosage and yield numbers are based on typical agronomic guidelines rather than the specific context.",
+      "evidence_summary": "Context‑supported claims about crop stage, soil deficiency, and drought are directly backed by the supplied data. General agronomic recommendations are reasonable, while the quantitative yield forecasts are only weakly supported and carry risk."
     },
-    "comparative_evidence_summary": "Both answers correctly identify the visual and growth symptoms of nitrogen excess and advise stopping nitrogen applications. The agricultural chatbot answer provides richer, stage‑specific diagnostics, concrete testing procedures, and detailed corrective nutrient strategies, making its evidence base stronger overall. It includes a few vague statements but fewer weakly‑supported claims than the minimum‑context answer, which omits quantitative guidance and broader environmental considerations. Consequently, the chatbot answer has stronger evidential support and fewer gaps."
+    "comparative_evidence_summary": "The agricultural chatbot answer provides multiple claims directly anchored in the supplied weather, soil, and crop‑stage data, giving it stronger evidential support than the minimum‑context answer, which relies solely on generic advice. However, the chatbot’s precise yield numbers are weakly supported and somewhat risky, whereas the minimum‑context answer contains no risky quantitative claims.",
+    "context_grounded_faithfulness_summary": "The added soil and weather details (low organic matter, nitrogen deficiency, below‑normal rainfall) are consistent with the provided ISDA soil information and seasonal forecast, so they are faithful. Yield and fertilizer dosage figures, while plausible, extend beyond the explicit context and are not directly verified by the supplied data."
   },
   "metric_results": {
-    "completeness": {
+    "specificity": {
       "minimum_context_answer": {
-        "score": 0.8,
-        "reason": "The answer identifies key visual symptoms of excess nitrogen, suggests a diagnostic test, and provides clear corrective actions (stop N applications, switch to balanced fertilizer, maintain watering, avoid heavy pruning). However, it lacks specific guidance on timing of interventions, recommended nitrogen application rates, how to adjust fertilizer ratios, and detailed next steps such as soil testing or leaching excess nitrogen, which are important for complete farmer guidance."
+        "score": 0.5,
+        "reason": "The answer gives a concrete regional yield range (1.5–2.5 t ha⁻¹) and mentions factors affecting it, which adds some specificity. However, it does not provide a tailored estimate for the farmer’s season and relies on a request for more data, leaving the core question only partially answered."
       },
       "agricultural_chatbot_answer": {
         "score": 1.0,
-        "reason": "The answer thoroughly explains symptoms, diagnostic methods, immediate corrective actions, future nitrogen management, timing, risks, and additional cultural practices, covering all key aspects a farmer needs."
+        "reason": "The answer directly answers the farmer's yield question with concrete ranges (1.0‑1.3 t ha⁻¹, 0.6‑0.8 t ha⁻¹) and translates them to total tonnage for the 3 ha farm. It references the specific crop (peanut), location (Peanut Basin, Senegal), soil condition, rainfall deficit, and provides precise management inputs (N rates, compost amounts) that justify the yield estimate, covering all relevant aspects without vague statements."
       }
     },
-    "practical_usefulness": {
+    "actionability": {
       "minimum_context_answer": {
-        "score": 0.8,
-        "reason": "The answer clearly lists observable symptoms of excess nitrogen, advises reviewing recent fertilizer applications, suggests a simple leaf sap test, and provides concrete next steps (stop nitrogen, switch to balanced/potassium-forward fertilizer, maintain steady watering, avoid heavy pruning). While actionable, it lacks specific dosage rates or timing details, preventing a perfect score."
+        "score": 0.2,
+        "reason": "The answer provides a broad regional yield range but cannot give a farm‑specific estimate and offers only generic management reminders (monitor moisture, scout pests, apply fertilizer). It lacks concrete 4R details (no specific source, rate, timing, or placement) and does not enable the farmer to make a concrete field‑level decision about expected yield. Context about typical yields is present but does not translate into actionable guidance."
       },
       "agricultural_chatbot_answer": {
-        "score": 0.8,
-        "reason": "The answer gives clear, actionable signs of excess nitrogen, practical steps to confirm the problem, and specific management actions (pause N, shift to P/K, pruning, calcium, timing of future N applications). While it lacks exact dosage amounts, it provides sufficient guidance for a farmer to make field-level decisions."
-      }
-    },
-    "faithfulness": {
-      "minimum_context_answer": {
         "score": 1.0,
-        "reason": "The answer directly addresses how to identify excess nitrogen in tomato plants, lists observable symptoms, suggests realistic diagnostic steps, and offers practical, grounded management advice without unsupported claims."
-      },
-      "agricultural_chatbot_answer": {
-        "score": 0.8,
-        "reason": "The answer directly addresses how to identify excess nitrogen in tomatoes with realistic signs and detection methods, staying grounded in agricultural practice. It adds some extra management advice, which is relevant, but makes a minor unsupported assumption about the soil being sandy."
+        "reason": "The answer gives a concrete yield range and actionable management steps. It specifies the right source (N fertilizer, compost/manure), right rate (50‑75 kg N/ha planting, 100‑150 kg N/ha top‑dress, 5‑10 t compost/ha), right time (top‑dress at V4‑V6, immediate soil amendment), and right place (soil application, mulch). Recommendations are clear, realistic for Senegal’s Peanut Basin, and consider the farmer’s low organic matter and dry forecast, making the guidance practical and implementable."
       }
-    },
-    "context_gain": {
-      "score": 1.0,
-      "winner": "agricultural_chatbot_answer",
-      "reason": "Answer B adds soil type, growth stage timing, specific fertilizer choices, weather‑related watering advice, pruning tips, calcium management, split‑application strategy, and invites farmer details, greatly enhancing decision‑making over Answer A."
     },
     "comparative_winner_reasoning": {
       "score": 0.8,
       "winner": "agricultural_chatbot_answer",
-      "reason": "Both answers are accurate and relevant, but Answer B provides richer context, more specific fertilizer recommendations, detailed safety guidance, and actionable steps (pruning, calcium management, timing of applications). While slightly less concise, its greater completeness, practicality, and farmer‑friendly tone make it the better overall response."
+      "reason": "Answer B provides more specific yield estimates, concrete fertilizer and organic amendment rates, and clear actionable steps tailored to the season, enhancing decision support. While it introduces some assumptions not given by the farmer, the added context improves specificity and actionability without compromising safety. Answer A is more cautious but less specific and actionable."
     },
     "safety_risk_awareness": {
       "minimum_context_answer": {
         "score": 1.0,
-        "reason": "The answer safely identifies excess nitrogen symptoms, warns about over‑application risks, advises stopping nitrogen inputs, suggests balanced fertilisation and testing, and avoids any unsafe recommendations."
+        "reason": "The answer avoids giving unsafe or overly specific advice, emphasizes variability, and recommends monitoring soil moisture, pest scouting, and timely fertilizer use, showing strong risk awareness without risky recommendations."
       },
       "agricultural_chatbot_answer": {
-        "score": 1.0,
-        "reason": "The answer provides clear, safe guidance on identifying excess nitrogen, advises stopping nitrogen applications, recommends balanced nutrition, warns about over-watering, rain timing, and potential disease/pest issues, and avoids any harmful or risky practices."
-      }
-    },
-    "specificity": {
-      "minimum_context_answer": {
-        "score": 0.8,
-        "reason": "The answer provides concrete symptoms, specific fertilizer types, a diagnostic leaf sap test, and actionable steps (stop N applications, switch to balanced/K‑forward fertilizer, adjust watering and pruning). While it lacks exact dosage thresholds or precise timing, it offers detailed, practical guidance relevant to the question."
-      },
-      "agricultural_chatbot_answer": {
-        "score": 1.0,
-        "reason": "Provides concrete signs, timing (4–6 weeks post‑transplant), soil type, specific fertilizer types and dosages, testing method, and detailed management steps, giving ample detail for farmer decision."
+        "score": 0.2,
+        "reason": "The answer recommends a nitrogen program for peanuts without warning that excessive N can reduce yields, cause lodging, and lead to leaching, despite peanuts' nitrogen-fixing ability. It lacks cautions, label references, or mitigation steps, making the advice risky and insufficiently risk-aware."
       }
     },
     "conciseness": {
       "minimum_context_answer": {
         "score": 1.0,
-        "reason": "The answer directly addresses how to identify excess nitrogen in tomato plants, stays focused on relevant symptoms, diagnostic tips, and corrective actions without unrelated information or unnecessary repetition."
+        "reason": "The answer gives a realistic yield range, explains why a precise figure requires more data, and offers practical, focused advice. It includes necessary context without unnecessary detail, avoids repetition, and remains decision‑supportive."
       },
       "agricultural_chatbot_answer": {
         "score": 0.8,
-        "reason": "The answer clearly explains how to identify excess nitrogen with specific symptoms and testing tips, staying on topic. However, it includes extensive management recommendations that go beyond the core question, making it somewhat verbose."
+        "reason": "The answer provides a clear, context‑specific yield estimate and useful actions to achieve it. It includes relevant soil and weather details, but adds some detailed fertilizer recommendations that, while helpful, are slightly beyond the core question, making it a bit more verbose than strictly necessary."
       }
     }
   },
+  "context_impact_analysis": {
+    "without_context_summary": "Answer A gives only a generic regional yield range (1.5–2.5 t ha⁻¹) and generic advice to monitor moisture, pests and apply fertilizer on time. It acknowledges missing details and asks the farmer for more information, but provides no farm‑specific estimate or concrete management rates.",
+    "with_context_summary": "Answer B incorporates inferred ground‑truth context (low organic matter and nitrogen, below‑normal seasonal rain, location in the Peanut Basin) and temporal context (early vegetative stage, imminent dry spell). It translates these factors into a tailored yield estimate (1.0–1.3 t ha⁻¹, 3–4 t total) and supplies precise nitrogen and organic amendment rates, plus immediate actions (irrigation, mulch, weed control).",
+    "response_change_summary": "The context‑rich answer moves from a vague range and a request for more data to a concrete, location‑specific yield projection with detailed, actionable nutrient and water management steps, directly answering the farmer’s question.",
+    "gate_context_impact": {
+      "G": {
+        "used": true,
+        "value_score": 0.9,
+        "impact_on_response": "Provides soil deficiency (low organic matter, N), location, and seasonal drought outlook, which shape the lower yield estimate and the recommended nitrogen/compost rates.",
+        "decision_quality_impact": "Enables the farmer to adjust inputs to the actual soil and weather constraints, improving the relevance and effectiveness of the advice.",
+        "utilization_quality": "high",
+        "value_reason": "Ground‑truth context is the primary driver of the specific yield projection and input recommendations."
+      },
+      "A": {
+        "used": true,
+        "value_score": 0.4,
+        "impact_on_response": "Mentions limited fertilizer/organic amendment availability and suggests actions that fit a resource‑constrained situation.",
+        "decision_quality_impact": "Adds modest realism about what the farmer can feasibly implement, but does not deeply explore socioeconomic or affordability aspects.",
+        "utilization_quality": "medium",
+        "value_reason": "Action context is present but only lightly addressed; it improves realism without being central."
+      },
+      "T": {
+        "used": true,
+        "value_score": 0.7,
+        "impact_on_response": "Identifies the crop’s early vegetative stage and the imminent dry spell, prompting timely nitrogen application and moisture‑conserving practices.",
+        "decision_quality_impact": "Helps the farmer time interventions correctly, increasing the likelihood of achieving the projected yield.",
+        "utilization_quality": "high",
+        "value_reason": "Temporal cues directly shape the timing of fertilizer and irrigation recommendations."
+      },
+      "E": {
+        "used": false,
+        "value_score": 0.0,
+        "impact_on_response": "No explicit end‑value context (e.g., profit focus, sustainability goals) is reflected beyond the generic aim of achieving a yield.",
+        "decision_quality_impact": "Absent end‑value framing limits alignment with farmer’s broader objectives.",
+        "utilization_quality": "not_needed",
+        "value_reason": "End‑value context was not required for the specific yield‑estimation question and was therefore omitted."
+      }
+    },
+    "context_utilization_analysis": {
+      "available_context_used": true,
+      "utilization_quality": "high",
+      "properly_used_gate_contexts": [
+        "G",
+        "T"
+      ],
+      "underused_gate_contexts": [
+        "A"
+      ],
+      "overused_or_speculative_contexts": [
+        "E"
+      ],
+      "context_utilization_reason": "The chatbot grounded most of its claims in the supplied soil, location, and weather data (G) and used the crop stage and forecast (T) to tailor recommendations. Action constraints (A) were mentioned but not fully explored, and no unnecessary end‑value speculation was added."
+    },
+    "most_valuable_gate_context": {
+      "category": "G",
+      "reason": "Ground‑truth context supplied the critical soil nutrient deficits and drought outlook that directly lowered the yield estimate and dictated the specific nitrogen and organic amendment rates."
+    },
+    "context_value_ranking": [
+      {
+        "category": "G",
+        "rank": 1,
+        "reason": "Highest contribution to specificity, practical usefulness, and decision quality by defining the biophysical limits of the farm."
+      },
+      {
+        "category": "T",
+        "rank": 2,
+        "reason": "Crucial for timing of interventions; improves actionability and safety of recommendations."
+      },
+      {
+        "category": "A",
+        "rank": 3,
+        "reason": "Adds modest realism about resource limits but is not central to the yield estimate."
+      },
+      {
+        "category": "E",
+        "rank": 4,
+        "reason": "Not needed for a pure yield projection; its absence does not harm the answer."
+      }
+    ],
+    "specificity_improvement": {
+      "without_context_specificity": "moderate (regional range only, no farm‑level detail)",
+      "with_context_specificity": "high (exact yield band, per‑ha and total tonnage, linked to soil and weather conditions)",
+      "improvement_summary": "Ground‑truth and temporal context turned a broad regional estimate into a farm‑specific projection tied to measured deficiencies and forecasted rain.",
+      "specificity_gain_score": 0.5
+    },
+    "actionability_improvement": {
+      "without_context_actionability": "low (generic monitoring advice, no concrete rates or timing)",
+      "with_context_actionability": "high (specific N rates, compost amounts, timing of top‑dress, mulch recommendation)",
+      "improvement_summary": "Context enabled the provision of 4R‑style fertilizer recommendations and immediate moisture‑conserving actions.",
+      "actionability_gain_score": 0.8
+    },
+    "decision_quality_improvement": {
+      "without_context_decision_quality": "limited; farmer must supply more data before making decisions",
+      "with_context_decision_quality": "substantially better; farmer receives a realistic yield expectation and a clear input plan aligned with current constraints",
+      "improvement_summary": "The inferred G and T contexts produce a decision‑support answer that can be acted on immediately, reducing uncertainty.",
+      "decision_quality_gain_score": 0.7
+    },
+    "weak_or_unhelpful_context_usage": [
+      {
+        "gate_category": "E",
+        "issue": "End‑value context was omitted; while not harmful, its absence means the advice does not address possible profit or sustainability goals the farmer might have."
+      }
+    ],
+    "overall_context_value_score": 0.5,
+    "context_value_conclusion": "Inferred GATE context transformed a vague, non‑committal reply into a concrete, actionable yield forecast. Ground‑truth (soil, location, weather) and temporal (crop stage, forecast) information provided the greatest benefit, while action context was only modestly leveraged and end‑value context was unnecessary for this specific question."
+  },
   "final_decision": {
     "winner": "agricultural_chatbot_answer",
-    "confidence": 0.9,
-    "final_reason": "The agricultural chatbot answer achieves perfect completeness, providing exhaustive symptom descriptions, stage‑specific diagnostics, detailed testing methods, and comprehensive corrective actions. It also adds strong context (soil type, growth stage, precise fertilizer choices) and higher specificity, outweighing its slightly lower conciseness and minor faithfulness gap. Completeness is the top priority, making this answer the superior response.",
+    "confidence": 0.85,
+    "final_reason": "The agricultural chatbot answer delivers a far more specific, farm‑level yield estimate and concrete, context‑driven management actions, directly addressing the farmer’s request. Although it lacks explicit safety cautions, its superiority in specificity and actionability outweighs the modest safety shortfall, making it the better overall response.",
     "minimum_context_strengths": [
-      "Clear, concise list of key nitrogen‑excess symptoms",
-      "Simple, actionable diagnostic suggestion (leaf/petiole sap test)",
-      "Straightforward corrective steps (stop N, switch to balanced/K‑forward fertilizer)",
-      "Safe guidance without risky recommendations",
-      "Highly concise and focused on the core question"
+      "Provides a realistic regional yield range",
+      "Emphasizes safety by avoiding risky quantitative advice",
+      "Very concise and easy to read"
     ],
     "minimum_context_weaknesses": [
-      "Missing quantitative thresholds for leaf colour or nitrate levels",
-      "Lacks timing and dosage details for corrective fertiliser applications",
-      "No discussion of environmental impacts (leaching, runoff)",
-      "Limited soil‑type considerations beyond fresh manure",
-      "Less specific guidance for different production systems"
+      "Low specificity – no farm‑specific yield estimate",
+      "Minimal actionability – only generic monitoring suggestions",
+      "Fails to incorporate the supplied soil, weather, and crop‑stage data"
     ],
     "agricultural_chatbot_strengths": [
-      "Comprehensive coverage of symptoms, including fruit quality and pest/disease risks",
-      "Stage‑specific diagnostic cue (4–6 weeks post‑transplant) and detailed testing method",
-      "Rich, concrete fertilizer recommendations (low‑N, high‑P/K options, split‑application strategy)",
-      "Additional cultural practices (pruning, calcium management, watering timing) for safety",
-      "Strong context gain with soil type, growth stage, and weather considerations",
-      "High specificity and practical usefulness for field decisions"
+      "High specificity with concrete per‑ha and total yield numbers",
+      "Actionable 4R‑style fertilizer and organic amendment recommendations",
+      "Effectively leverages ground‑truth (soil, weather) and temporal context",
+      "Addresses water stress and provides immediate mitigation steps"
     ],
     "agricultural_chatbot_weaknesses": [
-      "Slightly less concise due to extensive management advice",
-      "Some vague statements (nitrate strip interpretation, watering impact) lacking quantitative detail",
-      "Assumes sandy soil in one claim, reducing faithfulness for other soil types",
-      "Exact dosage rates for suggested fertilizers are not provided"
+      "Safety risk awareness is low – no warning about potential nitrogen over‑application",
+      "Yield numbers are weakly supported and carry some risk",
+      "Slightly less concise due to detailed dosage information"
     ],
     "most_influential_metrics": [
-      "completeness",
-      "context_gain",
       "specificity",
-      "practical_usefulness"
+      "actionability",
+      "safety_risk_awareness"
     ],
-    "context_impact_summary": "By incorporating soil type, crop stage, precise fertilizer choices, and additional cultural practices, the agricultural chatbot answer transforms generic guidance into a tailored, actionable plan for tomato growers, markedly improving relevance and usefulness over the minimal‑context response.",
-    "final_judgement_summary": "The agricultural chatbot answer wins due to its superior completeness and richer contextual detail, delivering a more thorough and practical solution despite a modest loss in conciseness."
+    "most_valuable_contexts": [
+      "Ground‑truth context (soil nutrient deficits, drought forecast)",
+      "Temporal context (early vegetative stage, imminent dry spell)"
+    ],
+    "context_impact_summary": "Incorporating the supplied soil and weather data shifted the response from a vague regional range to a tailored yield projection (1.0‑1.3 t ha⁻¹) with precise nitrogen and organic amendment rates, directly improving decision support for the farmer.",
+    "specificity_change_summary": "Without context the answer offered only a broad 1.5‑2.5 t ha⁻¹ range; with context it provided a narrowed, farm‑specific estimate (1.0‑1.3 t ha⁻¹ and total tonnage for 3 ha), linking the numbers to observed deficiencies and forecasted drought.",
+    "final_judgement_summary": "The context‑rich answer wins because its specificity and actionable guidance far exceed the generic, safe but non‑committal reply, despite a modest safety oversight."
   },
   "trace": [
     {
       "agent": "evaluation_planner_agent",
-      "action": "planned_evaluation",
+      "action": "planned_benchmark_aligned_evaluation",
       "output": {
-        "question_type": "nutrient_excess_detection",
+        "question_type": "yield_estimation",
+        "agronomic_categories": [
+          "Crop Management",
+          "Nutrition",
+          "Water",
+          "Soils"
+        ],
         "risk_level": "medium",
         "selected_metrics": [
-          "completeness",
-          "practical_usefulness",
-          "faithfulness",
-          "context_gain",
+          "specificity",
+          "actionability",
           "comparative_winner_reasoning",
           "safety_risk_awareness",
-          "specificity",
           "conciseness"
         ],
+        "benchmark_metric_mapping": {
+          "agronomic_specificity": "specificity",
+          "field_actionability": "actionability",
+          "information_efficiency": "conciseness",
+          "agronomic_risk_awareness": "safety_risk_awareness",
+          "comparative_decision_quality": "comparative_winner_reasoning"
+        },
         "metric_rationale": {
-          "completeness": "Check that the answer covers all relevant signs, diagnostic methods, and mitigation steps for excess nitrogen.",
-          "practical_usefulness": "Ensure the guidance can be readily applied by the farmer in the field.",
-          "faithfulness": "Verify that the information aligns with established agronomic knowledge about nitrogen management.",
-          "context_gain": "Assess how well the answer builds on the specific context of tomato plants and nitrogen excess.",
-          "comparative_winner_reasoning": "Provide a reasoned judgment on which answer better satisfies the question overall.",
-          "safety_risk_awareness": "The question involves fertilizer use, so the answer must acknowledge risks of over‑application and environmental/economic impacts.",
-          "specificity": "The question seeks detailed cues (timing, growth stage, symptoms) to identify excess nitrogen.",
-          "conciseness": "Both answers are lengthy; evaluate whether they stay focused without unnecessary verbosity."
+          "specificity": "The question asks for a quantitative yield expectation; we need to judge how precisely each answer addresses that.",
+          "actionability": "Both answers provide management steps; we must evaluate how useful and implementable those recommendations are.",
+          "comparative_winner_reasoning": "We must determine which answer gives a better overall recommendation based on the provided context.",
+          "safety_risk_awareness": "Answers mention fertilizer rates, water stress, and potential crop damage, so awareness of agronomic and economic risks is essential.",
+          "conciseness": "The query is simple; we need to check that answers are not overly verbose while still covering needed detail."
         },
         "evaluation_plan": [
-          "Step 1: Evaluate each answer for completeness and specificity, confirming all diagnostic signs, testing options, and stage‑specific recommendations are present.",
-          "Step 2: Assess practical usefulness and safety_risk_awareness, ensuring actionable steps and risk mitigation are clearly communicated.",
-          "Step 3: Check faithfulness and context_gain, then apply comparative_winner_reasoning to determine which answer best balances accuracy, relevance, and conciseness."
+          "Step 1: Evaluate each answer for agronomic_specificity (precision of yield estimate).",
+          "Step 2: Evaluate field_actionability (practicality of recommended actions).",
+          "Step 3: Assess agronomic_risk_awareness (identification of fertilizer, water, and yield risk).",
+          "Step 4: Measure information_efficiency (brevity relative to the simple question).",
+          "Step 5: Apply comparative_decision_quality to decide which answer is overall superior."
         ],
-        "planner_reason": "The plan systematically checks coverage, actionable detail, risk awareness, and correctness before comparing the two answers, while also rewarding brevity where appropriate."
+        "planner_reason": "The question seeks a clear yield forecast and actionable guidance; therefore we assess precision, practicality, risk awareness, brevity, and overall comparative quality."
       }
     },
     {
@@ -419,357 +455,366 @@
       "output": {
         "minimum_context_claims": [
           {
-            "claim": "Too much nitrogen in tomatoes shows up first as very vigorous, dark green, and soft growth.",
-            "claim_type": "general",
-            "importance": "medium"
-          },
-          {
-            "claim": "Plants get tall with long spaces between leaves, produce thick, sappy stems and lots of suckers, and the canopy becomes very dense.",
-            "claim_type": "general",
-            "importance": "medium"
-          },
-          {
-            "claim": "Flowering is delayed, clusters are sparse, and blooms may abort, so you see plenty of leaves but few fruits setting.",
-            "claim_type": "yield",
-            "importance": "high"
-          },
-          {
-            "claim": "Older leaves can develop physiological leaf roll while staying green and turgid, especially on very vigorous plants; this is different from disease because the leaves are not spotted or yellow.",
-            "claim_type": "pest_disease",
-            "importance": "medium"
-          },
-          {
-            "claim": "The lush, shaded canopy can also make fruits slower to color and more watery with poorer flavor.",
+            "claim": "Typical yields for well‑managed farms in the Kaolack (Peanut Basin) region range from about 1.5 t ha⁻¹ to 2.5 t ha⁻¹.",
             "claim_type": "yield",
             "importance": "medium"
           },
           {
-            "claim": "Such soft growth is more attractive to pests like aphids and more susceptible to fungal problems.",
-            "claim_type": "pest_disease",
-            "importance": "medium"
-          },
-          {
-            "claim": "Heavy or frequent applications of urea, ammonium fertilisers, or fresh poultry manure commonly cause excess nitrogen symptoms.",
+            "claim": "Ensuring timely fertilizer applications is one of the most reliable ways to maximize peanut harvest in Kaolack.",
             "claim_type": "fertilizer",
             "importance": "high"
           },
           {
-            "claim": "A simple leaf or petiole sap test for nitrate can be done through a local lab or advisory service.",
-            "claim_type": "method",
-            "importance": "medium"
-          },
-          {
-            "claim": "If you suspect excess nitrogen, stop nitrogen applications and switch to a more balanced or potassium‑forward fertiliser to support flowering and fruiting.",
-            "claim_type": "fertilizer",
-            "importance": "high"
-          },
-          {
-            "claim": "Keep watering steady to avoid further stress, and avoid heavy pruning, which can worsen leaf roll on vigorous plants.",
-            "claim_type": "water",
+            "claim": "Monitoring soil moisture and scouting for early signs of leaf spot or nematodes helps maximize peanut yield.",
+            "claim_type": "general",
             "importance": "medium"
           }
         ],
         "agricultural_chatbot_claims": [
           {
-            "claim": "Too much nitrogen in tomatoes shows up as plants that look very healthy on top but are slow to give you flowers and fruit.",
-            "claim_type": "general",
-            "importance": "medium"
-          },
-          {
-            "claim": "The most common signs are very lush, dark green foliage and thick, soft stems with long distances between leaves.",
-            "claim_type": "general",
-            "importance": "medium"
-          },
-          {
-            "claim": "Plants grow fast and tall, the canopy becomes dense, and leaves can droop slightly from succulent growth.",
-            "claim_type": "general",
-            "importance": "medium"
-          },
-          {
-            "claim": "Flowering is delayed, flowers may drop, and fruit set is poor or late, so you see plenty of leaves but few clusters.",
-            "claim_type": "yield",
-            "importance": "high"
-          },
-          {
-            "claim": "Fruits that do form may be watery, bland, and more prone to cracking.",
-            "claim_type": "yield",
-            "importance": "medium"
-          },
-          {
-            "claim": "Lush canopies also attract aphids and whiteflies and create a humid microclimate that favors foliar diseases.",
-            "claim_type": "pest_disease",
-            "importance": "medium"
-          },
-          {
-            "claim": "In sandy soil, a heavy topdress of urea or CAN, or fresh manure, can push a rapid flush of vegetative growth within a week, especially when there is enough moisture.",
-            "claim_type": "fertilizer",
-            "importance": "high"
-          },
-          {
-            "claim": "If your plants are 4–6 weeks after transplanting and still making leaf and stem growth with few or no flower clusters, suspect excess nitrogen.",
+            "claim": "The crop is currently in the early vegetative stage, with seedlings just getting established.",
             "claim_type": "crop_stage",
             "importance": "medium"
           },
           {
-            "claim": "Simple nitrate test strips can be used on petiole sap taken mid‑morning; consistently very high readings confirm excess nitrogen for the crop stage.",
-            "claim_type": "method",
+            "claim": "Well‑managed peanut fields on fertile, well‑watered soils in the Peanut Basin can yield 1.5 – 2.5 t ha⁻¹.",
+            "claim_type": "yield",
             "importance": "medium"
           },
           {
-            "claim": "If you suspect too much nitrogen, pause all nitrogen applications for now.",
-            "claim_type": "fertilizer",
-            "importance": "high"
-          },
-          {
-            "claim": "Do not topdress with urea, CAN, or high‑N foliar feeds.",
-            "claim_type": "fertilizer",
-            "importance": "high"
-          },
-          {
-            "claim": "Shift nutrition toward flowering and fruiting by using low‑N, higher‑P and higher‑K options such as single superphosphate, sulfate of potash, or an NPK where the first number (N) is the smallest.",
-            "claim_type": "fertilizer",
-            "importance": "high"
-          },
-          {
-            "claim": "Maintain steady but not excessive watering; avoid extra irrigation on rainy days because nitrogen plus heavy watering drives more leaf growth.",
-            "claim_type": "water",
-            "importance": "medium"
-          },
-          {
-            "claim": "If the canopy is very dense, lightly remove a few excess side shoots and old leaves low in the canopy to improve light and airflow, but avoid hard pruning that can stress plants or cause sunscald.",
-            "claim_type": "method",
-            "importance": "medium"
-          },
-          {
-            "claim": "If blossom‑end rot appears, supply calcium (e.g., gypsum or foliar calcium) without adding more nitrogen, while keeping soil moisture even.",
-            "claim_type": "pest_disease",
-            "importance": "medium"
-          },
-          {
-            "claim": "Manage nitrogen in small, well‑timed doses: apply modest basal nitrogen, then split applications only up to early fruit set; after first clusters set, keep nitrogen light and prioritize potassium.",
-            "claim_type": "dosage",
-            "importance": "high"
-          },
-          {
-            "claim": "In sandy soils, smaller, more frequent nitrogen doses are safer than big single applications.",
-            "claim_type": "dosage",
-            "importance": "medium"
-          },
-          {
-            "claim": "Time any fertilizer so rain or irrigation can water it in, but avoid applying nitrogen right before heavier rains to reduce losses.",
-            "claim_type": "timing",
-            "importance": "medium"
-          },
-          {
-            "claim": "Building organic matter with compost or well‑decomposed manure and mulch buffers nitrogen supply and helps avoid both deficiency and excess.",
+            "claim": "The soil is very low in organic matter and nitrogen.",
             "claim_type": "soil",
+            "importance": "high"
+          },
+          {
+            "claim": "The seasonal forecast is below normal with no rain in the coming days, leading to water stress unless supplemental irrigation is applied.",
+            "claim_type": "water",
+            "importance": "high"
+          },
+          {
+            "claim": "Recommended nitrogen application is about 50–75 kg N ha⁻¹ at planting.",
+            "claim_type": "dosage",
+            "importance": "high"
+          },
+          {
+            "claim": "A top‑dress of 100–150 kg N ha⁻¹ should be applied around the V4‑V6 growth stage.",
+            "claim_type": "dosage",
+            "importance": "high"
+          },
+          {
+            "claim": "Add 5–10 t ha⁻¹ of compost or manure to raise organic matter.",
+            "claim_type": "fertilizer",
+            "importance": "medium"
+          },
+          {
+            "claim": "Following these nitrogen and organic amendment rates can produce roughly 1.0 – 1.3 t ha⁻¹ of marketable peanuts.",
+            "claim_type": "yield",
+            "importance": "high"
+          },
+          {
+            "claim": "On a 3 ha farm this corresponds to about 3 – 4 t of grain at harvest.",
+            "claim_type": "yield",
+            "importance": "medium"
+          },
+          {
+            "claim": "If fertilizer and organic amendments are limited, yields could fall to 0.6 – 0.8 t ha⁻¹.",
+            "claim_type": "yield",
+            "importance": "medium"
+          },
+          {
+            "claim": "Retaining crop residues as mulch helps conserve soil moisture.",
+            "claim_type": "method",
+            "importance": "medium"
+          },
+          {
+            "claim": "Keeping the field weed‑free helps protect the modest yield.",
+            "claim_type": "method",
+            "importance": "medium"
+          },
+          {
+            "claim": "Monitoring for early pest pressure helps protect the yield.",
+            "claim_type": "pest_disease",
             "importance": "medium"
           }
         ],
-        "claim_summary": "Answer A provides basic symptom descriptions, a few fertilizer sources, a simple testing method, and general mitigation, while Answer B offers a richer set of claims covering detailed symptoms, soil context, specific fertilizer types, testing procedures, precise timing and dosage guidance, water management, pest/disease risks, and safety precautions."
+        "claim_summary": "Answer A provides only a broad typical yield range and a general recommendation to apply fertilizer timely, whereas Answer B offers many specific, actionable claims about crop stage, soil deficiencies, detailed nitrogen dosages and timing, organic amendment rates, water stress, and precise yield expectations, making it richer and more detailed."
       }
     },
     {
       "agent": "evidence_checker_agent",
-      "action": "checked_evidence",
+      "action": "checked_context_grounded_evidence",
       "output": {
         "minimum_context_answer": {
           "supported_claims": [
-            "Too much nitrogen in tomatoes shows up first as very vigorous, dark green, and soft growth.",
-            "Plants get tall with long spaces between leaves, produce thick, sappy stems and lots of suckers, and the canopy becomes very dense.",
-            "Flowering is delayed, clusters are sparse, and blooms may abort, so you see plenty of leaves but few fruits setting.",
-            "The lush, shaded canopy can also make fruits slower to color and more watery with poorer flavor.",
-            "Such soft growth is more attractive to pests like aphids and more susceptible to fungal problems.",
-            "Heavy or frequent applications of urea, ammonium fertilisers, or fresh poultry manure commonly cause excess nitrogen symptoms.",
-            "A simple leaf or petiole sap test for nitrate can be done through a local lab or advisory service.",
-            "If you suspect excess nitrogen, stop nitrogen applications and switch to a more balanced or potassium‑forward fertiliser to support flowering and fruiting."
+            "Ensuring timely fertilizer applications is one of the most reliable ways to maximize peanut harvest in Kaolack.",
+            "Monitoring soil moisture and scouting for early signs of leaf spot or nematodes helps maximize peanut yield."
           ],
+          "context_supported_claims": [],
           "weakly_supported_claims": [
-            "Older leaves can develop physiological leaf roll while staying green and turgid, especially on very vigorous plants; this is different from disease because the leaves are not spotted or yellow.",
-            "Keep watering steady to avoid further stress, and avoid heavy pruning, which can worsen leaf roll on vigorous plants."
+            "Typical yields for well‑managed farms in the Kaolack (Peanut Basin) region range from about 1.5 t ha⁻¹ to 2.5 t ha⁻¹."
           ],
           "unsupported_claims": [],
           "risky_claims": [],
           "vague_claims": [],
           "missing_context": [
-            "Quantitative thresholds for leaf colour or nitrate levels to confirm excess nitrogen.",
-            "Specific timing and frequency for corrective fertilizer applications (e.g., how much potassium‑forward fertilizer to apply).",
-            "Potential environmental impacts such as nitrate leaching or greenhouse‑gas emissions.",
-            "Guidance for different soil types beyond poultry manure (e.g., loam, clay).",
-            "Integration with organic or low‑input production systems."
+            "soil organic matter and nitrogen levels",
+            "current weather and rainfall forecast",
+            "seasonal water availability",
+            "actual crop growth stage",
+            "field‑specific management history"
           ],
-          "evidence_summary": "The answer provides well‑established symptoms of nitrogen excess, common fertilizer sources, and basic corrective actions, all aligned with agronomic knowledge. A few statements (leaf roll, pruning advice) are less directly supported, and the answer lacks quantitative guidance and broader environmental context."
+          "context_grounding_summary": "The answer relies only on general agronomic knowledge; it does not use the limited latitude/longitude beyond naming the region, and provides no evidence from the minimal context.",
+          "evidence_summary": "Fertilizer timing and pest monitoring are well‑grounded by standard practice, while the yield range is an external estimate not derived from the given location data."
         },
         "agricultural_chatbot_answer": {
           "supported_claims": [
-            "Too much nitrogen in tomatoes shows up as plants that look very healthy on top but are slow to give you flowers and fruit.",
-            "The most common signs are very lush, dark green foliage and thick, soft stems with long distances between leaves.",
-            "Plants grow fast and tall, the canopy becomes dense, and leaves can droop slightly from succulent growth.",
-            "Flowering is delayed, flowers may drop, and fruit set is poor or late, so you see plenty of leaves but few clusters.",
-            "Fruits that do form may be watery, bland, and more prone to cracking.",
-            "Lush canopies also attract aphids and whiteflies and create a humid microclimate that favors foliar diseases.",
-            "In sandy soil, a heavy topdress of urea or CAN, or fresh manure, can push a rapid flush of vegetative growth within a week, especially when there is enough moisture.",
-            "If your plants are 4–6 weeks after transplanting and still making leaf and stem growth with few or no flower clusters, suspect excess nitrogen.",
-            "If you suspect too much nitrogen, pause all nitrogen applications for now.",
-            "Do not topdress with urea, CAN, or high‑N foliar feeds.",
-            "Shift nutrition toward flowering and fruiting by using low‑N, higher‑P and higher‑K options such as single superphosphate, sulfate of potash, or an NPK where the first number (N) is the smallest.",
-            "If the canopy is very dense, lightly remove a few excess side shoots and old leaves low in the canopy to improve light and airflow, but avoid hard pruning that can stress plants or cause sunscald.",
-            "If blossom‑end rot appears, supply calcium (e.g., gypsum or foliar calcium) without adding more nitrogen, while keeping soil moisture even.",
-            "Manage nitrogen in small, well‑timed doses: apply modest basal nitrogen, then split applications only up to early fruit set; after first clusters set, keep nitrogen light and prioritize potassium.",
-            "In sandy soils, smaller, more frequent nitrogen doses are safer than big single applications.",
-            "Time any fertilizer so rain or irrigation can water it in, but avoid applying nitrogen right before heavier rains to reduce losses.",
-            "Building organic matter with compost or well‑decomposed manure and mulch buffers nitrogen supply and helps avoid both deficiency and excess."
+            "Well‑managed peanut fields on fertile, well‑watered soils in the Peanut Basin can yield 1.5 – 2.5 t ha⁻¹.",
+            "Recommended nitrogen application is about 50–75 kg N ha⁻¹ at planting.",
+            "A top‑dress of 100–150 kg N ha⁻¹ should be applied around the V4‑V6 growth stage.",
+            "Add 5–10 t ha⁻¹ of compost or manure to raise organic matter.",
+            "Retaining crop residues as mulch helps conserve soil moisture.",
+            "Keeping the field weed‑free helps protect the modest yield.",
+            "Monitoring for early pest pressure helps protect the yield."
+          ],
+          "context_supported_claims": [
+            "The crop is currently in the early vegetative stage, with seedlings just getting established.",
+            "The soil is very low in organic matter and nitrogen.",
+            "The seasonal forecast is below normal with no rain in the coming days, leading to water stress unless supplemental irrigation is applied."
           ],
           "weakly_supported_claims": [
-            "Simple nitrate test strips can be used on petiole sap taken mid‑morning; consistently very high readings confirm excess nitrogen for the crop stage.",
-            "Maintain steady but not excessive watering; avoid extra irrigation on rainy days because nitrogen plus heavy watering drives more leaf growth."
+            "Following these nitrogen and organic amendment rates can produce roughly 1.0 – 1.3 t ha⁻¹ of marketable peanuts.",
+            "On a 3 ha farm this corresponds to about 3 – 4 t of grain at harvest.",
+            "If fertilizer and organic amendments are limited, yields could fall to 0.6 – 0.8 t ha⁻¹."
           ],
           "unsupported_claims": [],
-          "risky_claims": [],
-          "vague_claims": [
-            "Simple nitrate test strips can be used on petiole sap taken mid‑morning; consistently very high readings confirm excess nitrogen for the crop stage.",
-            "Maintain steady but not excessive watering; avoid extra irrigation on rainy days because nitrogen plus heavy watering drives more leaf growth."
+          "risky_claims": [
+            "Following these nitrogen and organic amendment rates can produce roughly 1.0 – 1.3 t ha⁻¹ of marketable peanuts.",
+            "On a 3 ha farm this corresponds to about 3 – 4 t of grain at harvest.",
+            "If fertilizer and organic amendments are limited, yields could fall to 0.6 – 0.8 t ha⁻¹."
           ],
+          "vague_claims": [],
           "missing_context": [
-            "Exact nitrate concentration thresholds that define \"very high\" readings.",
-            "Recommended rates (kg/ha or g/plant) for the suggested low‑N, high‑K/P fertilizers.",
-            "Potential leaching or runoff risks associated with the previously applied high‑N fertilizers.",
-            "Guidance for growers using organic amendments other than fresh manure."
+            "precise soil test values for phosphorus and potassium",
+            "actual irrigation capacity and water source",
+            "detailed pest and disease pressure levels",
+            "field history of previous crops",
+            "economic considerations for fertilizer purchase"
           ],
-          "evidence_summary": "The answer covers a comprehensive set of symptoms, stage‑specific diagnostics, testing methods, and detailed mitigation steps that are consistent with agronomic best practices. Most claims are well‑supported; a couple of recommendations (nitrate strip interpretation and watering impact) lack quantitative detail, making them slightly vague."
+          "context_grounding_summary": "The answer heavily leverages the provided weather forecast, seasonal drought outlook, and soil nutrient deficiencies, grounding many claims in the supplied context. Additional dosage and yield numbers are based on typical agronomic guidelines rather than the specific context.",
+          "evidence_summary": "Context‑supported claims about crop stage, soil deficiency, and drought are directly backed by the supplied data. General agronomic recommendations are reasonable, while the quantitative yield forecasts are only weakly supported and carry risk."
         },
-        "comparative_evidence_summary": "Both answers correctly identify the visual and growth symptoms of nitrogen excess and advise stopping nitrogen applications. The agricultural chatbot answer provides richer, stage‑specific diagnostics, concrete testing procedures, and detailed corrective nutrient strategies, making its evidence base stronger overall. It includes a few vague statements but fewer weakly‑supported claims than the minimum‑context answer, which omits quantitative guidance and broader environmental considerations. Consequently, the chatbot answer has stronger evidential support and fewer gaps."
+        "comparative_evidence_summary": "The agricultural chatbot answer provides multiple claims directly anchored in the supplied weather, soil, and crop‑stage data, giving it stronger evidential support than the minimum‑context answer, which relies solely on generic advice. However, the chatbot’s precise yield numbers are weakly supported and somewhat risky, whereas the minimum‑context answer contains no risky quantitative claims.",
+        "context_grounded_faithfulness_summary": "The added soil and weather details (low organic matter, nitrogen deficiency, below‑normal rainfall) are consistent with the provided ISDA soil information and seasonal forecast, so they are faithful. Yield and fertilizer dosage figures, while plausible, extend beyond the explicit context and are not directly verified by the supplied data."
       }
     },
     {
       "agent": "metric_tool_agent",
       "action": "executed_metric_tools",
       "selected_metrics": [
-        "completeness",
-        "practical_usefulness",
-        "faithfulness",
-        "context_gain",
+        "specificity",
+        "actionability",
         "comparative_winner_reasoning",
         "safety_risk_awareness",
-        "specificity",
         "conciseness"
       ],
       "output": {
-        "completeness": {
+        "specificity": {
           "minimum_context_answer": {
-            "score": 0.8,
-            "reason": "The answer identifies key visual symptoms of excess nitrogen, suggests a diagnostic test, and provides clear corrective actions (stop N applications, switch to balanced fertilizer, maintain watering, avoid heavy pruning). However, it lacks specific guidance on timing of interventions, recommended nitrogen application rates, how to adjust fertilizer ratios, and detailed next steps such as soil testing or leaching excess nitrogen, which are important for complete farmer guidance."
+            "score": 0.5,
+            "reason": "The answer gives a concrete regional yield range (1.5–2.5 t ha⁻¹) and mentions factors affecting it, which adds some specificity. However, it does not provide a tailored estimate for the farmer’s season and relies on a request for more data, leaving the core question only partially answered."
           },
           "agricultural_chatbot_answer": {
             "score": 1.0,
-            "reason": "The answer thoroughly explains symptoms, diagnostic methods, immediate corrective actions, future nitrogen management, timing, risks, and additional cultural practices, covering all key aspects a farmer needs."
+            "reason": "The answer directly answers the farmer's yield question with concrete ranges (1.0‑1.3 t ha⁻¹, 0.6‑0.8 t ha⁻¹) and translates them to total tonnage for the 3 ha farm. It references the specific crop (peanut), location (Peanut Basin, Senegal), soil condition, rainfall deficit, and provides precise management inputs (N rates, compost amounts) that justify the yield estimate, covering all relevant aspects without vague statements."
           }
         },
-        "practical_usefulness": {
+        "actionability": {
           "minimum_context_answer": {
-            "score": 0.8,
-            "reason": "The answer clearly lists observable symptoms of excess nitrogen, advises reviewing recent fertilizer applications, suggests a simple leaf sap test, and provides concrete next steps (stop nitrogen, switch to balanced/potassium-forward fertilizer, maintain steady watering, avoid heavy pruning). While actionable, it lacks specific dosage rates or timing details, preventing a perfect score."
+            "score": 0.2,
+            "reason": "The answer provides a broad regional yield range but cannot give a farm‑specific estimate and offers only generic management reminders (monitor moisture, scout pests, apply fertilizer). It lacks concrete 4R details (no specific source, rate, timing, or placement) and does not enable the farmer to make a concrete field‑level decision about expected yield. Context about typical yields is present but does not translate into actionable guidance."
           },
           "agricultural_chatbot_answer": {
-            "score": 0.8,
-            "reason": "The answer gives clear, actionable signs of excess nitrogen, practical steps to confirm the problem, and specific management actions (pause N, shift to P/K, pruning, calcium, timing of future N applications). While it lacks exact dosage amounts, it provides sufficient guidance for a farmer to make field-level decisions."
-          }
-        },
-        "faithfulness": {
-          "minimum_context_answer": {
             "score": 1.0,
-            "reason": "The answer directly addresses how to identify excess nitrogen in tomato plants, lists observable symptoms, suggests realistic diagnostic steps, and offers practical, grounded management advice without unsupported claims."
-          },
-          "agricultural_chatbot_answer": {
-            "score": 0.8,
-            "reason": "The answer directly addresses how to identify excess nitrogen in tomatoes with realistic signs and detection methods, staying grounded in agricultural practice. It adds some extra management advice, which is relevant, but makes a minor unsupported assumption about the soil being sandy."
+            "reason": "The answer gives a concrete yield range and actionable management steps. It specifies the right source (N fertilizer, compost/manure), right rate (50‑75 kg N/ha planting, 100‑150 kg N/ha top‑dress, 5‑10 t compost/ha), right time (top‑dress at V4‑V6, immediate soil amendment), and right place (soil application, mulch). Recommendations are clear, realistic for Senegal’s Peanut Basin, and consider the farmer’s low organic matter and dry forecast, making the guidance practical and implementable."
           }
-        },
-        "context_gain": {
-          "score": 1.0,
-          "winner": "agricultural_chatbot_answer",
-          "reason": "Answer B adds soil type, growth stage timing, specific fertilizer choices, weather‑related watering advice, pruning tips, calcium management, split‑application strategy, and invites farmer details, greatly enhancing decision‑making over Answer A."
         },
         "comparative_winner_reasoning": {
           "score": 0.8,
           "winner": "agricultural_chatbot_answer",
-          "reason": "Both answers are accurate and relevant, but Answer B provides richer context, more specific fertilizer recommendations, detailed safety guidance, and actionable steps (pruning, calcium management, timing of applications). While slightly less concise, its greater completeness, practicality, and farmer‑friendly tone make it the better overall response."
+          "reason": "Answer B provides more specific yield estimates, concrete fertilizer and organic amendment rates, and clear actionable steps tailored to the season, enhancing decision support. While it introduces some assumptions not given by the farmer, the added context improves specificity and actionability without compromising safety. Answer A is more cautious but less specific and actionable."
         },
         "safety_risk_awareness": {
           "minimum_context_answer": {
             "score": 1.0,
-            "reason": "The answer safely identifies excess nitrogen symptoms, warns about over‑application risks, advises stopping nitrogen inputs, suggests balanced fertilisation and testing, and avoids any unsafe recommendations."
+            "reason": "The answer avoids giving unsafe or overly specific advice, emphasizes variability, and recommends monitoring soil moisture, pest scouting, and timely fertilizer use, showing strong risk awareness without risky recommendations."
           },
           "agricultural_chatbot_answer": {
-            "score": 1.0,
-            "reason": "The answer provides clear, safe guidance on identifying excess nitrogen, advises stopping nitrogen applications, recommends balanced nutrition, warns about over-watering, rain timing, and potential disease/pest issues, and avoids any harmful or risky practices."
-          }
-        },
-        "specificity": {
-          "minimum_context_answer": {
-            "score": 0.8,
-            "reason": "The answer provides concrete symptoms, specific fertilizer types, a diagnostic leaf sap test, and actionable steps (stop N applications, switch to balanced/K‑forward fertilizer, adjust watering and pruning). While it lacks exact dosage thresholds or precise timing, it offers detailed, practical guidance relevant to the question."
-          },
-          "agricultural_chatbot_answer": {
-            "score": 1.0,
-            "reason": "Provides concrete signs, timing (4–6 weeks post‑transplant), soil type, specific fertilizer types and dosages, testing method, and detailed management steps, giving ample detail for farmer decision."
+            "score": 0.2,
+            "reason": "The answer recommends a nitrogen program for peanuts without warning that excessive N can reduce yields, cause lodging, and lead to leaching, despite peanuts' nitrogen-fixing ability. It lacks cautions, label references, or mitigation steps, making the advice risky and insufficiently risk-aware."
           }
         },
         "conciseness": {
           "minimum_context_answer": {
             "score": 1.0,
-            "reason": "The answer directly addresses how to identify excess nitrogen in tomato plants, stays focused on relevant symptoms, diagnostic tips, and corrective actions without unrelated information or unnecessary repetition."
+            "reason": "The answer gives a realistic yield range, explains why a precise figure requires more data, and offers practical, focused advice. It includes necessary context without unnecessary detail, avoids repetition, and remains decision‑supportive."
           },
           "agricultural_chatbot_answer": {
             "score": 0.8,
-            "reason": "The answer clearly explains how to identify excess nitrogen with specific symptoms and testing tips, staying on topic. However, it includes extensive management recommendations that go beyond the core question, making it somewhat verbose."
+            "reason": "The answer provides a clear, context‑specific yield estimate and useful actions to achieve it. It includes relevant soil and weather details, but adds some detailed fertilizer recommendations that, while helpful, are slightly beyond the core question, making it a bit more verbose than strictly necessary."
           }
         }
       }
     },
     {
+      "agent": "context_impact_agent",
+      "action": "analyzed_gate_context_utilization_without_explicit_context",
+      "output": {
+        "without_context_summary": "Answer A gives only a generic regional yield range (1.5–2.5 t ha⁻¹) and generic advice to monitor moisture, pests and apply fertilizer on time. It acknowledges missing details and asks the farmer for more information, but provides no farm‑specific estimate or concrete management rates.",
+        "with_context_summary": "Answer B incorporates inferred ground‑truth context (low organic matter and nitrogen, below‑normal seasonal rain, location in the Peanut Basin) and temporal context (early vegetative stage, imminent dry spell). It translates these factors into a tailored yield estimate (1.0–1.3 t ha⁻¹, 3–4 t total) and supplies precise nitrogen and organic amendment rates, plus immediate actions (irrigation, mulch, weed control).",
+        "response_change_summary": "The context‑rich answer moves from a vague range and a request for more data to a concrete, location‑specific yield projection with detailed, actionable nutrient and water management steps, directly answering the farmer’s question.",
+        "gate_context_impact": {
+          "G": {
+            "used": true,
+            "value_score": 0.9,
+            "impact_on_response": "Provides soil deficiency (low organic matter, N), location, and seasonal drought outlook, which shape the lower yield estimate and the recommended nitrogen/compost rates.",
+            "decision_quality_impact": "Enables the farmer to adjust inputs to the actual soil and weather constraints, improving the relevance and effectiveness of the advice.",
+            "utilization_quality": "high",
+            "value_reason": "Ground‑truth context is the primary driver of the specific yield projection and input recommendations."
+          },
+          "A": {
+            "used": true,
+            "value_score": 0.4,
+            "impact_on_response": "Mentions limited fertilizer/organic amendment availability and suggests actions that fit a resource‑constrained situation.",
+            "decision_quality_impact": "Adds modest realism about what the farmer can feasibly implement, but does not deeply explore socioeconomic or affordability aspects.",
+            "utilization_quality": "medium",
+            "value_reason": "Action context is present but only lightly addressed; it improves realism without being central."
+          },
+          "T": {
+            "used": true,
+            "value_score": 0.7,
+            "impact_on_response": "Identifies the crop’s early vegetative stage and the imminent dry spell, prompting timely nitrogen application and moisture‑conserving practices.",
+            "decision_quality_impact": "Helps the farmer time interventions correctly, increasing the likelihood of achieving the projected yield.",
+            "utilization_quality": "high",
+            "value_reason": "Temporal cues directly shape the timing of fertilizer and irrigation recommendations."
+          },
+          "E": {
+            "used": false,
+            "value_score": 0.0,
+            "impact_on_response": "No explicit end‑value context (e.g., profit focus, sustainability goals) is reflected beyond the generic aim of achieving a yield.",
+            "decision_quality_impact": "Absent end‑value framing limits alignment with farmer’s broader objectives.",
+            "utilization_quality": "not_needed",
+            "value_reason": "End‑value context was not required for the specific yield‑estimation question and was therefore omitted."
+          }
+        },
+        "context_utilization_analysis": {
+          "available_context_used": true,
+          "utilization_quality": "high",
+          "properly_used_gate_contexts": [
+            "G",
+            "T"
+          ],
+          "underused_gate_contexts": [
+            "A"
+          ],
+          "overused_or_speculative_contexts": [
+            "E"
+          ],
+          "context_utilization_reason": "The chatbot grounded most of its claims in the supplied soil, location, and weather data (G) and used the crop stage and forecast (T) to tailor recommendations. Action constraints (A) were mentioned but not fully explored, and no unnecessary end‑value speculation was added."
+        },
+        "most_valuable_gate_context": {
+          "category": "G",
+          "reason": "Ground‑truth context supplied the critical soil nutrient deficits and drought outlook that directly lowered the yield estimate and dictated the specific nitrogen and organic amendment rates."
+        },
+        "context_value_ranking": [
+          {
+            "category": "G",
+            "rank": 1,
+            "reason": "Highest contribution to specificity, practical usefulness, and decision quality by defining the biophysical limits of the farm."
+          },
+          {
+            "category": "T",
+            "rank": 2,
+            "reason": "Crucial for timing of interventions; improves actionability and safety of recommendations."
+          },
+          {
+            "category": "A",
+            "rank": 3,
+            "reason": "Adds modest realism about resource limits but is not central to the yield estimate."
+          },
+          {
+            "category": "E",
+            "rank": 4,
+            "reason": "Not needed for a pure yield projection; its absence does not harm the answer."
+          }
+        ],
+        "specificity_improvement": {
+          "without_context_specificity": "moderate (regional range only, no farm‑level detail)",
+          "with_context_specificity": "high (exact yield band, per‑ha and total tonnage, linked to soil and weather conditions)",
+          "improvement_summary": "Ground‑truth and temporal context turned a broad regional estimate into a farm‑specific projection tied to measured deficiencies and forecasted rain.",
+          "specificity_gain_score": 0.5
+        },
+        "actionability_improvement": {
+          "without_context_actionability": "low (generic monitoring advice, no concrete rates or timing)",
+          "with_context_actionability": "high (specific N rates, compost amounts, timing of top‑dress, mulch recommendation)",
+          "improvement_summary": "Context enabled the provision of 4R‑style fertilizer recommendations and immediate moisture‑conserving actions.",
+          "actionability_gain_score": 0.8
+        },
+        "decision_quality_improvement": {
+          "without_context_decision_quality": "limited; farmer must supply more data before making decisions",
+          "with_context_decision_quality": "substantially better; farmer receives a realistic yield expectation and a clear input plan aligned with current constraints",
+          "improvement_summary": "The inferred G and T contexts produce a decision‑support answer that can be acted on immediately, reducing uncertainty.",
+          "decision_quality_gain_score": 0.7
+        },
+        "weak_or_unhelpful_context_usage": [
+          {
+            "gate_category": "E",
+            "issue": "End‑value context was omitted; while not harmful, its absence means the advice does not address possible profit or sustainability goals the farmer might have."
+          }
+        ],
+        "overall_context_value_score": 0.5,
+        "context_value_conclusion": "Inferred GATE context transformed a vague, non‑committal reply into a concrete, actionable yield forecast. Ground‑truth (soil, location, weather) and temporal (crop stage, forecast) information provided the greatest benefit, while action context was only modestly leveraged and end‑value context was unnecessary for this specific question."
+      }
+    },
+    {
       "agent": "final_decision_agent",
-      "action": "generated_final_decision",
+      "action": "generated_context_grounded_final_decision",
       "output": {
         "winner": "agricultural_chatbot_answer",
-        "confidence": 0.9,
-        "final_reason": "The agricultural chatbot answer achieves perfect completeness, providing exhaustive symptom descriptions, stage‑specific diagnostics, detailed testing methods, and comprehensive corrective actions. It also adds strong context (soil type, growth stage, precise fertilizer choices) and higher specificity, outweighing its slightly lower conciseness and minor faithfulness gap. Completeness is the top priority, making this answer the superior response.",
+        "confidence": 0.85,
+        "final_reason": "The agricultural chatbot answer delivers a far more specific, farm‑level yield estimate and concrete, context‑driven management actions, directly addressing the farmer’s request. Although it lacks explicit safety cautions, its superiority in specificity and actionability outweighs the modest safety shortfall, making it the better overall response.",
         "minimum_context_strengths": [
-          "Clear, concise list of key nitrogen‑excess symptoms",
-          "Simple, actionable diagnostic suggestion (leaf/petiole sap test)",
-          "Straightforward corrective steps (stop N, switch to balanced/K‑forward fertilizer)",
-          "Safe guidance without risky recommendations",
-          "Highly concise and focused on the core question"
+          "Provides a realistic regional yield range",
+          "Emphasizes safety by avoiding risky quantitative advice",
+          "Very concise and easy to read"
         ],
         "minimum_context_weaknesses": [
-          "Missing quantitative thresholds for leaf colour or nitrate levels",
-          "Lacks timing and dosage details for corrective fertiliser applications",
-          "No discussion of environmental impacts (leaching, runoff)",
-          "Limited soil‑type considerations beyond fresh manure",
-          "Less specific guidance for different production systems"
+          "Low specificity – no farm‑specific yield estimate",
+          "Minimal actionability – only generic monitoring suggestions",
+          "Fails to incorporate the supplied soil, weather, and crop‑stage data"
         ],
         "agricultural_chatbot_strengths": [
-          "Comprehensive coverage of symptoms, including fruit quality and pest/disease risks",
-          "Stage‑specific diagnostic cue (4–6 weeks post‑transplant) and detailed testing method",
-          "Rich, concrete fertilizer recommendations (low‑N, high‑P/K options, split‑application strategy)",
-          "Additional cultural practices (pruning, calcium management, watering timing) for safety",
-          "Strong context gain with soil type, growth stage, and weather considerations",
-          "High specificity and practical usefulness for field decisions"
+          "High specificity with concrete per‑ha and total yield numbers",
+          "Actionable 4R‑style fertilizer and organic amendment recommendations",
+          "Effectively leverages ground‑truth (soil, weather) and temporal context",
+          "Addresses water stress and provides immediate mitigation steps"
         ],
         "agricultural_chatbot_weaknesses": [
-          "Slightly less concise due to extensive management advice",
-          "Some vague statements (nitrate strip interpretation, watering impact) lacking quantitative detail",
-          "Assumes sandy soil in one claim, reducing faithfulness for other soil types",
-          "Exact dosage rates for suggested fertilizers are not provided"
+          "Safety risk awareness is low – no warning about potential nitrogen over‑application",
+          "Yield numbers are weakly supported and carry some risk",
+          "Slightly less concise due to detailed dosage information"
         ],
         "most_influential_metrics": [
-          "completeness",
-          "context_gain",
           "specificity",
-          "practical_usefulness"
+          "actionability",
+          "safety_risk_awareness"
         ],
-        "context_impact_summary": "By incorporating soil type, crop stage, precise fertilizer choices, and additional cultural practices, the agricultural chatbot answer transforms generic guidance into a tailored, actionable plan for tomato growers, markedly improving relevance and usefulness over the minimal‑context response.",
-        "final_judgement_summary": "The agricultural chatbot answer wins due to its superior completeness and richer contextual detail, delivering a more thorough and practical solution despite a modest loss in conciseness."
+        "most_valuable_contexts": [
+          "Ground‑truth context (soil nutrient deficits, drought forecast)",
+          "Temporal context (early vegetative stage, imminent dry spell)"
+        ],
+        "context_impact_summary": "Incorporating the supplied soil and weather data shifted the response from a vague regional range to a tailored yield projection (1.0‑1.3 t ha⁻¹) with precise nitrogen and organic amendment rates, directly improving decision support for the farmer.",
+        "specificity_change_summary": "Without context the answer offered only a broad 1.5‑2.5 t ha⁻¹ range; with context it provided a narrowed, farm‑specific estimate (1.0‑1.3 t ha⁻¹ and total tonnage for 3 ha), linking the numbers to observed deficiencies and forecasted drought.",
+        "final_judgement_summary": "The context‑rich answer wins because its specificity and actionable guidance far exceed the generic, safe but non‑committal reply, despite a modest safety oversight."
       }
     }
   ],

@@ -1,0 +1,125 @@
+{
+  "id": 1,
+  "question": "I am a sunflower grower producing for high quality sunflower oil. Its August first week. How much Nitrogen fertilizer should I apply for greater yield and high quality oil?",
+  "main_question_1_without_vs_with_context": {
+    "without_context_summary": "Answer A gives a generic, region‑wide recommendation: total N 60‑90 kg ha⁻¹, top‑dress 30‑45 kg ha⁻¹, using urea or calcium nitrate, with safety ceiling 120 kg ha⁻¹ and simple monitoring tips. It relies only on the month and crop, without any site‑specific soil, weather, or farmer‑goal details.",
+    "with_context_summary": "Answer B incorporates inferred ground‑truth context (slightly acidic clay‑loam, soil N ≈ 0.15 %), a specific field size (3 ha), a short‑term rain forecast, and a timing cue (“apply today or within a couple of days”). It also references the farmer’s goal of premium oil and adds a brief herbicide safety note.",
+    "response_change_summary": "The context‑rich answer narrows the nitrogen rate to ~30 kg N ha⁻¹ (≈90 kg N total for 3 ha) and adds application depth, runoff mitigation, and a weather‑timed window, whereas the minimum‑context answer provides a broader 60‑90 kg ha⁻¹ range with generic instructions. The added soil and weather details increase specificity but introduce an inaccurate May rain forecast and optional herbicide advice."
+  },
+  "main_question_2_which_gate_context_added_most_value": {
+    "most_valuable_gate_context": {
+      "category": "G",
+      "reason": "Soil characteristics and crop stage directly altered the nitrogen dosage and application method, providing the greatest boost to specificity, safety, and decision quality."
+    },
+    "context_value_ranking": [
+      {
+        "category": "G",
+        "rank": 1,
+        "reason": "Provided concrete, site‑specific data that changed the dosage and method."
+      },
+      {
+        "category": "T",
+        "rank": 2,
+        "reason": "Timing advice could be useful but was inaccurate, limiting its benefit."
+      },
+      {
+        "category": "E",
+        "rank": 3,
+        "reason": "Reinforced the farmer’s goal but added no actionable detail."
+      },
+      {
+        "category": "A",
+        "rank": 4,
+        "reason": "No action‑context was needed for the question."
+      }
+    ],
+    "overall_context_value_score": 0.53,
+    "context_value_conclusion": "Inferred GATE context modestly improved the answer by tailoring nitrogen dosage to the field’s soil conditions (G), but the benefit was partially offset by inaccurate temporal information (T) and vague end‑value statements (E). Action context (A) was unnecessary. Overall, ground‑truth context contributed the most value, while the other contexts were either underused or over‑speculative."
+  },
+  "main_question_3_how_context_improved_specificity_and_usefulness": {
+    "specificity_improvement": {
+      "without_context_specificity": "high – provides a clear dosage range and method but remains generic for the region.",
+      "with_context_specificity": "moderate‑high – narrows dosage to a single rate and adds soil depth, runoff, and timing details, though muddied by an irrelevant rain forecast.",
+      "improvement_summary": "Ground‑truth soil data and crop stage increased specificity of the N rate; temporal data attempted to add timing specificity but introduced inconsistency.",
+      "specificity_gain_score": 0.6
+    },
+    "practical_usefulness_improvement": null,
+    "decision_quality_improvement": {
+      "without_context_decision_quality": "moderate – safe generic recommendation suitable for many farms.",
+      "with_context_decision_quality": "moderate‑high – soil‑based rate adjustment improves nutrient use efficiency, but the erroneous forecast and optional herbicide advice reduce overall reliability.",
+      "improvement_summary": "Ground‑truth context raised decision quality by matching N supply to soil status; temporal mis‑alignment and speculative herbicide suggestion offset some gains.",
+      "decision_quality_gain_score": 0.55
+    }
+  },
+  "main_question_4_context_utilization_quality": {
+    "gate_context_impact": {
+      "G": {
+        "used": true,
+        "value_score": 0.9,
+        "impact_on_response": "Introduced soil type, acidity, and measured soil N, which justified a lower N rate (30 kg ha⁻¹) and the recommendation to incorporate fertilizer shallowly to avoid runoff.",
+        "decision_quality_impact": "Ground‑truth context improved dosage precision and method choice, aligning the recommendation with the field’s nutrient status and reducing risk of over‑application.",
+        "utilization_quality": "high",
+        "value_reason": "Soil and crop‑stage data directly informed a more tailored N recommendation, markedly enhancing relevance and safety."
+      },
+      "A": {
+        "used": false,
+        "value_score": 0.0,
+        "impact_on_response": "No socioeconomic, resource‑availability, or cost constraints were mentioned, so action context was absent.",
+        "decision_quality_impact": "None; the answer does not address farmer budget, labor capacity, or scale considerations.",
+        "utilization_quality": "not_needed",
+        "value_reason": "The question did not request socioeconomic or resource‑limit information, so action context was unnecessary."
+      },
+      "T": {
+        "used": true,
+        "value_score": 0.4,
+        "impact_on_response": "Added a short‑term rain forecast and a timing directive to apply within a couple of days before the “heaviest rains”.",
+        "decision_quality_impact": "Temporal context could improve timing but the forecast refers to May, not August, making the advice potentially misleading and reducing safety.",
+        "utilization_quality": "low",
+        "value_reason": "Timing information was partially relevant but inaccurate, so it added limited value and introduced risk."
+      },
+      "E": {
+        "used": true,
+        "value_score": 0.3,
+        "impact_on_response": "Repeated the farmer’s goal of high‑quality oil and linked nitrogen management to oil quality, plus a vague claim that the split‑application will boost yields.",
+        "decision_quality_impact": "Goal alignment reinforces relevance but the statements are generic and do not change the concrete recommendation.",
+        "utilization_quality": "medium",
+        "value_reason": "End‑value context reminded the purpose of the advice but did not materially improve the technical recommendation."
+      }
+    },
+    "context_utilization_analysis": {
+      "available_context_used": true,
+      "utilization_quality": "medium",
+      "properly_used_gate_contexts": [
+        "G"
+      ],
+      "underused_gate_contexts": [
+        "A"
+      ],
+      "overused_or_speculative_contexts": [
+        "T",
+        "E"
+      ],
+      "context_utilization_reason": "The chatbot correctly leveraged ground‑truth soil and crop‑stage data to refine the nitrogen rate, but it over‑extended temporal context with an inaccurate May rain forecast and added a generic herbicide tip that was not asked for. End‑value context was present but did not enhance decision quality beyond restating the goal."
+    },
+    "weak_or_unhelpful_context_usage": [
+      {
+        "gate_category": "T",
+        "issue": "Rainfall forecast refers to May, not the August period asked about, making the timing advice potentially unsafe."
+      },
+      {
+        "gate_category": "E",
+        "issue": "Generic statement about “higher yields” is vague and does not add actionable insight."
+      },
+      {
+        "gate_category": "T",
+        "issue": "Herbicide recommendation lacks product specifics and safety details, introducing risk."
+      }
+    ]
+  },
+  "final_outcome": {
+    "winner": "minimum_context_answer",
+    "confidence": 0.95,
+    "reason": "The minimum‑context answer scores higher on all key metrics (specificity, actionability, safety awareness, conciseness) and provides a clear, safe, and actionable nitrogen recommendation without unsupported or inaccurate information. The agricultural chatbot answer, while using some site‑specific data, includes an incorrect May rain forecast, unnecessary herbicide advice, and assumes a field size not asked for, reducing its overall quality."
+  },
+  "errors": []
+}

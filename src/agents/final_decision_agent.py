@@ -9,6 +9,7 @@ class FinalDecisionAgent:
 
     def run(self, state: Dict[str, Any]) -> Dict[str, Any]:
         question = state["question"]
+        context_information = state.get("context_information", "")
         planner_output = state.get("planner_output", {})
         claims = state.get("claims", {})
         evidence_check = state.get("evidence_check", {})
@@ -24,26 +25,33 @@ You are NOT answering the farmer's question.
 You are judging which answer is better.
 
 Use the following evidence:
-1. Planner output
-2. Extracted claims
-3. Evidence checking results
-4. Metric scores and reasons
-5. Context impact analysis
+1. Context Information
+2. Planner output
+3. Extracted claims
+4. Evidence checking results
+5. Metric scores and reasons
+6. Context impact analysis
+
+IMPORTANT CONTEXT-GROUNDED DECISION RULE:
+The agricultural chatbot answer was generated with weather, seasonal, soil, predicted soil type, and crop growth stage context.
+Do NOT penalize the agricultural chatbot answer for mentioning soil, weather, seasonal, nutrient, or crop-stage information if that information is supported by the Context Information.
+Only penalize added context if it is unsupported, contradicted by the context, unsafe, vague, or irrelevant.
 
 Decision criteria:
-- Completeness is most important.
-- Practical usefulness is second most important.
-- Faithfulness is third most important.
-- Conciseness is fourth most important.
+- Specificity is most important.
+- Actionability is second most important.
+- Conciseness is third most important.
 - Context impact is central to this study.
-- Prefer the answer where added context improves specificity, practical usefulness, and decision support.
-- Penalize added context if it is unsupported, vague, unsafe, or unrelated.
+- Prefer the answer where added context improves specificity, actionability, safety, and decision support.
+- Penalize added context only if it is unsupported, vague, unsafe, unrelated, or contradicts the provided context.
 - Do not choose an answer only because it is longer.
 - Do not choose an answer only because it has more details.
-- Prefer the answer that is more complete, useful, faithful, safe, specific, and context-aware.
 
 Question:
 {question}
+
+Context Information:
+{context_information}
 
 Planner Output:
 {planner_output}
@@ -83,7 +91,7 @@ Return valid JSON only in this exact structure:
   "most_valuable_contexts": [
     "context type or context detail"
   ],
-  "context_impact_summary": "explain how added context changed the answer quality",
+  "context_impact_summary": "explain how added context changed answer quality",
   "specificity_change_summary": "explain how specificity changed between the two answers",
   "final_judgement_summary": "short final summary"
 }}
@@ -93,7 +101,7 @@ Return valid JSON only in this exact structure:
 
         trace_entry = {
             "agent": self.name,
-            "action": "generated_final_decision",
+            "action": "generated_context_grounded_final_decision",
             "output": result,
         }
 

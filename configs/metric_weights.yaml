@@ -1,15 +1,5 @@
-completeness: 0.24
-
-practical_usefulness: 0.22
-
-faithfulness: 0.18
-
-conciseness: 0.12
-
-safety_risk_awareness: 0.10
-
-context_gain: 0.08
-
-specificity: 0.04
-
+specificity: 0.30
+actionability: 0.35
+safety_risk_awareness: 0.20
+conciseness: 0.13
 comparative_winner_reasoning: 0.02

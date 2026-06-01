@@ -1,12 +1,9 @@
 from typing import Any, Dict
 
-from metrics.completeness import CompletenessMetric
-from metrics.practical_usefulness import PracticalUsefulnessMetric
-from metrics.faithfulness import FaithfulnessMetric
+from metrics.specificity import SpecificityMetric
+from metrics.actionability import ActionabilityMetric
 from metrics.conciseness import ConcisenessMetric
 from metrics.safety_risk_awareness import SafetyRiskAwarenessMetric
-from metrics.context_gain import ContextGainMetric
-from metrics.specificity import SpecificityMetric
 from metrics.comparative_winner_reasoning import ComparativeWinnerReasoningMetric
 
 
@@ -17,17 +14,24 @@ class MetricToolAgent:
         self.judge_client = judge_client
 
         self.metric_tools = {
-            "completeness": CompletenessMetric(judge_client),
-            "practical_usefulness": PracticalUsefulnessMetric(judge_client),
-            "faithfulness": FaithfulnessMetric(judge_client),
+            "specificity": SpecificityMetric(judge_client),
+            "actionability": ActionabilityMetric(judge_client),
             "conciseness": ConcisenessMetric(judge_client),
             "safety_risk_awareness": SafetyRiskAwarenessMetric(judge_client),
-            "specificity": SpecificityMetric(judge_client),
-            "context_gain": ContextGainMetric(judge_client),
-            "comparative_winner_reasoning": ComparativeWinnerReasoningMetric(judge_client),
+            "comparative_winner_reasoning": ComparativeWinnerReasoningMetric(
+                judge_client
+            ),
         }
 
-    def _safe_run_single_metric(self, metric, question: str, answer: str) -> Dict[str, Any]:
+    def _safe_run_single_metric(
+        self,
+        metric,
+        question: str,
+        answer: str,
+        latitude=None,
+        longitude=None,
+        date=None,
+    ) -> Dict[str, Any]:
         try:
             return metric.evaluate(question, answer)
         except Exception as error:
@@ -49,6 +53,7 @@ class MetricToolAgent:
                 minimum_context_answer,
                 agricultural_chatbot_answer,
             )
+
         except Exception as error:
             return {
                 "score": 0.0,
@@ -63,6 +68,10 @@ class MetricToolAgent:
 
         selected_metrics = state.get("selected_metrics", [])
 
+        latitude = state.get("latitude")
+        longitude = state.get("longitude")
+        date = state.get("date")
+
         metric_results = {}
 
         for metric_name in selected_metrics:
@@ -74,24 +83,33 @@ class MetricToolAgent:
                 }
                 continue
 
-            if metric_name in ["context_gain", "comparative_winner_reasoning"]:
-                metric_results[metric_name] = self._safe_run_pairwise_metric(
-                    metric,
-                    question,
-                    minimum_context_answer,
-                    agricultural_chatbot_answer,
+            if metric_name == "comparative_winner_reasoning":
+                metric_results[metric_name] = (
+                    self._safe_run_pairwise_metric(
+                        metric,
+                        question,
+                        minimum_context_answer,
+                        agricultural_chatbot_answer,
+                    )
                 )
+
             else:
                 metric_results[metric_name] = {
                     "minimum_context_answer": self._safe_run_single_metric(
                         metric,
                         question,
                         minimum_context_answer,
+                        latitude=latitude,
+                        longitude=longitude,
+                        date=date,
                     ),
                     "agricultural_chatbot_answer": self._safe_run_single_metric(
                         metric,
                         question,
                         agricultural_chatbot_answer,
+                        latitude=latitude,
+                        longitude=longitude,
+                        date=date,
                     ),
                 }
 

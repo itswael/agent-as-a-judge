@@ -1,81 +1,130 @@
 {
   "id": 0,
-  "question": "Are there any other organic fertilizers that work well with sesame?",
-  "question_type": "organic_fertilizer_recommendation",
-  "risk_level": "low",
-  "selected_metrics": [
-    "completeness",
-    "practical_usefulness",
-    "faithfulness",
-    "context_gain",
-    "comparative_winner_reasoning",
-    "safety_risk_awareness",
-    "specificity",
-    "conciseness"
-  ],
-  "metric_scores": {
-    "completeness": {
-      "minimum_context_answer": 1.0,
-      "agricultural_chatbot_answer": 1.0
+  "question": "It is the middle of June and my maize field is infested with Fall Army Worm. How can I control it?",
+  "final_decision": {
+    "winner": "minimum_context_answer",
+    "confidence": 0.75,
+    "reason": "Both answers are equally specific, but the minimum‑context answer provides higher actionability (score 1.0 vs 0.9) and perfect safety awareness (score 1.0 vs 0.8). The agricultural chatbot answer, while well‑grounded in context, introduces a risky recommendation (chlorpyrifos) and contains vague safety statements, which lowers its overall suitability. Therefore, the answer with higher actionable and safer guidance is preferred."
+  },
+  "metric_reasoning": {
+    "specificity": {
+      "minimum_context": {
+        "score": 0.8,
+        "reason": "The answer directly addresses the farmer's question about controlling Fall Armyworm in mid‑June maize, covering scouting, hand‑picking, biological (Bt, neem) and chemical options, economic threshold, timing, and follow‑up. It provides concrete details such as the threshold (≈1 larva per 10 m²), repeat interval (7‑10 days), and product classes. However, it lacks precise dosage rates, specific product names, and exact pre‑harvest intervals, preventing a perfect specificity score."
+      },
+      "agricultural_chatbot": {
+        "score": 0.8,
+        "reason": "The answer directly addresses the FAW control question with concrete details: crop stage, infestation threshold, specific biopesticide options and dosage (neem 2% v/v, Bt at label rate), application timing, rain considerations, a synthetic alternative (lambda‑cyhalothrin/chlorpyrifos) and safety notes. It also mentions soil pH, nitrogen management, sanitation, and future resistant hybrid planting. The only shortfall is the lack of exact dosage or rate for the synthetic pesticide, which prevents a perfect score."
+      }
     },
-    "practical_usefulness": {
-      "minimum_context_answer": 0.8,
-      "agricultural_chatbot_answer": 0.9
-    },
-    "faithfulness": {
-      "minimum_context_answer": 1.0,
-      "agricultural_chatbot_answer": 0.5
-    },
-    "context_gain": {
-      "score": 1.0,
-      "winner": "agricultural_chatbot_answer"
+    "actionability": {
+      "minimum_context": {
+        "score": 1.0,
+        "reason": "The answer gives clear, step‑by‑step field actions: scouting, hand‑picking, biological control (Bt, neem) with timing (early instars, repeat 7‑10 days), economic threshold, chemical options with right source, recommended timing (cooler part of day) and guidance to follow label dose, rotate modes of action, and post‑treatment scouting. It addresses Right Source, Right Rate (via label), Right Time, and Right Place, and uses the June/Kitale context to improve timing and feasibility. All guidance is practical and implementable for the farmer."
+      },
+      "agricultural_chatbot": {
+        "score": 0.9,
+        "reason": "The answer gives clear, field‑level steps: scouting threshold, specific biopesticide options (neem 2% v/v, Bt at label rate), timing (early morning/late afternoon, keep rain off 24 h), application method (foliar spray), and safety notes. It also mentions a synthetic fallback, integrates soil moisture context, and adds follow‑up actions (destroy infested plants, clean residues, plant resistant hybrid). All relevant 4Rs are addressed, though exact Bt dosage isn’t listed beyond “label rate,” preventing a perfect 1.0."
+      }
     },
     "comparative_winner_reasoning": {
       "score": 0.8,
-      "winner": "agricultural_chatbot_answer"
+      "winner": "agricultural_chatbot_answer",
+      "reason": "Both answers are specific, actionable, and safety‑aware, but Answer B adds relevant field context (growth stage, imminent rain, soil pH, nitrogen management) that directly shapes timing and choice of control measures, enhancing decision support without unnecessary verbosity. Answer A is thorough but less tailored to the farmer's immediate conditions."
     },
     "safety_risk_awareness": {
-      "minimum_context_answer": 1.0,
-      "agricultural_chatbot_answer": 1.0
-    },
-    "specificity": {
-      "minimum_context_answer": 0.8,
-      "agricultural_chatbot_answer": 0.9
+      "minimum_context": {
+        "score": 1.0,
+        "reason": "The answer provides comprehensive, low‑risk recommendations, emphasizes scouting, hand‑picking, biological controls, and only suggests chemicals with clear cautions (label rate, pre‑harvest interval, resistance management). It warns about timing, resistance, and includes field hygiene, avoiding unsafe or over‑application advice."
+      },
+      "agricultural_chatbot": {
+        "score": 0.8,
+        "reason": "The answer provides appropriate first‑line biopesticide options, timing advice, PPE recommendations, and cautions about rain, over‑fertilisation, and pre‑harvest intervals, showing good risk awareness. However, it also suggests using chlorpyrifos where allowed, a highly toxic organophosphate, which introduces a significant safety concern despite the disclaimer."
+      }
     },
     "conciseness": {
-      "minimum_context_answer": 0.8,
-      "agricultural_chatbot_answer": 0.5
+      "minimum_context": {
+        "score": 0.95,
+        "reason": "The answer provides all necessary steps—scouting, hand‑picking, biological control, threshold‑based chemical use, timing, resistance management, and hygiene—without irrelevant or repetitive information. It is detailed enough for decision‑making yet remains practical and focused, only adding context that directly supports the farmer's actions."
+      },
+      "agricultural_chatbot": {
+        "score": 1.0,
+        "reason": "The answer provides all necessary, decision‑supportive details (stage, rain timing, scouting threshold, biopesticide and synthetic options, safety, soil context, sanitation, future resistant varieties) without repetition or irrelevant information. It is practical, easy to follow, and balances brevity with completeness."
+      }
     }
   },
-  "claim_summary": "Answer A gives a concise set of organic fertilizer options with clear dosage and timing notes, while Answer B provides a richer, more detailed collection of recommendations covering application methods, safety precautions, additional amendments like biochar, and explicit yield‑related timing advice.",
-  "evidence_summary": "Both answers present sound organic fertilizer options for sesame, but the agricultural chatbot answer offers greater breadth (including biochar and a mineral starter) while also containing more vague and weakly supported statements. The minimum‑context answer is more concise and its claims are uniformly well‑supported, though it also omits dosage specifics. Overall, the chatbot answer has stronger completeness but slightly higher risk of ambiguity, whereas the minimum‑context answer is more consistently evidence‑based with fewer uncertainties.",
-  "winner": "agricultural_chatbot_answer",
-  "confidence": 0.75,
-  "final_reason": "Both answers are equally complete, but the agricultural chatbot answer provides higher practical usefulness, richer contextual details, and greater specificity, which outweigh its lower faithfulness and conciseness. Since practical usefulness is the second‑most important criterion and it scores higher there, it is the overall better response.",
-  "context_impact_summary": "The agricultural chatbot answer enriches the basic list of organic fertilizers with soil‑type considerations, weather‑related tips, and innovative amendments like biochar, giving the farmer a more nuanced decision framework. This added context improves practical applicability despite some extra, less‑verified content.",
-  "minimum_context_strengths": [
-    "Lists a solid range of organic fertilizers relevant to sesame",
-    "Clear safety warnings about fresh manure and excess nitrogen",
-    "Relatively concise and easy to read",
-    "Claims are well‑supported by agronomic evidence"
-  ],
-  "minimum_context_weaknesses": [
-    "Missing quantitative application rates for many inputs",
-    "Limited contextual information (soil type, weather conditions)",
-    "Some recommendations are vague (e.g., \"modest dose\")",
-    "Less detailed timing and placement guidance compared to the other answer"
-  ],
-  "agricultural_chatbot_strengths": [
-    "Higher practical usefulness with actionable timing and placement tips",
-    "Adds valuable context such as soil type, dry‑season advice, and biochar use",
-    "More specific guidance on incorporation depth and seed‑row methods",
-    "Higher specificity scores and broader set of organic (and supplemental) options"
-  ],
-  "agricultural_chatbot_weaknesses": [
-    "Includes non‑organic inputs (bone meal, rock phosphate, mineral starter) that dilute the organic focus",
-    "Several statements are vague or weakly supported (e.g., biochar charging, fastest early response claim)",
-    "Less concise; the response is longer and contains extra details beyond the core question",
-    "Faithfulness score is lower due to inclusion of less‑verified recommendations"
-  ],
+  "context_impact": {
+    "overall_context_value_score": 0.78,
+    "most_valuable_gate_context": {
+      "category": "T",
+      "reason": "Rain forecast and growth‑stage timing directly dictate when and how sprays will work, making temporal context the key driver of specificity, safety and practical usefulness."
+    },
+    "context_value_ranking": [
+      {
+        "category": "T",
+        "rank": 1,
+        "reason": "Timing of application under rain conditions is critical for efficacy and safety."
+      },
+      {
+        "category": "G",
+        "rank": 2,
+        "reason": "Soil pH and crop stage refine product selection and fertilizer advice."
+      },
+      {
+        "category": "A",
+        "rank": 3,
+        "reason": "Farm size and resource constraints shape the recommendation toward low‑cost biopesticides."
+      },
+      {
+        "category": "E",
+        "rank": 4,
+        "reason": "Long‑term sustainability goals are useful but not central to the immediate pest‑control query."
+      }
+    ],
+    "why_context_matters": "Inferred GATE context substantially refines the pest‑control advice. Temporal data (rain forecast) provides the biggest boost by dictating safe and effective spray windows. Ground‑truth data (crop stage, soil pH) further tailors product choice and fertilizer guidance. Action context is acknowledged but could be deeper, while end‑value context adds peripheral, somewhat speculative suggestions. Overall, the context‑rich answer offers higher decision quality without compromising safety."
+  },
+  "context_change": {
+    "without_context": "Answer A gives a solid integrated‑pest‑management plan for Fall Armyworm in mid‑June maize, covering scouting, hand‑picking, Bt or neem bio‑insecticides, economic‑threshold‑based chemical options, timing (cooler part of day), resistance management and post‑treatment scouting. It lacks any reference to the farmer’s specific crop stage, recent weather, farm size, soil conditions or longer‑term goals.",
+    "with_context": "Answer B tailors the advice to the inferred context: the maize is at knee‑high to early tasseling, a nine‑day rainy spell is forecast, the soil is slightly acidic (pH 5.8) and holds water well, and the farm is a small‑scale (3 ha) operation. Recommendations therefore stress early‑instar biopesticides (neem 2 % v/v, Bt at label rate), timing the spray for dry periods within 24 h of rain, avoiding extra nitrogen, and optionally using a short‑acting synthetic only if infestation is heavy. It also adds a future‑oriented suggestion to plant a resistant hybrid.",
+    "response_change": "The context‑rich answer narrows the guidance to the farmer’s exact growth stage, imminent rain, soil chemistry and farm size, resulting in more precise dosage, timing and fertilizer advice. The minimum‑context answer is broader, offering generic thresholds and product classes without these fine‑tuned adjustments."
+  },
+  "specificity_and_usefulness": {
+    "specificity_improvement": {
+      "without_context_specificity": "moderate (score 0.8) – generic thresholds and product classes, no stage‑ or weather‑specific details.",
+      "with_context_specificity": "moderate‑high (score ~0.9) – includes exact growth stage, rain window, soil pH, and precise neem dosage.",
+      "improvement_summary": "Temporal and ground‑truth context add concrete timing windows and dosage numbers, turning a generic plan into a field‑specific protocol.",
+      "specificity_gain_score": 0.1
+    },
+    "actionability_improvement": {
+      "without_context_actionability": "high (score 1.0) – clear step‑by‑step actions, all 4Rs covered.",
+      "with_context_actionability": "high (score 0.9) – equally clear steps but adds context‑driven timing and dosage; slight loss due to omission of exact synthetic pesticide rate.",
+      "improvement_summary": "Context adds nuance (rain‑avoidance, soil‑aware nitrogen advice) but does not increase the number of actionable steps; overall actionability remains strong.",
+      "actionability_gain_score": -0.1
+    }
+  },
+  "strengths_and_weaknesses": {
+    "minimum_context_strengths": [
+      "High specificity with clear thresholds and product classes",
+      "Excellent actionability – step‑by‑step IPM actions covering scouting, hand‑picking, biocontrol, chemical use, timing and resistance management",
+      "Strong safety awareness – no hazardous chemicals suggested, clear label and pre‑harvest interval guidance",
+      "Concise without unnecessary detail"
+    ],
+    "minimum_context_weaknesses": [
+      "Does not use the provided crop‑stage, weather or soil context, making the advice less tailored",
+      "Some quantitative claims (peak timing, population reduction) are weakly supported or vague",
+      "Lacks precise dosage rates for specific products"
+    ],
+    "agricultural_chatbot_strengths": [
+      "Effectively incorporates ground‑truth context (crop stage, rain forecast, soil pH) to tailor timing and product choice",
+      "Very concise and well‑structured",
+      "Adds useful agronomic advice on nitrogen management and future resistant hybrids"
+    ],
+    "agricultural_chatbot_weaknesses": [
+      "Suggests chlorpyrifos, a highly toxic organophosphate, lowering safety risk awareness",
+      "Some statements are vague (e.g., “break down quickly in moist soil”)",
+      "Synthetic pesticide dosage not provided, reducing actionability slightly",
+      "End‑value suggestion (planting resistant hybrid) is speculative for the immediate problem"
+    ]
+  },
   "errors": []
 }

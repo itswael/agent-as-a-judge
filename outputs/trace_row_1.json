@@ -1,354 +1,440 @@
 {
   "id": 1,
-  "question": "Can I still add urea to my rice when it has started producing?",
-  "minimum_context_answer": "If the rice has already formed heads (panicles) and you can see flowering or grains starting to fill, do not add urea now. At this stage the crop has taken up most of the nitrogen it needs, so late urea gives little or no yield benefit and can instead cause lodging, increase disease and pest pressure, and delay maturity.\n\nThe only time a final nitrogen dose helps is just before the head emerges—at panicle initiation/early booting—when the panicle is still inside the stem and not yet visible. If your crop is already “producing” in the sense that heads are out or grains are forming, it’s too late for urea.\n\nFor future crops, plan urea in splits: a basal dose at planting/transplanting, another during active tillering, and the last at panicle initiation. Avoid applying nitrogen after heading.",
-  "agricultural_chatbot_answer": "You can still add urea if your rice is at panicle initiation or booting and the heads are just about to emerge, but once most panicles have come out and flowering/grain filling has begun, it’s better not to. A small nitrogen dose at booting can help grain number and size; after flowering it won’t increase yield, and it can cause lodging, more disease/insect pressure, and delay maturity.\n\nA quick way to decide: feel the top stem (the flag leaf sheath). If the panicle is still inside (booting) or only just emerging and you don’t yet see open flowers, you’re in the last useful window for a light topdress. If most heads are out and you can see flowering or small grains, skip the urea.\n\nIf you are still within that window and the crop looks a bit pale or thin, apply a light topdress—about one 50‑kg bag of urea per hectare (roughly half a bag per acre). Do not exceed this at this stage. How you apply matters:\n- In lowland/flooded rice: apply when the water is shallow or after briefly draining; broadcast in the cool of the day and re-flood lightly after a day or so. Avoid spreading onto deep standing water at midday to reduce losses.\n- In upland/non-flooded rice: place or lightly incorporate urea a little away from the plant base and cover it; apply just before a light rain or irrigate so it dissolves into the root zone. Avoid placing granules on wet leaves.\n\nWith your sandy loam soil and the generally dry seasonal outlook, only apply if you can ensure some moisture from irrigation or imminent light rain; otherwise the urea can be lost and won’t pay back. Also, avoid putting it down right before a heavy storm that could wash it away.\n\nIf the crop has already flowered and is filling grain, don’t add granular urea now. Focus instead on steady water management, weed and pest control, and plan to improve nitrogen management next crop by splitting nitrogen earlier (basal, active tillering, and panicle initiation) and building soil organic matter with compost/manure and residue retention so the crop has enough nitrogen before this late stage.",
-  "question_type": "fertilizer_timing",
+  "question": "I am a sunflower grower producing for high quality sunflower oil. Its August first week. How much Nitrogen fertilizer should I apply for greater yield and high quality oil?",
+  "minimum_context_answer": "In the Aurangabad region, sunflower plants that are already in the first week of August are typically at the early‑bud to early‑flower stage. At this point the crop can still benefit from a top‑dressing of nitrogen, which is the most important nutrient for boosting seed size and overall yield, while also helping to maintain a good oil‑to‑protein ratio.\n\nFor a high‑quality oil crop, aim for a total nitrogen application of **60 – 90 kg N ha⁻¹**. Because the basal dose was already applied at sowing, the remaining nitrogen should be supplied now as a split top‑dress. Use about **30 – 45 kg N ha⁻¹** (≈ 65–75 % of the total recommended rate) in the form of urea (46 % N) or calcium nitrate, applied uniformly over the field and incorporated lightly with a shallow harrow or by irrigation. This timing coincides with rapid seed‑filling and will encourage larger kernels without diluting oil content.\n\nDo not exceed 120 kg N ha⁻¹, as excessive nitrogen can increase protein at the expense of oil quality and may promote lodging in the later stages. After application, watch the foliage: a healthy deep‑green color indicates adequate N, while yellowing suggests a shortfall. If possible, a quick leaf‑N test or chlorophyll meter reading can fine‑tune the rate, but the 60‑90 kg N ha⁻¹ range is a reliable guideline for most fields in Chhatrapati Sambhajinagar.",
+  "agricultural_chatbot_answer": "You’re now in the early‑flowering phase of your sunflower crop – the stage when a side‑dress of nitrogen gives the biggest boost to seed set and oil quality. Because the soil is a slightly acidic clay‑loam with modest organic matter and total nitrogen around 0.15 %, a second nitrogen application is needed, but it should be moderate to avoid excess vegetative growth that can lower oil quality.\n\nFor a 3‑ha field, aim for about 30 kg of nitrogen per hectare at this stage, which works out to roughly 90 kg of nitrogen total. Using common urea (46 % N), that means applying about 195 kg of urea (≈ 65 kg per hectare). Spread the granules evenly and incorporate them into the top 5–7 cm, or place them in shallow furrows, to reduce the risk of runoff now that a rainy spell (about 70 mm over the next nine days, with a peak on 29 May) is on the way. If you can apply today or within the next couple of days, the soil will still be able to absorb the nutrient before the heaviest rains arrive.\n\nKeep an eye on the field for any signs of lodging as the soil stays moist, and if you notice excessive weed growth, a light post‑emergence herbicide can be used safely after the nitrogen has been incorporated. This split‑application strategy should help you reach higher yields while maintaining the quality needed for premium sunflower oil.",
+  "question_type": "fertilizer recommendation",
   "risk_level": "medium",
   "selected_metrics": [
-    "completeness",
-    "practical_usefulness",
-    "faithfulness",
-    "context_gain",
+    "specificity",
+    "actionability",
     "comparative_winner_reasoning",
     "safety_risk_awareness",
-    "specificity",
     "conciseness"
   ],
+  "agronomic_categories": [
+    "Nutrition"
+  ],
+  "benchmark_metric_mapping": {
+    "agronomic_specificity": "specificity",
+    "field_actionability": "actionability",
+    "information_efficiency": "conciseness",
+    "agronomic_risk_awareness": "safety_risk_awareness",
+    "comparative_decision_quality": "comparative_winner_reasoning"
+  },
   "planner_output": {
-    "question_type": "fertilizer_timing",
+    "question_type": "fertilizer recommendation",
+    "agronomic_categories": [
+      "Nutrition"
+    ],
     "risk_level": "medium",
     "selected_metrics": [
-      "completeness",
-      "practical_usefulness",
-      "faithfulness",
-      "context_gain",
+      "specificity",
+      "actionability",
       "comparative_winner_reasoning",
       "safety_risk_awareness",
-      "specificity",
       "conciseness"
     ],
+    "benchmark_metric_mapping": {
+      "agronomic_specificity": "specificity",
+      "field_actionability": "actionability",
+      "information_efficiency": "conciseness",
+      "agronomic_risk_awareness": "safety_risk_awareness",
+      "comparative_decision_quality": "comparative_winner_reasoning"
+    },
     "metric_rationale": {
-      "completeness": "Ensures each answer addresses all relevant aspects of urea application timing, dosage, and alternatives.",
-      "practical_usefulness": "Checks that the advice can be readily applied by the farmer in the field.",
-      "faithfulness": "Verifies that the information aligns with established agronomic science for rice nitrogen management.",
-      "context_gain": "Evaluates whether the answer adds useful context beyond the simple question (e.g., future planning, soil considerations).",
-      "comparative_winner_reasoning": "Provides a structured justification for selecting the better answer based on the other metrics.",
-      "safety_risk_awareness": "Identifies any mention of risks such as lodging, disease, environmental loss, or improper dosage.",
-      "specificity": "Assesses detail on timing (panicle initiation vs. heading), amount of urea, application method, and soil/irrigation conditions.",
-      "conciseness": "Ensures the answer is clear and not overly verbose for a straightforward question."
+      "specificity": "The question asks for a precise nitrogen rate; we must verify each answer provides exact, context‑aware dosage.",
+      "actionability": "The answer must give clear steps the grower can follow to apply the fertilizer correctly.",
+      "comparative_winner_reasoning": "We need to judge which answer presents a better overall recommendation based on agronomic soundness.",
+      "safety_risk_awareness": "Nitrogen application carries environmental and crop‑quality risks; the answer should acknowledge limits and potential hazards.",
+      "conciseness": "The query is simple; overly verbose responses should be penalized for information efficiency."
     },
     "evaluation_plan": [
-      "Assess completeness of each answer against the question requirements.",
-      "Check faithfulness of the content to agronomic best practices for rice nitrogen management.",
-      "Evaluate practical usefulness of the recommendations for immediate farmer action.",
-      "Review safety_risk_awareness: presence of risk warnings and mitigation advice.",
-      "Measure specificity: detail on timing, dosage, method, soil and irrigation considerations.",
-      "Rate conciseness: length relative to the simplicity of the question.",
-      "Determine context_gain: additional useful information beyond the direct answer.",
-      "Apply comparative_winner_reasoning to decide which answer overall performs best."
+      "Step 1: Evaluate agronomic_specificity of each answer using the specificity metric.",
+      "Step 2: Evaluate field_actionability of each answer using the actionability metric.",
+      "Step 3: Evaluate agronomic_risk_awareness of each answer using the safety_risk_awareness metric.",
+      "Step 4: Evaluate information_efficiency of each answer using the conciseness metric.",
+      "Step 5: Perform comparative_decision_quality analysis using the comparative_winner_reasoning metric to select the superior answer."
     ],
-    "planner_reason": "The plan systematically covers all mandatory metrics, adds risk and detail checks relevant to fertilizer use, and orders evaluation from foundational correctness to practical and comparative judgment."
+    "planner_reason": "The question is a direct fertilizer dosage request, requiring precise, actionable, and risk‑aware guidance while remaining concise; thus all mandated metrics plus safety awareness and conciseness are applied in a stepwise comparison."
   },
   "claims": {
     "minimum_context_claims": [
       {
-        "claim": "If the rice has already formed heads (panicles) and you can see flowering or grains starting to fill, do not add urea now.",
-        "claim_type": "timing",
-        "importance": "high"
-      },
-      {
-        "claim": "Late urea gives little or no yield benefit.",
-        "claim_type": "yield",
-        "importance": "high"
-      },
-      {
-        "claim": "Late urea can cause lodging, increase disease and pest pressure, and delay maturity.",
-        "claim_type": "pest_disease",
+        "claim": "In the Aurangabad region, sunflower plants that are already in the first week of August are typically at the early‑bud to early‑flower stage.",
+        "claim_type": "crop_stage",
         "importance": "medium"
       },
       {
-        "claim": "The only time a final nitrogen dose helps is just before the head emerges—at panicle initiation/early booting—when the panicle is still inside the stem and not yet visible.",
-        "claim_type": "timing",
-        "importance": "high"
-      },
-      {
-        "claim": "Plan urea in splits: a basal dose at planting/transplanting, another during active tillering, and the last at panicle initiation.",
-        "claim_type": "fertilizer",
-        "importance": "medium"
-      },
-      {
-        "claim": "Avoid applying nitrogen after heading.",
-        "claim_type": "timing",
-        "importance": "high"
-      }
-    ],
-    "agricultural_chatbot_claims": [
-      {
-        "claim": "Urea can still be added if rice is at panicle initiation or booting and heads are just about to emerge, but not once most panicles have emerged and flowering/grain filling has begun.",
-        "claim_type": "timing",
-        "importance": "high"
-      },
-      {
-        "claim": "A small nitrogen dose at booting can help grain number and size.",
-        "claim_type": "yield",
-        "importance": "medium"
-      },
-      {
-        "claim": "After flowering, additional nitrogen will not increase yield and can cause lodging, more disease/insect pressure, and delay maturity.",
-        "claim_type": "pest_disease",
-        "importance": "medium"
-      },
-      {
-        "claim": "Apply a light topdress of about one 50‑kg bag of urea per hectare (roughly half a bag per acre) if the crop looks pale or thin.",
+        "claim": "For a high‑quality oil crop, aim for a total nitrogen application of 60 – 90 kg N ha⁻¹.",
         "claim_type": "dosage",
         "importance": "high"
       },
       {
-        "claim": "Do not exceed the recommended light topdress amount at this stage.",
+        "claim": "Use about 30 – 45 kg N ha⁻¹ (≈ 65–75 % of the total recommended rate) in the form of urea (46 % N) or calcium nitrate, applied uniformly over the field and incorporated lightly with a shallow harrow or by irrigation.",
+        "claim_type": "method",
+        "importance": "high"
+      },
+      {
+        "claim": "Do not exceed 120 kg N ha⁻¹, as excessive nitrogen can increase protein at the expense of oil quality and may promote lodging in the later stages.",
         "claim_type": "safety",
         "importance": "medium"
       },
       {
-        "claim": "In lowland/flooded rice, apply urea when water is shallow or after briefly draining, broadcast in the cool of the day, and re‑flood lightly after a day; avoid spreading onto deep standing water at midday.",
+        "claim": "A quick leaf‑N test or chlorophyll meter reading can fine‑tune the nitrogen rate after application.",
         "claim_type": "method",
+        "importance": "low"
+      }
+    ],
+    "agricultural_chatbot_claims": [
+      {
+        "claim": "You’re now in the early‑flowering phase of your sunflower crop – the stage when a side‑dress of nitrogen gives the biggest boost to seed set and oil quality.",
+        "claim_type": "crop_stage",
         "importance": "medium"
       },
       {
-        "claim": "In upland/non‑flooded rice, place or lightly incorporate urea away from the plant base and cover it; apply just before a light rain or irrigate so it dissolves into the root zone; avoid placing granules on wet leaves.",
-        "claim_type": "method",
-        "importance": "medium"
-      },
-      {
-        "claim": "With sandy loam soil and a generally dry seasonal outlook, only apply urea if moisture from irrigation or imminent light rain can be ensured; otherwise the urea can be lost and won’t pay back.",
+        "claim": "The soil is a slightly acidic clay‑loam with modest organic matter and total nitrogen around 0.15 %.",
         "claim_type": "soil",
         "importance": "medium"
       },
       {
-        "claim": "Avoid applying urea right before a heavy storm that could wash it away.",
-        "claim_type": "safety",
-        "importance": "medium"
-      },
-      {
-        "claim": "Do not add granular urea once the crop has already flowered and is filling grain.",
-        "claim_type": "timing",
+        "claim": "For a 3‑ha field, aim for about 30 kg of nitrogen per hectare at this stage, which works out to roughly 90 kg of nitrogen total.",
+        "claim_type": "dosage",
         "importance": "high"
       },
       {
-        "claim": "Plan nitrogen management for the next crop by splitting nitrogen earlier (basal, active tillering, and panicle initiation).",
+        "claim": "Using common urea (46 % N), that means applying about 195 kg of urea (≈ 65 kg per hectare).",
         "claim_type": "fertilizer",
+        "importance": "high"
+      },
+      {
+        "claim": "Spread the granules evenly and incorporate them into the top 5–7 cm, or place them in shallow furrows, to reduce the risk of runoff.",
+        "claim_type": "method",
         "importance": "medium"
       },
       {
-        "claim": "Build soil organic matter with compost/manure and residue retention to ensure sufficient nitrogen before late stages.",
-        "claim_type": "general",
+        "claim": "A rainy spell of about 70 mm over the next nine days, with a peak on 29 May, is expected.",
+        "claim_type": "water",
+        "importance": "medium"
+      },
+      {
+        "claim": "Apply today or within the next couple of days so the soil can absorb the nutrient before the heaviest rains arrive.",
+        "claim_type": "timing",
+        "importance": "medium"
+      },
+      {
+        "claim": "Monitor for lodging and, if excessive weed growth occurs, a light post‑emergence herbicide can be used safely after the nitrogen has been incorporated.",
+        "claim_type": "safety",
+        "importance": "low"
+      },
+      {
+        "claim": "This split‑application strategy should help you reach higher yields while maintaining the quality needed for premium sunflower oil.",
+        "claim_type": "yield",
         "importance": "medium"
       }
     ],
-    "claim_summary": "Answer A gives a concise set of high‑level timing and dosage recommendations, while Answer B provides a richer set of claims covering timing, dosage, application methods, soil and water conditions, safety precautions, and expected yield effects."
+    "claim_summary": "Answer A focuses on a dosage range (60‑90 kg N ha⁻¹) and detailed application method, while Answer B gives a single per‑ha rate, adds soil and weather context, and includes timing and safety advice; B contains more varied claim types, whereas A concentrates on dosage and method."
   },
   "evidence_check": {
     "minimum_context_answer": {
       "supported_claims": [
-        "If the rice has already formed heads (panicles) and you can see flowering or grains starting to fill, do not add urea now.",
-        "Late urea can cause lodging, increase disease and pest pressure, and delay maturity.",
-        "The only time a final nitrogen dose helps is just before the head emerges—at panicle initiation/early booting—when the panicle is still inside the stem and not yet visible.",
-        "Plan urea in splits: a basal dose at planting/transplanting, another during active tillering, and the last at panicle initiation.",
-        "Avoid applying nitrogen after heading."
+        "For a high‑quality oil crop, aim for a total nitrogen application of 60–90 kg N ha⁻¹.",
+        "Use about 30–45 kg N ha⁻¹ (≈ 65–75% of the total recommended rate) in the form of urea (46% N) or calcium nitrate, applied uniformly over the field and incorporated lightly with a shallow harrow or by irrigation.",
+        "Do not exceed 120 kg N ha⁻¹, as excessive nitrogen can increase protein at the expense of oil quality and may promote lodging in the later stages.",
+        "A quick leaf‑N test or chlorophyll meter reading can fine‑tune the nitrogen rate after application."
       ],
-      "weakly_supported_claims": [],
+      "context_supported_claims": [],
+      "weakly_supported_claims": [
+        "In the Aurangabad region, sunflower plants that are already in the first week of August are typically at the early‑bud to early‑flower stage."
+      ],
       "unsupported_claims": [],
       "risky_claims": [],
-      "vague_claims": [
-        "Late urea gives little or no yield benefit."
-      ],
+      "vague_claims": [],
       "missing_context": [
-        "Specific recommended dosage for a late‑stage urea top‑dress",
-        "Application method (broadcast, incorporation, timing relative to water level)",
-        "Soil moisture or irrigation requirements for effective N uptake",
-        "Guidance on how existing soil N status influences the decision"
+        "site‑specific soil nitrogen and organic matter levels",
+        "actual crop growth stage confirmation for the field",
+        "current soil moisture and recent rainfall",
+        "previous nitrogen applications and total N already supplied",
+        "short‑term weather forecast for the upcoming days"
       ],
-      "evidence_summary": "All timing and risk statements align with established rice nitrogen management; the yield claim is generally true but lacks quantitative detail, making it slightly vague. The answer omits dosage, method, and moisture considerations needed for safe field implementation."
+      "context_grounding_summary": "The answer relies only on the minimal latitude/longitude, crop name, and date information; none of its claims are directly grounded in that limited context, though they reflect generally accepted agronomic guidance.",
+      "evidence_summary": "All statements are agronomically reasonable and align with typical sunflower nitrogen recommendations, but they are not substantiated by the minimal contextual data provided."
     },
     "agricultural_chatbot_answer": {
       "supported_claims": [
-        "Urea can still be added if rice is at panicle initiation or booting and heads are just about to emerge, but not once most panicles have emerged and flowering/grain filling has begun.",
-        "After flowering, additional nitrogen will not increase yield and can cause lodging, more disease/insect pressure, and delay maturity.",
-        "Apply a light topdress of about one 50‑kg bag of urea per hectare (roughly half a bag per acre) if the crop looks pale or thin.",
-        "Do not exceed the recommended light topdress amount at this stage.",
-        "In lowland/flooded rice, apply urea when water is shallow or after briefly draining, broadcast in the cool of the day, and re‑flood lightly after a day; avoid spreading onto deep standing water at midday.",
-        "In upland/non‑flooded rice, place or lightly incorporate urea away from the plant base and cover it; apply just before a light rain or irrigate so it dissolves into the root zone; avoid placing granules on wet leaves.",
-        "With sandy loam soil and a generally dry seasonal outlook, only apply urea if moisture from irrigation or imminent light rain can be ensured; otherwise the urea can be lost and won’t pay back.",
-        "Avoid applying urea right before a heavy storm that could wash it away.",
-        "Do not add granular urea once the crop has already flowered and is filling grain.",
-        "Plan nitrogen management for the next crop by splitting nitrogen earlier (basal, active tillering, and panicle initiation).",
-        "Build soil organic matter with compost/manure and residue retention to ensure sufficient nitrogen before late stages."
+        "Using common urea (46% N), that means applying about 195 kg of urea (≈ 65 kg per hectare).",
+        "Spread the granules evenly and incorporate them into the top 5–7 cm, or place them in shallow furrows, to reduce the risk of runoff.",
+        "Monitor for lodging and, if excessive weed growth occurs, a light post‑emergence herbicide can be used safely after the nitrogen has been incorporated.",
+        "This split‑application strategy should help you reach higher yields while maintaining the quality needed for premium sunflower oil."
+      ],
+      "context_supported_claims": [
+        "You’re now in the early‑flowering phase of your sunflower crop – the stage when a side‑dress of nitrogen gives the biggest boost to seed set and oil quality.",
+        "The soil is a slightly acidic clay‑loam with modest organic matter and total nitrogen around 0.15%.",
+        "For a 3‑ha field, aim for about 30 kg of nitrogen per hectare at this stage, which works out to roughly 90 kg of nitrogen total.",
+        "A rainy spell of about 70 mm over the next nine days, with a peak on 29 May, is expected."
       ],
       "weakly_supported_claims": [
-        "A small nitrogen dose at booting can help grain number and size."
+        "For a 3‑ha field, aim for about 30 kg of nitrogen per hectare at this stage, which works out to roughly 90 kg of nitrogen total."
       ],
-      "unsupported_claims": [],
-      "risky_claims": [],
+      "unsupported_claims": [
+        "A rainy spell of about 70 mm over the next nine days, with a peak on 29 May, is expected.",
+        "Apply today or within the next couple of days so the soil can absorb the nutrient before the heaviest rains arrive."
+      ],
+      "risky_claims": [
+        "Apply today or within the next couple of days so the soil can absorb the nutrient before the heaviest rains arrive."
+      ],
       "vague_claims": [
-        "A small nitrogen dose at booting can help grain number and size.",
-        "Build soil organic matter with compost/manure and residue retention to ensure sufficient nitrogen before late stages."
+        "This split‑application strategy should help you reach higher yields while maintaining the quality needed for premium sunflower oil."
       ],
       "missing_context": [
-        "Exact nitrogen amount (kg N) corresponding to the \"one 50‑kg bag\" recommendation",
-        "Precise timing window (days after panicle initiation) for the safe top‑dress",
-        "Soil test or existing N status guidance to decide if a late top‑dress is needed",
-        "Potential environmental loss rates (volatilization, leaching) under different water regimes"
+        "actual rainfall forecast for the August period (the provided forecast refers to May)",
+        "current soil moisture status",
+        "previous nitrogen applications and total N already present in the soil",
+        "exact timing of the side‑dress relative to phenological stage beyond the generic early‑flowering label"
       ],
-      "evidence_summary": "The answer provides well‑aligned timing, dosage, and method guidance supported by agronomic practice. The claim about a \"small\" dose at booting is plausible but lacks quantitative backing, making it only weakly supported and somewhat vague. Overall the advice is comprehensive and safe."
+      "context_grounding_summary": "The answer makes good use of the supplied soil type, nitrogen content, and predicted crop stage, grounding several claims in the provided agricultural context. However, the weather forecast cited does not correspond to the August timeframe of the query, weakening overall context fidelity.",
+      "evidence_summary": "Most recommendations (crop stage, soil description, dosage, application method) are backed by the contextual data and standard agronomic practice. The precipitation forecast and timing advice are unsupported by the relevant August weather data, introducing potential risk."
     },
-    "comparative_evidence_summary": "Both answers correctly state that urea should not be applied after heading and that the safe window is around panicle initiation. The agricultural chatbot answer offers stronger evidence through specific dosage, detailed application methods for flooded and upland systems, and safety precautions, though it includes a few vague or weakly supported statements. The minimum‑context answer is accurate but less detailed, missing key practical information such as dosage and moisture requirements. Consequently, the agricultural chatbot answer has stronger overall evidence support and fewer informational gaps."
+    "comparative_evidence_summary": "The agricultural chatbot answer provides stronger evidence for several claims by referencing concrete soil and crop‑stage data, whereas the minimum‑context answer relies solely on generic agronomic norms. However, the chatbot’s weather forecast is inaccurate for the queried period, creating unsupported and risky advice, while the minimum‑context answer contains no such inaccuracies but lacks site‑specific grounding.",
+    "context_grounded_faithfulness_summary": "The chatbot’s added details about soil type, nitrogen content, and early‑flowering stage are consistent with the provided context and therefore faithful. The precipitation forecast, however, is not aligned with the August date supplied, indicating a lapse in context‑grounded faithfulness for that particular claim."
   },
   "metric_results": {
-    "completeness": {
+    "specificity": {
       "minimum_context_answer": {
         "score": 1.0,
-        "reason": "The answer fully addresses the farmer's question, explaining why adding urea after rice has started producing is not advisable, describing the appropriate timing for nitrogen applications, outlining risks of late application, and providing a clear future fertilization schedule."
+        "reason": "The answer directly addresses the farmer's request by specifying the crop (sunflower), growth stage (early bud/early flower in early August), and region. It provides concrete nitrogen rates (total 60‑90 kg N ha⁻¹, with a current top‑dress of 30‑45 kg N ha⁻¹), fertilizer types (urea or calcium nitrate), application method, timing, and a safety ceiling (≤120 kg N ha⁻¹). These details are precise, relevant, and cover all key aspects of the question, making the response highly specific."
       },
       "agricultural_chatbot_answer": {
-        "score": 1.0,
-        "reason": "The answer fully addresses timing, appropriate growth stage, dosage, application methods for different rice systems, cautions about risks, moisture requirements, and next steps, providing comprehensive guidance for the farmer."
+        "score": 0.8,
+        "reason": "The answer directly addresses the farmer's request by giving a concrete nitrogen rate (≈30 kg N ha⁻¹) and a specific urea amount (≈65 kg ha⁻¹) for the early‑flowering stage in early August, which is relevant to yield and oil quality. It mentions crop stage, fertilizer type, and application method, fulfilling the core specificity criteria. However, it adds unnecessary and partially inaccurate context (soil description, May rainfall forecast, herbicide advice) and assumes a 3‑ha field size not asked for, which slightly dilutes the precision."
       }
     },
-    "practical_usefulness": {
+    "actionability": {
       "minimum_context_answer": {
         "score": 1.0,
-        "reason": "The answer clearly tells the farmer not to apply urea once panicles are visible, explains why, and provides concrete timing and split‑application guidance for future crops, making it directly actionable and easy to follow."
+        "reason": "The answer provides clear, practical guidance: specifies the right source (urea or calcium nitrate), right rate (30‑45 kg N ha⁻¹ now, total 60‑90 kg N ha⁻¹), right time (early‑bud/early‑flower stage in early August), and right place (uniform field application, shallow harrow incorporation). It includes implementation details, safety limits, and useful monitoring tips, making it highly actionable for the farmer."
       },
       "agricultural_chatbot_answer": {
-        "score": 1.0,
-        "reason": "Provides clear, actionable timing, dosage, application method, and precautions tailored to field conditions, enabling a farmer to make an immediate decision."
+        "score": 0.9,
+        "reason": "The answer provides clear, practical guidance: right source (urea), right rate (≈30 kg N / ha), right time (early flowering, apply within a couple of days), and right place (incorporate 5‑7 cm or shallow furrows). It includes useful field‑level details (soil type, incorporation method) that aid implementation. The only drawback is an irrelevant rain forecast for May, which is disconnected from the August timing and could cause confusion, slightly lowering the score."
       }
-    },
-    "faithfulness": {
-      "minimum_context_answer": {
-        "score": 1.0,
-        "reason": "The answer directly addresses the farmer's question about applying urea after rice has started producing, correctly advises against late nitrogen application, explains realistic agronomic reasons, and offers appropriate future timing without unsupported or fabricated details."
-      },
-      "agricultural_chatbot_answer": {
-        "score": 0.5,
-        "reason": "The response addresses the question about timing of urea application, but it introduces specific fertilizer rates, soil type, and weather outlook that were not mentioned by the farmer, constituting unsupported recommendations and thus reducing faithfulness."
-      }
-    },
-    "context_gain": {
-      "score": 1.0,
-      "winner": "agricultural_chatbot_answer",
-      "reason": "Answer B adds detailed crop-stage checks, specific dosage, application methods for flooded vs upland rice, soil type considerations, weather outlook, and practical field-level tips, greatly enhancing farmer decision-making beyond the minimal guidance of Answer A."
     },
     "comparative_winner_reasoning": {
-      "score": 0.9,
-      "winner": "agricultural_chatbot_answer",
-      "reason": "Answer B provides more practical, specific guidance (diagnostic tip, dosage, application methods for different rice systems, soil moisture considerations) while still being accurate and safe. It adds valuable context and farmer-friendly details that Answer A lacks, making it more useful overall."
+      "score": 0.8,
+      "winner": "minimum_context_answer",
+      "reason": "Answer A offers clear, region‑specific nitrogen rates, practical application instructions, and safety warnings without extraneous or potentially misleading details. Answer B adds soil and weather context, but includes inaccurate timing (rain forecast for May in an August scenario) and off‑topic herbicide advice, which reduces its safety and relevance. While both are actionable, Answer A is more specific, safer, and more concise overall."
     },
     "safety_risk_awareness": {
       "minimum_context_answer": {
-        "score": 1.0,
-        "reason": "The answer clearly advises against late urea application, explains risks such as lodging, disease, pest pressure, and delayed maturity, and provides safe timing guidelines for nitrogen use, demonstrating strong safety and risk awareness."
-      },
-      "agricultural_chatbot_answer": {
-        "score": 1.0,
-        "reason": "The answer provides clear, stage‑appropriate guidance, warns about over‑application, lodging, disease, runoff, and timing, and includes safe dosage and application methods, fully addressing safety and risk awareness."
-      }
-    },
-    "specificity": {
-      "minimum_context_answer": {
         "score": 0.8,
-        "reason": "The answer provides concrete details about crop stage (panicle initiation, heading), timing of nitrogen applications, and a split application schedule. It avoids vague advice and gives actionable guidance, though it lacks specific dosage amounts, preventing a perfect score."
+        "reason": "The answer gives a sensible N rate range, warns against excess application, lodging, and oil quality impacts, and suggests monitoring leaf colour and tests. It could improve safety by adding explicit guidance on runoff prevention, label compliance, and timing relative to weather, but overall it demonstrates good risk awareness."
       },
       "agricultural_chatbot_answer": {
-        "score": 1.0,
-        "reason": "Provides concrete stage timing, dosage, application method, soil and weather considerations, and clear decision criteria, giving detailed guidance for the farmer."
+        "score": 0.5,
+        "reason": "The answer provides a specific nitrogen rate and application method, which could be useful, but it lacks essential cautions such as confirming soil test results, local agronomic recommendations, and regulatory limits. It also includes inaccurate weather information (referring to May rains in August) and suggests herbicide use without specifying safe products or timing, which could lead to misuse. While it mentions runoff risk and lodging, the overall guidance is overconfident for the given uncertain conditions, reducing its safety and risk awareness."
       }
     },
     "conciseness": {
       "minimum_context_answer": {
-        "score": 1.0,
-        "reason": "The response directly answers the farmer's question, stays focused on nitrogen timing for rice, avoids unnecessary repetition, and provides only relevant, actionable details."
+        "score": 0.8,
+        "reason": "The answer gives a clear nitrogen rate, timing, application method, and safety limits with relevant context for decision‑making. It is slightly wordy but stays focused on actionable guidance and does not include irrelevant or distracting information."
       },
       "agricultural_chatbot_answer": {
-        "score": 0.8,
-        "reason": "The answer is clear, focused on the timing and method of urea application, and avoids repetition. However, it adds some extra context (soil type, future nitrogen strategy) that, while useful, goes beyond the immediate question, making it slightly more verbose than necessary."
+        "score": 0.5,
+        "reason": "The answer provides the needed nitrogen rate and practical application timing, which is useful. However, it adds unnecessary details about soil type, total nitrogen, specific rainfall forecast, and herbicide use that were not asked for, making it verbose and less concise."
       }
     }
   },
+  "context_impact_analysis": {
+    "without_context_summary": "Answer A gives a generic, region‑wide recommendation: total N 60‑90 kg ha⁻¹, top‑dress 30‑45 kg ha⁻¹, using urea or calcium nitrate, with safety ceiling 120 kg ha⁻¹ and simple monitoring tips. It relies only on the month and crop, without any site‑specific soil, weather, or farmer‑goal details.",
+    "with_context_summary": "Answer B incorporates inferred ground‑truth context (slightly acidic clay‑loam, soil N ≈ 0.15 %), a specific field size (3 ha), a short‑term rain forecast, and a timing cue (“apply today or within a couple of days”). It also references the farmer’s goal of premium oil and adds a brief herbicide safety note.",
+    "response_change_summary": "The context‑rich answer narrows the nitrogen rate to ~30 kg N ha⁻¹ (≈90 kg N total for 3 ha) and adds application depth, runoff mitigation, and a weather‑timed window, whereas the minimum‑context answer provides a broader 60‑90 kg ha⁻¹ range with generic instructions. The added soil and weather details increase specificity but introduce an inaccurate May rain forecast and optional herbicide advice.",
+    "gate_context_impact": {
+      "G": {
+        "used": true,
+        "value_score": 0.9,
+        "impact_on_response": "Introduced soil type, acidity, and measured soil N, which justified a lower N rate (30 kg ha⁻¹) and the recommendation to incorporate fertilizer shallowly to avoid runoff.",
+        "decision_quality_impact": "Ground‑truth context improved dosage precision and method choice, aligning the recommendation with the field’s nutrient status and reducing risk of over‑application.",
+        "utilization_quality": "high",
+        "value_reason": "Soil and crop‑stage data directly informed a more tailored N recommendation, markedly enhancing relevance and safety."
+      },
+      "A": {
+        "used": false,
+        "value_score": 0.0,
+        "impact_on_response": "No socioeconomic, resource‑availability, or cost constraints were mentioned, so action context was absent.",
+        "decision_quality_impact": "None; the answer does not address farmer budget, labor capacity, or scale considerations.",
+        "utilization_quality": "not_needed",
+        "value_reason": "The question did not request socioeconomic or resource‑limit information, so action context was unnecessary."
+      },
+      "T": {
+        "used": true,
+        "value_score": 0.4,
+        "impact_on_response": "Added a short‑term rain forecast and a timing directive to apply within a couple of days before the “heaviest rains”.",
+        "decision_quality_impact": "Temporal context could improve timing but the forecast refers to May, not August, making the advice potentially misleading and reducing safety.",
+        "utilization_quality": "low",
+        "value_reason": "Timing information was partially relevant but inaccurate, so it added limited value and introduced risk."
+      },
+      "E": {
+        "used": true,
+        "value_score": 0.3,
+        "impact_on_response": "Repeated the farmer’s goal of high‑quality oil and linked nitrogen management to oil quality, plus a vague claim that the split‑application will boost yields.",
+        "decision_quality_impact": "Goal alignment reinforces relevance but the statements are generic and do not change the concrete recommendation.",
+        "utilization_quality": "medium",
+        "value_reason": "End‑value context reminded the purpose of the advice but did not materially improve the technical recommendation."
+      }
+    },
+    "context_utilization_analysis": {
+      "available_context_used": true,
+      "utilization_quality": "medium",
+      "properly_used_gate_contexts": [
+        "G"
+      ],
+      "underused_gate_contexts": [
+        "A"
+      ],
+      "overused_or_speculative_contexts": [
+        "T",
+        "E"
+      ],
+      "context_utilization_reason": "The chatbot correctly leveraged ground‑truth soil and crop‑stage data to refine the nitrogen rate, but it over‑extended temporal context with an inaccurate May rain forecast and added a generic herbicide tip that was not asked for. End‑value context was present but did not enhance decision quality beyond restating the goal."
+    },
+    "most_valuable_gate_context": {
+      "category": "G",
+      "reason": "Soil characteristics and crop stage directly altered the nitrogen dosage and application method, providing the greatest boost to specificity, safety, and decision quality."
+    },
+    "context_value_ranking": [
+      {
+        "category": "G",
+        "rank": 1,
+        "reason": "Provided concrete, site‑specific data that changed the dosage and method."
+      },
+      {
+        "category": "T",
+        "rank": 2,
+        "reason": "Timing advice could be useful but was inaccurate, limiting its benefit."
+      },
+      {
+        "category": "E",
+        "rank": 3,
+        "reason": "Reinforced the farmer’s goal but added no actionable detail."
+      },
+      {
+        "category": "A",
+        "rank": 4,
+        "reason": "No action‑context was needed for the question."
+      }
+    ],
+    "specificity_improvement": {
+      "without_context_specificity": "high – provides a clear dosage range and method but remains generic for the region.",
+      "with_context_specificity": "moderate‑high – narrows dosage to a single rate and adds soil depth, runoff, and timing details, though muddied by an irrelevant rain forecast.",
+      "improvement_summary": "Ground‑truth soil data and crop stage increased specificity of the N rate; temporal data attempted to add timing specificity but introduced inconsistency.",
+      "specificity_gain_score": 0.6
+    },
+    "actionability_improvement": {
+      "without_context_actionability": "high – clear steps, rates, and safety ceiling.",
+      "with_context_actionability": "high – adds field size, exact urea amount, incorporation depth, and a short‑term timing window.",
+      "improvement_summary": "Context added concrete quantities (195 kg urea for 3 ha) and operational tips (5‑7 cm incorporation), enhancing practical execution, but the inaccurate weather cue slightly detracts.",
+      "actionability_gain_score": 0.5
+    },
+    "decision_quality_improvement": {
+      "without_context_decision_quality": "moderate – safe generic recommendation suitable for many farms.",
+      "with_context_decision_quality": "moderate‑high – soil‑based rate adjustment improves nutrient use efficiency, but the erroneous forecast and optional herbicide advice reduce overall reliability.",
+      "improvement_summary": "Ground‑truth context raised decision quality by matching N supply to soil status; temporal mis‑alignment and speculative herbicide suggestion offset some gains.",
+      "decision_quality_gain_score": 0.55
+    },
+    "weak_or_unhelpful_context_usage": [
+      {
+        "gate_category": "T",
+        "issue": "Rainfall forecast refers to May, not the August period asked about, making the timing advice potentially unsafe."
+      },
+      {
+        "gate_category": "E",
+        "issue": "Generic statement about “higher yields” is vague and does not add actionable insight."
+      },
+      {
+        "gate_category": "T",
+        "issue": "Herbicide recommendation lacks product specifics and safety details, introducing risk."
+      }
+    ],
+    "overall_context_value_score": 0.53,
+    "context_value_conclusion": "Inferred GATE context modestly improved the answer by tailoring nitrogen dosage to the field’s soil conditions (G), but the benefit was partially offset by inaccurate temporal information (T) and vague end‑value statements (E). Action context (A) was unnecessary. Overall, ground‑truth context contributed the most value, while the other contexts were either underused or over‑speculative."
+  },
   "final_decision": {
     "winner": "minimum_context_answer",
-    "confidence": 0.85,
-    "final_reason": "Both answers are complete and practical, but the minimum_context answer is fully faithful to agronomic knowledge, whereas the agricultural chatbot answer includes unsupported dosage and soil recommendations, lowering its faithfulness. Faithfulness is the third‑most important metric after completeness and practicality, making the fully faithful answer the better choice despite its lower specificity and context gain.",
+    "confidence": 0.95,
+    "final_reason": "The minimum‑context answer scores higher on all key metrics (specificity, actionability, safety awareness, conciseness) and provides a clear, safe, and actionable nitrogen recommendation without unsupported or inaccurate information. The agricultural chatbot answer, while using some site‑specific data, includes an incorrect May rain forecast, unnecessary herbicide advice, and assumes a field size not asked for, reducing its overall quality.",
     "minimum_context_strengths": [
-      "Complete coverage of timing and risks",
-      "Highly practical and actionable",
-      "Fully faithful to established rice nitrogen management",
-      "Clear safety warnings",
-      "Very concise and easy to read"
+      "Very specific nitrogen dosage range (60‑90 kg N ha⁻¹ total, 30‑45 kg N ha⁻¹ now)",
+      "Clear, step‑by‑step application method and safety ceiling (≤120 kg N ha⁻¹)",
+      "Highly actionable with simple monitoring tips",
+      "Concise and stays focused on the question"
     ],
     "minimum_context_weaknesses": [
-      "No specific dosage amount for a late‑stage top‑dress",
-      "Missing detailed application method (broadcast vs. incorporation)",
-      "No guidance on soil moisture or existing N status"
+      "Lacks site‑specific tailoring (soil N, moisture, recent rainfall, field size)",
+      "Does not incorporate the farmer’s provided soil or weather context"
     ],
     "agricultural_chatbot_strengths": [
-      "Very specific dosage and application method guidance",
-      "Adds useful context for flooded vs. upland systems and soil moisture",
-      "Strong safety and risk awareness",
-      "High specificity and practical detail"
+      "Uses ground‑truth soil type, acidity and measured soil N to tailor the rate",
+      "Provides exact urea amount (≈195 kg for 3 ha) and incorporation depth (5‑7 cm)",
+      "Links nitrogen management to the goal of premium oil quality"
     ],
     "agricultural_chatbot_weaknesses": [
-      "Contains unsupported or weakly supported recommendations, reducing faithfulness",
-      "Some statements are vague (e.g., \"small dose\")",
-      "Less concise due to extra contextual information"
+      "Cites an inaccurate May rain forecast for an August query, creating unsafe timing advice",
+      "Adds unnecessary herbicide recommendation without safety details",
+      "Assumes a 3‑ha field size not requested, reducing precision",
+      "Lower safety‑risk awareness and less concise"
     ],
     "most_influential_metrics": [
-      "faithfulness",
-      "completeness",
-      "practical_usefulness",
-      "specificity"
+      "specificity",
+      "safety_risk_awareness",
+      "actionability"
     ],
-    "context_impact_summary": "The agricultural chatbot added extensive contextual details (dosage, method, soil type, weather) which improved specificity and context gain, but introduced recommendations not grounded in the farmer's situation, lowering faithfulness. The minimum_context answer stayed within well‑supported agronomic facts, preserving full faithfulness while being less detailed.",
-    "final_judgement_summary": "The minimum_context answer wins because it is completely faithful and safe, outweighing the richer but partially unsupported detail of the agricultural chatbot answer."
+    "most_valuable_contexts": [
+      "Ground‑truth soil and crop‑stage data (G)"
+    ],
+    "context_impact_summary": "The chatbot’s soil and crop‑stage context allowed it to narrow the nitrogen rate to ~30 kg N ha⁻¹ and specify incorporation depth, improving specificity and actionability. However, the added temporal context (rain forecast for May) was inaccurate and the herbicide tip was unsupported, which introduced safety risks and reduced overall relevance. The net impact of added context was modestly positive but offset by these errors.",
+    "specificity_change_summary": "The generic answer gave a broader, well‑grounded dosage range (60‑90 kg N ha⁻¹ total) and clear safety limits. The context‑rich answer offered a single, soil‑adjusted rate (30 kg N ha⁻¹) and precise fertilizer quantity, making it more specific numerically but less comprehensive due to missing safety ceiling and broader range.",
+    "final_judgement_summary": "Because it delivers higher overall specificity, safety, and actionable guidance without unsupported claims, the minimum‑context answer is the superior response."
   },
   "trace": [
     {
       "agent": "evaluation_planner_agent",
-      "action": "planned_evaluation",
+      "action": "planned_benchmark_aligned_evaluation",
       "output": {
-        "question_type": "fertilizer_timing",
+        "question_type": "fertilizer recommendation",
+        "agronomic_categories": [
+          "Nutrition"
+        ],
         "risk_level": "medium",
         "selected_metrics": [
-          "completeness",
-          "practical_usefulness",
-          "faithfulness",
-          "context_gain",
+          "specificity",
+          "actionability",
           "comparative_winner_reasoning",
           "safety_risk_awareness",
-          "specificity",
           "conciseness"
         ],
+        "benchmark_metric_mapping": {
+          "agronomic_specificity": "specificity",
+          "field_actionability": "actionability",
+          "information_efficiency": "conciseness",
+          "agronomic_risk_awareness": "safety_risk_awareness",
+          "comparative_decision_quality": "comparative_winner_reasoning"
+        },
         "metric_rationale": {
-          "completeness": "Ensures each answer addresses all relevant aspects of urea application timing, dosage, and alternatives.",
-          "practical_usefulness": "Checks that the advice can be readily applied by the farmer in the field.",
-          "faithfulness": "Verifies that the information aligns with established agronomic science for rice nitrogen management.",
-          "context_gain": "Evaluates whether the answer adds useful context beyond the simple question (e.g., future planning, soil considerations).",
-          "comparative_winner_reasoning": "Provides a structured justification for selecting the better answer based on the other metrics.",
-          "safety_risk_awareness": "Identifies any mention of risks such as lodging, disease, environmental loss, or improper dosage.",
-          "specificity": "Assesses detail on timing (panicle initiation vs. heading), amount of urea, application method, and soil/irrigation conditions.",
-          "conciseness": "Ensures the answer is clear and not overly verbose for a straightforward question."
+          "specificity": "The question asks for a precise nitrogen rate; we must verify each answer provides exact, context‑aware dosage.",
+          "actionability": "The answer must give clear steps the grower can follow to apply the fertilizer correctly.",
+          "comparative_winner_reasoning": "We need to judge which answer presents a better overall recommendation based on agronomic soundness.",
+          "safety_risk_awareness": "Nitrogen application carries environmental and crop‑quality risks; the answer should acknowledge limits and potential hazards.",
+          "conciseness": "The query is simple; overly verbose responses should be penalized for information efficiency."
         },
         "evaluation_plan": [
-          "Assess completeness of each answer against the question requirements.",
-          "Check faithfulness of the content to agronomic best practices for rice nitrogen management.",
-          "Evaluate practical usefulness of the recommendations for immediate farmer action.",
-          "Review safety_risk_awareness: presence of risk warnings and mitigation advice.",
-          "Measure specificity: detail on timing, dosage, method, soil and irrigation considerations.",
-          "Rate conciseness: length relative to the simplicity of the question.",
-          "Determine context_gain: additional useful information beyond the direct answer.",
-          "Apply comparative_winner_reasoning to decide which answer overall performs best."
+          "Step 1: Evaluate agronomic_specificity of each answer using the specificity metric.",
+          "Step 2: Evaluate field_actionability of each answer using the actionability metric.",
+          "Step 3: Evaluate agronomic_risk_awareness of each answer using the safety_risk_awareness metric.",
+          "Step 4: Evaluate information_efficiency of each answer using the conciseness metric.",
+          "Step 5: Perform comparative_decision_quality analysis using the comparative_winner_reasoning metric to select the superior answer."
         ],
-        "planner_reason": "The plan systematically covers all mandatory metrics, adds risk and detail checks relevant to fertilizer use, and orders evaluation from foundational correctness to practical and comparative judgment."
+        "planner_reason": "The question is a direct fertilizer dosage request, requiring precise, actionable, and risk‑aware guidance while remaining concise; thus all mandated metrics plus safety awareness and conciseness are applied in a stepwise comparison."
       }
     },
     {
@@ -357,285 +443,363 @@
       "output": {
         "minimum_context_claims": [
           {
-            "claim": "If the rice has already formed heads (panicles) and you can see flowering or grains starting to fill, do not add urea now.",
-            "claim_type": "timing",
-            "importance": "high"
-          },
-          {
-            "claim": "Late urea gives little or no yield benefit.",
-            "claim_type": "yield",
-            "importance": "high"
-          },
-          {
-            "claim": "Late urea can cause lodging, increase disease and pest pressure, and delay maturity.",
-            "claim_type": "pest_disease",
+            "claim": "In the Aurangabad region, sunflower plants that are already in the first week of August are typically at the early‑bud to early‑flower stage.",
+            "claim_type": "crop_stage",
             "importance": "medium"
           },
           {
-            "claim": "The only time a final nitrogen dose helps is just before the head emerges—at panicle initiation/early booting—when the panicle is still inside the stem and not yet visible.",
-            "claim_type": "timing",
-            "importance": "high"
-          },
-          {
-            "claim": "Plan urea in splits: a basal dose at planting/transplanting, another during active tillering, and the last at panicle initiation.",
-            "claim_type": "fertilizer",
-            "importance": "medium"
-          },
-          {
-            "claim": "Avoid applying nitrogen after heading.",
-            "claim_type": "timing",
-            "importance": "high"
-          }
-        ],
-        "agricultural_chatbot_claims": [
-          {
-            "claim": "Urea can still be added if rice is at panicle initiation or booting and heads are just about to emerge, but not once most panicles have emerged and flowering/grain filling has begun.",
-            "claim_type": "timing",
-            "importance": "high"
-          },
-          {
-            "claim": "A small nitrogen dose at booting can help grain number and size.",
-            "claim_type": "yield",
-            "importance": "medium"
-          },
-          {
-            "claim": "After flowering, additional nitrogen will not increase yield and can cause lodging, more disease/insect pressure, and delay maturity.",
-            "claim_type": "pest_disease",
-            "importance": "medium"
-          },
-          {
-            "claim": "Apply a light topdress of about one 50‑kg bag of urea per hectare (roughly half a bag per acre) if the crop looks pale or thin.",
+            "claim": "For a high‑quality oil crop, aim for a total nitrogen application of 60 – 90 kg N ha⁻¹.",
             "claim_type": "dosage",
             "importance": "high"
           },
           {
-            "claim": "Do not exceed the recommended light topdress amount at this stage.",
+            "claim": "Use about 30 – 45 kg N ha⁻¹ (≈ 65–75 % of the total recommended rate) in the form of urea (46 % N) or calcium nitrate, applied uniformly over the field and incorporated lightly with a shallow harrow or by irrigation.",
+            "claim_type": "method",
+            "importance": "high"
+          },
+          {
+            "claim": "Do not exceed 120 kg N ha⁻¹, as excessive nitrogen can increase protein at the expense of oil quality and may promote lodging in the later stages.",
             "claim_type": "safety",
             "importance": "medium"
           },
           {
-            "claim": "In lowland/flooded rice, apply urea when water is shallow or after briefly draining, broadcast in the cool of the day, and re‑flood lightly after a day; avoid spreading onto deep standing water at midday.",
+            "claim": "A quick leaf‑N test or chlorophyll meter reading can fine‑tune the nitrogen rate after application.",
             "claim_type": "method",
+            "importance": "low"
+          }
+        ],
+        "agricultural_chatbot_claims": [
+          {
+            "claim": "You’re now in the early‑flowering phase of your sunflower crop – the stage when a side‑dress of nitrogen gives the biggest boost to seed set and oil quality.",
+            "claim_type": "crop_stage",
             "importance": "medium"
           },
           {
-            "claim": "In upland/non‑flooded rice, place or lightly incorporate urea away from the plant base and cover it; apply just before a light rain or irrigate so it dissolves into the root zone; avoid placing granules on wet leaves.",
-            "claim_type": "method",
-            "importance": "medium"
-          },
-          {
-            "claim": "With sandy loam soil and a generally dry seasonal outlook, only apply urea if moisture from irrigation or imminent light rain can be ensured; otherwise the urea can be lost and won’t pay back.",
+            "claim": "The soil is a slightly acidic clay‑loam with modest organic matter and total nitrogen around 0.15 %.",
             "claim_type": "soil",
             "importance": "medium"
           },
           {
-            "claim": "Avoid applying urea right before a heavy storm that could wash it away.",
-            "claim_type": "safety",
-            "importance": "medium"
-          },
-          {
-            "claim": "Do not add granular urea once the crop has already flowered and is filling grain.",
-            "claim_type": "timing",
+            "claim": "For a 3‑ha field, aim for about 30 kg of nitrogen per hectare at this stage, which works out to roughly 90 kg of nitrogen total.",
+            "claim_type": "dosage",
             "importance": "high"
           },
           {
-            "claim": "Plan nitrogen management for the next crop by splitting nitrogen earlier (basal, active tillering, and panicle initiation).",
+            "claim": "Using common urea (46 % N), that means applying about 195 kg of urea (≈ 65 kg per hectare).",
             "claim_type": "fertilizer",
+            "importance": "high"
+          },
+          {
+            "claim": "Spread the granules evenly and incorporate them into the top 5–7 cm, or place them in shallow furrows, to reduce the risk of runoff.",
+            "claim_type": "method",
             "importance": "medium"
           },
           {
-            "claim": "Build soil organic matter with compost/manure and residue retention to ensure sufficient nitrogen before late stages.",
-            "claim_type": "general",
+            "claim": "A rainy spell of about 70 mm over the next nine days, with a peak on 29 May, is expected.",
+            "claim_type": "water",
+            "importance": "medium"
+          },
+          {
+            "claim": "Apply today or within the next couple of days so the soil can absorb the nutrient before the heaviest rains arrive.",
+            "claim_type": "timing",
+            "importance": "medium"
+          },
+          {
+            "claim": "Monitor for lodging and, if excessive weed growth occurs, a light post‑emergence herbicide can be used safely after the nitrogen has been incorporated.",
+            "claim_type": "safety",
+            "importance": "low"
+          },
+          {
+            "claim": "This split‑application strategy should help you reach higher yields while maintaining the quality needed for premium sunflower oil.",
+            "claim_type": "yield",
             "importance": "medium"
           }
         ],
-        "claim_summary": "Answer A gives a concise set of high‑level timing and dosage recommendations, while Answer B provides a richer set of claims covering timing, dosage, application methods, soil and water conditions, safety precautions, and expected yield effects."
+        "claim_summary": "Answer A focuses on a dosage range (60‑90 kg N ha⁻¹) and detailed application method, while Answer B gives a single per‑ha rate, adds soil and weather context, and includes timing and safety advice; B contains more varied claim types, whereas A concentrates on dosage and method."
       }
     },
     {
       "agent": "evidence_checker_agent",
-      "action": "checked_evidence",
+      "action": "checked_context_grounded_evidence",
       "output": {
         "minimum_context_answer": {
           "supported_claims": [
-            "If the rice has already formed heads (panicles) and you can see flowering or grains starting to fill, do not add urea now.",
-            "Late urea can cause lodging, increase disease and pest pressure, and delay maturity.",
-            "The only time a final nitrogen dose helps is just before the head emerges—at panicle initiation/early booting—when the panicle is still inside the stem and not yet visible.",
-            "Plan urea in splits: a basal dose at planting/transplanting, another during active tillering, and the last at panicle initiation.",
-            "Avoid applying nitrogen after heading."
+            "For a high‑quality oil crop, aim for a total nitrogen application of 60–90 kg N ha⁻¹.",
+            "Use about 30–45 kg N ha⁻¹ (≈ 65–75% of the total recommended rate) in the form of urea (46% N) or calcium nitrate, applied uniformly over the field and incorporated lightly with a shallow harrow or by irrigation.",
+            "Do not exceed 120 kg N ha⁻¹, as excessive nitrogen can increase protein at the expense of oil quality and may promote lodging in the later stages.",
+            "A quick leaf‑N test or chlorophyll meter reading can fine‑tune the nitrogen rate after application."
           ],
-          "weakly_supported_claims": [],
+          "context_supported_claims": [],
+          "weakly_supported_claims": [
+            "In the Aurangabad region, sunflower plants that are already in the first week of August are typically at the early‑bud to early‑flower stage."
+          ],
           "unsupported_claims": [],
           "risky_claims": [],
-          "vague_claims": [
-            "Late urea gives little or no yield benefit."
-          ],
+          "vague_claims": [],
           "missing_context": [
-            "Specific recommended dosage for a late‑stage urea top‑dress",
-            "Application method (broadcast, incorporation, timing relative to water level)",
-            "Soil moisture or irrigation requirements for effective N uptake",
-            "Guidance on how existing soil N status influences the decision"
+            "site‑specific soil nitrogen and organic matter levels",
+            "actual crop growth stage confirmation for the field",
+            "current soil moisture and recent rainfall",
+            "previous nitrogen applications and total N already supplied",
+            "short‑term weather forecast for the upcoming days"
           ],
-          "evidence_summary": "All timing and risk statements align with established rice nitrogen management; the yield claim is generally true but lacks quantitative detail, making it slightly vague. The answer omits dosage, method, and moisture considerations needed for safe field implementation."
+          "context_grounding_summary": "The answer relies only on the minimal latitude/longitude, crop name, and date information; none of its claims are directly grounded in that limited context, though they reflect generally accepted agronomic guidance.",
+          "evidence_summary": "All statements are agronomically reasonable and align with typical sunflower nitrogen recommendations, but they are not substantiated by the minimal contextual data provided."
         },
         "agricultural_chatbot_answer": {
           "supported_claims": [
-            "Urea can still be added if rice is at panicle initiation or booting and heads are just about to emerge, but not once most panicles have emerged and flowering/grain filling has begun.",
-            "After flowering, additional nitrogen will not increase yield and can cause lodging, more disease/insect pressure, and delay maturity.",
-            "Apply a light topdress of about one 50‑kg bag of urea per hectare (roughly half a bag per acre) if the crop looks pale or thin.",
-            "Do not exceed the recommended light topdress amount at this stage.",
-            "In lowland/flooded rice, apply urea when water is shallow or after briefly draining, broadcast in the cool of the day, and re‑flood lightly after a day; avoid spreading onto deep standing water at midday.",
-            "In upland/non‑flooded rice, place or lightly incorporate urea away from the plant base and cover it; apply just before a light rain or irrigate so it dissolves into the root zone; avoid placing granules on wet leaves.",
-            "With sandy loam soil and a generally dry seasonal outlook, only apply urea if moisture from irrigation or imminent light rain can be ensured; otherwise the urea can be lost and won’t pay back.",
-            "Avoid applying urea right before a heavy storm that could wash it away.",
-            "Do not add granular urea once the crop has already flowered and is filling grain.",
-            "Plan nitrogen management for the next crop by splitting nitrogen earlier (basal, active tillering, and panicle initiation).",
-            "Build soil organic matter with compost/manure and residue retention to ensure sufficient nitrogen before late stages."
+            "Using common urea (46% N), that means applying about 195 kg of urea (≈ 65 kg per hectare).",
+            "Spread the granules evenly and incorporate them into the top 5–7 cm, or place them in shallow furrows, to reduce the risk of runoff.",
+            "Monitor for lodging and, if excessive weed growth occurs, a light post‑emergence herbicide can be used safely after the nitrogen has been incorporated.",
+            "This split‑application strategy should help you reach higher yields while maintaining the quality needed for premium sunflower oil."
+          ],
+          "context_supported_claims": [
+            "You’re now in the early‑flowering phase of your sunflower crop – the stage when a side‑dress of nitrogen gives the biggest boost to seed set and oil quality.",
+            "The soil is a slightly acidic clay‑loam with modest organic matter and total nitrogen around 0.15%.",
+            "For a 3‑ha field, aim for about 30 kg of nitrogen per hectare at this stage, which works out to roughly 90 kg of nitrogen total.",
+            "A rainy spell of about 70 mm over the next nine days, with a peak on 29 May, is expected."
           ],
           "weakly_supported_claims": [
-            "A small nitrogen dose at booting can help grain number and size."
+            "For a 3‑ha field, aim for about 30 kg of nitrogen per hectare at this stage, which works out to roughly 90 kg of nitrogen total."
           ],
-          "unsupported_claims": [],
-          "risky_claims": [],
+          "unsupported_claims": [
+            "A rainy spell of about 70 mm over the next nine days, with a peak on 29 May, is expected.",
+            "Apply today or within the next couple of days so the soil can absorb the nutrient before the heaviest rains arrive."
+          ],
+          "risky_claims": [
+            "Apply today or within the next couple of days so the soil can absorb the nutrient before the heaviest rains arrive."
+          ],
           "vague_claims": [
-            "A small nitrogen dose at booting can help grain number and size.",
-            "Build soil organic matter with compost/manure and residue retention to ensure sufficient nitrogen before late stages."
+            "This split‑application strategy should help you reach higher yields while maintaining the quality needed for premium sunflower oil."
           ],
           "missing_context": [
-            "Exact nitrogen amount (kg N) corresponding to the \"one 50‑kg bag\" recommendation",
-            "Precise timing window (days after panicle initiation) for the safe top‑dress",
-            "Soil test or existing N status guidance to decide if a late top‑dress is needed",
-            "Potential environmental loss rates (volatilization, leaching) under different water regimes"
+            "actual rainfall forecast for the August period (the provided forecast refers to May)",
+            "current soil moisture status",
+            "previous nitrogen applications and total N already present in the soil",
+            "exact timing of the side‑dress relative to phenological stage beyond the generic early‑flowering label"
           ],
-          "evidence_summary": "The answer provides well‑aligned timing, dosage, and method guidance supported by agronomic practice. The claim about a \"small\" dose at booting is plausible but lacks quantitative backing, making it only weakly supported and somewhat vague. Overall the advice is comprehensive and safe."
+          "context_grounding_summary": "The answer makes good use of the supplied soil type, nitrogen content, and predicted crop stage, grounding several claims in the provided agricultural context. However, the weather forecast cited does not correspond to the August timeframe of the query, weakening overall context fidelity.",
+          "evidence_summary": "Most recommendations (crop stage, soil description, dosage, application method) are backed by the contextual data and standard agronomic practice. The precipitation forecast and timing advice are unsupported by the relevant August weather data, introducing potential risk."
         },
-        "comparative_evidence_summary": "Both answers correctly state that urea should not be applied after heading and that the safe window is around panicle initiation. The agricultural chatbot answer offers stronger evidence through specific dosage, detailed application methods for flooded and upland systems, and safety precautions, though it includes a few vague or weakly supported statements. The minimum‑context answer is accurate but less detailed, missing key practical information such as dosage and moisture requirements. Consequently, the agricultural chatbot answer has stronger overall evidence support and fewer informational gaps."
+        "comparative_evidence_summary": "The agricultural chatbot answer provides stronger evidence for several claims by referencing concrete soil and crop‑stage data, whereas the minimum‑context answer relies solely on generic agronomic norms. However, the chatbot’s weather forecast is inaccurate for the queried period, creating unsupported and risky advice, while the minimum‑context answer contains no such inaccuracies but lacks site‑specific grounding.",
+        "context_grounded_faithfulness_summary": "The chatbot’s added details about soil type, nitrogen content, and early‑flowering stage are consistent with the provided context and therefore faithful. The precipitation forecast, however, is not aligned with the August date supplied, indicating a lapse in context‑grounded faithfulness for that particular claim."
       }
     },
     {
       "agent": "metric_tool_agent",
       "action": "executed_metric_tools",
       "selected_metrics": [
-        "completeness",
-        "practical_usefulness",
-        "faithfulness",
-        "context_gain",
+        "specificity",
+        "actionability",
         "comparative_winner_reasoning",
         "safety_risk_awareness",
-        "specificity",
         "conciseness"
       ],
       "output": {
-        "completeness": {
+        "specificity": {
           "minimum_context_answer": {
             "score": 1.0,
-            "reason": "The answer fully addresses the farmer's question, explaining why adding urea after rice has started producing is not advisable, describing the appropriate timing for nitrogen applications, outlining risks of late application, and providing a clear future fertilization schedule."
+            "reason": "The answer directly addresses the farmer's request by specifying the crop (sunflower), growth stage (early bud/early flower in early August), and region. It provides concrete nitrogen rates (total 60‑90 kg N ha⁻¹, with a current top‑dress of 30‑45 kg N ha⁻¹), fertilizer types (urea or calcium nitrate), application method, timing, and a safety ceiling (≤120 kg N ha⁻¹). These details are precise, relevant, and cover all key aspects of the question, making the response highly specific."
           },
           "agricultural_chatbot_answer": {
-            "score": 1.0,
-            "reason": "The answer fully addresses timing, appropriate growth stage, dosage, application methods for different rice systems, cautions about risks, moisture requirements, and next steps, providing comprehensive guidance for the farmer."
+            "score": 0.8,
+            "reason": "The answer directly addresses the farmer's request by giving a concrete nitrogen rate (≈30 kg N ha⁻¹) and a specific urea amount (≈65 kg ha⁻¹) for the early‑flowering stage in early August, which is relevant to yield and oil quality. It mentions crop stage, fertilizer type, and application method, fulfilling the core specificity criteria. However, it adds unnecessary and partially inaccurate context (soil description, May rainfall forecast, herbicide advice) and assumes a 3‑ha field size not asked for, which slightly dilutes the precision."
           }
         },
-        "practical_usefulness": {
+        "actionability": {
           "minimum_context_answer": {
             "score": 1.0,
-            "reason": "The answer clearly tells the farmer not to apply urea once panicles are visible, explains why, and provides concrete timing and split‑application guidance for future crops, making it directly actionable and easy to follow."
+            "reason": "The answer provides clear, practical guidance: specifies the right source (urea or calcium nitrate), right rate (30‑45 kg N ha⁻¹ now, total 60‑90 kg N ha⁻¹), right time (early‑bud/early‑flower stage in early August), and right place (uniform field application, shallow harrow incorporation). It includes implementation details, safety limits, and useful monitoring tips, making it highly actionable for the farmer."
           },
           "agricultural_chatbot_answer": {
-            "score": 1.0,
-            "reason": "Provides clear, actionable timing, dosage, application method, and precautions tailored to field conditions, enabling a farmer to make an immediate decision."
+            "score": 0.9,
+            "reason": "The answer provides clear, practical guidance: right source (urea), right rate (≈30 kg N / ha), right time (early flowering, apply within a couple of days), and right place (incorporate 5‑7 cm or shallow furrows). It includes useful field‑level details (soil type, incorporation method) that aid implementation. The only drawback is an irrelevant rain forecast for May, which is disconnected from the August timing and could cause confusion, slightly lowering the score."
           }
-        },
-        "faithfulness": {
-          "minimum_context_answer": {
-            "score": 1.0,
-            "reason": "The answer directly addresses the farmer's question about applying urea after rice has started producing, correctly advises against late nitrogen application, explains realistic agronomic reasons, and offers appropriate future timing without unsupported or fabricated details."
-          },
-          "agricultural_chatbot_answer": {
-            "score": 0.5,
-            "reason": "The response addresses the question about timing of urea application, but it introduces specific fertilizer rates, soil type, and weather outlook that were not mentioned by the farmer, constituting unsupported recommendations and thus reducing faithfulness."
-          }
-        },
-        "context_gain": {
-          "score": 1.0,
-          "winner": "agricultural_chatbot_answer",
-          "reason": "Answer B adds detailed crop-stage checks, specific dosage, application methods for flooded vs upland rice, soil type considerations, weather outlook, and practical field-level tips, greatly enhancing farmer decision-making beyond the minimal guidance of Answer A."
         },
         "comparative_winner_reasoning": {
-          "score": 0.9,
-          "winner": "agricultural_chatbot_answer",
-          "reason": "Answer B provides more practical, specific guidance (diagnostic tip, dosage, application methods for different rice systems, soil moisture considerations) while still being accurate and safe. It adds valuable context and farmer-friendly details that Answer A lacks, making it more useful overall."
+          "score": 0.8,
+          "winner": "minimum_context_answer",
+          "reason": "Answer A offers clear, region‑specific nitrogen rates, practical application instructions, and safety warnings without extraneous or potentially misleading details. Answer B adds soil and weather context, but includes inaccurate timing (rain forecast for May in an August scenario) and off‑topic herbicide advice, which reduces its safety and relevance. While both are actionable, Answer A is more specific, safer, and more concise overall."
         },
         "safety_risk_awareness": {
           "minimum_context_answer": {
-            "score": 1.0,
-            "reason": "The answer clearly advises against late urea application, explains risks such as lodging, disease, pest pressure, and delayed maturity, and provides safe timing guidelines for nitrogen use, demonstrating strong safety and risk awareness."
-          },
-          "agricultural_chatbot_answer": {
-            "score": 1.0,
-            "reason": "The answer provides clear, stage‑appropriate guidance, warns about over‑application, lodging, disease, runoff, and timing, and includes safe dosage and application methods, fully addressing safety and risk awareness."
-          }
-        },
-        "specificity": {
-          "minimum_context_answer": {
             "score": 0.8,
-            "reason": "The answer provides concrete details about crop stage (panicle initiation, heading), timing of nitrogen applications, and a split application schedule. It avoids vague advice and gives actionable guidance, though it lacks specific dosage amounts, preventing a perfect score."
+            "reason": "The answer gives a sensible N rate range, warns against excess application, lodging, and oil quality impacts, and suggests monitoring leaf colour and tests. It could improve safety by adding explicit guidance on runoff prevention, label compliance, and timing relative to weather, but overall it demonstrates good risk awareness."
           },
           "agricultural_chatbot_answer": {
-            "score": 1.0,
-            "reason": "Provides concrete stage timing, dosage, application method, soil and weather considerations, and clear decision criteria, giving detailed guidance for the farmer."
+            "score": 0.5,
+            "reason": "The answer provides a specific nitrogen rate and application method, which could be useful, but it lacks essential cautions such as confirming soil test results, local agronomic recommendations, and regulatory limits. It also includes inaccurate weather information (referring to May rains in August) and suggests herbicide use without specifying safe products or timing, which could lead to misuse. While it mentions runoff risk and lodging, the overall guidance is overconfident for the given uncertain conditions, reducing its safety and risk awareness."
           }
         },
         "conciseness": {
           "minimum_context_answer": {
-            "score": 1.0,
-            "reason": "The response directly answers the farmer's question, stays focused on nitrogen timing for rice, avoids unnecessary repetition, and provides only relevant, actionable details."
+            "score": 0.8,
+            "reason": "The answer gives a clear nitrogen rate, timing, application method, and safety limits with relevant context for decision‑making. It is slightly wordy but stays focused on actionable guidance and does not include irrelevant or distracting information."
           },
           "agricultural_chatbot_answer": {
-            "score": 0.8,
-            "reason": "The answer is clear, focused on the timing and method of urea application, and avoids repetition. However, it adds some extra context (soil type, future nitrogen strategy) that, while useful, goes beyond the immediate question, making it slightly more verbose than necessary."
+            "score": 0.5,
+            "reason": "The answer provides the needed nitrogen rate and practical application timing, which is useful. However, it adds unnecessary details about soil type, total nitrogen, specific rainfall forecast, and herbicide use that were not asked for, making it verbose and less concise."
           }
         }
       }
     },
     {
+      "agent": "context_impact_agent",
+      "action": "analyzed_gate_context_utilization_without_explicit_context",
+      "output": {
+        "without_context_summary": "Answer A gives a generic, region‑wide recommendation: total N 60‑90 kg ha⁻¹, top‑dress 30‑45 kg ha⁻¹, using urea or calcium nitrate, with safety ceiling 120 kg ha⁻¹ and simple monitoring tips. It relies only on the month and crop, without any site‑specific soil, weather, or farmer‑goal details.",
+        "with_context_summary": "Answer B incorporates inferred ground‑truth context (slightly acidic clay‑loam, soil N ≈ 0.15 %), a specific field size (3 ha), a short‑term rain forecast, and a timing cue (“apply today or within a couple of days”). It also references the farmer’s goal of premium oil and adds a brief herbicide safety note.",
+        "response_change_summary": "The context‑rich answer narrows the nitrogen rate to ~30 kg N ha⁻¹ (≈90 kg N total for 3 ha) and adds application depth, runoff mitigation, and a weather‑timed window, whereas the minimum‑context answer provides a broader 60‑90 kg ha⁻¹ range with generic instructions. The added soil and weather details increase specificity but introduce an inaccurate May rain forecast and optional herbicide advice.",
+        "gate_context_impact": {
+          "G": {
+            "used": true,
+            "value_score": 0.9,
+            "impact_on_response": "Introduced soil type, acidity, and measured soil N, which justified a lower N rate (30 kg ha⁻¹) and the recommendation to incorporate fertilizer shallowly to avoid runoff.",
+            "decision_quality_impact": "Ground‑truth context improved dosage precision and method choice, aligning the recommendation with the field’s nutrient status and reducing risk of over‑application.",
+            "utilization_quality": "high",
+            "value_reason": "Soil and crop‑stage data directly informed a more tailored N recommendation, markedly enhancing relevance and safety."
+          },
+          "A": {
+            "used": false,
+            "value_score": 0.0,
+            "impact_on_response": "No socioeconomic, resource‑availability, or cost constraints were mentioned, so action context was absent.",
+            "decision_quality_impact": "None; the answer does not address farmer budget, labor capacity, or scale considerations.",
+            "utilization_quality": "not_needed",
+            "value_reason": "The question did not request socioeconomic or resource‑limit information, so action context was unnecessary."
+          },
+          "T": {
+            "used": true,
+            "value_score": 0.4,
+            "impact_on_response": "Added a short‑term rain forecast and a timing directive to apply within a couple of days before the “heaviest rains”.",
+            "decision_quality_impact": "Temporal context could improve timing but the forecast refers to May, not August, making the advice potentially misleading and reducing safety.",
+            "utilization_quality": "low",
+            "value_reason": "Timing information was partially relevant but inaccurate, so it added limited value and introduced risk."
+          },
+          "E": {
+            "used": true,
+            "value_score": 0.3,
+            "impact_on_response": "Repeated the farmer’s goal of high‑quality oil and linked nitrogen management to oil quality, plus a vague claim that the split‑application will boost yields.",
+            "decision_quality_impact": "Goal alignment reinforces relevance but the statements are generic and do not change the concrete recommendation.",
+            "utilization_quality": "medium",
+            "value_reason": "End‑value context reminded the purpose of the advice but did not materially improve the technical recommendation."
+          }
+        },
+        "context_utilization_analysis": {
+          "available_context_used": true,
+          "utilization_quality": "medium",
+          "properly_used_gate_contexts": [
+            "G"
+          ],
+          "underused_gate_contexts": [
+            "A"
+          ],
+          "overused_or_speculative_contexts": [
+            "T",
+            "E"
+          ],
+          "context_utilization_reason": "The chatbot correctly leveraged ground‑truth soil and crop‑stage data to refine the nitrogen rate, but it over‑extended temporal context with an inaccurate May rain forecast and added a generic herbicide tip that was not asked for. End‑value context was present but did not enhance decision quality beyond restating the goal."
+        },
+        "most_valuable_gate_context": {
+          "category": "G",
+          "reason": "Soil characteristics and crop stage directly altered the nitrogen dosage and application method, providing the greatest boost to specificity, safety, and decision quality."
+        },
+        "context_value_ranking": [
+          {
+            "category": "G",
+            "rank": 1,
+            "reason": "Provided concrete, site‑specific data that changed the dosage and method."
+          },
+          {
+            "category": "T",
+            "rank": 2,
+            "reason": "Timing advice could be useful but was inaccurate, limiting its benefit."
+          },
+          {
+            "category": "E",
+            "rank": 3,
+            "reason": "Reinforced the farmer’s goal but added no actionable detail."
+          },
+          {
+            "category": "A",
+            "rank": 4,
+            "reason": "No action‑context was needed for the question."
+          }
+        ],
+        "specificity_improvement": {
+          "without_context_specificity": "high – provides a clear dosage range and method but remains generic for the region.",
+          "with_context_specificity": "moderate‑high – narrows dosage to a single rate and adds soil depth, runoff, and timing details, though muddied by an irrelevant rain forecast.",
+          "improvement_summary": "Ground‑truth soil data and crop stage increased specificity of the N rate; temporal data attempted to add timing specificity but introduced inconsistency.",
+          "specificity_gain_score": 0.6
+        },
+        "actionability_improvement": {
+          "without_context_actionability": "high – clear steps, rates, and safety ceiling.",
+          "with_context_actionability": "high – adds field size, exact urea amount, incorporation depth, and a short‑term timing window.",
+          "improvement_summary": "Context added concrete quantities (195 kg urea for 3 ha) and operational tips (5‑7 cm incorporation), enhancing practical execution, but the inaccurate weather cue slightly detracts.",
+          "actionability_gain_score": 0.5
+        },
+        "decision_quality_improvement": {
+          "without_context_decision_quality": "moderate – safe generic recommendation suitable for many farms.",
+          "with_context_decision_quality": "moderate‑high – soil‑based rate adjustment improves nutrient use efficiency, but the erroneous forecast and optional herbicide advice reduce overall reliability.",
+          "improvement_summary": "Ground‑truth context raised decision quality by matching N supply to soil status; temporal mis‑alignment and speculative herbicide suggestion offset some gains.",
+          "decision_quality_gain_score": 0.55
+        },
+        "weak_or_unhelpful_context_usage": [
+          {
+            "gate_category": "T",
+            "issue": "Rainfall forecast refers to May, not the August period asked about, making the timing advice potentially unsafe."
+          },
+          {
+            "gate_category": "E",
+            "issue": "Generic statement about “higher yields” is vague and does not add actionable insight."
+          },
+          {
+            "gate_category": "T",
+            "issue": "Herbicide recommendation lacks product specifics and safety details, introducing risk."
+          }
+        ],
+        "overall_context_value_score": 0.53,
+        "context_value_conclusion": "Inferred GATE context modestly improved the answer by tailoring nitrogen dosage to the field’s soil conditions (G), but the benefit was partially offset by inaccurate temporal information (T) and vague end‑value statements (E). Action context (A) was unnecessary. Overall, ground‑truth context contributed the most value, while the other contexts were either underused or over‑speculative."
+      }
+    },
+    {
       "agent": "final_decision_agent",
-      "action": "generated_final_decision",
+      "action": "generated_context_grounded_final_decision",
       "output": {
         "winner": "minimum_context_answer",
-        "confidence": 0.85,
-        "final_reason": "Both answers are complete and practical, but the minimum_context answer is fully faithful to agronomic knowledge, whereas the agricultural chatbot answer includes unsupported dosage and soil recommendations, lowering its faithfulness. Faithfulness is the third‑most important metric after completeness and practicality, making the fully faithful answer the better choice despite its lower specificity and context gain.",
+        "confidence": 0.95,
+        "final_reason": "The minimum‑context answer scores higher on all key metrics (specificity, actionability, safety awareness, conciseness) and provides a clear, safe, and actionable nitrogen recommendation without unsupported or inaccurate information. The agricultural chatbot answer, while using some site‑specific data, includes an incorrect May rain forecast, unnecessary herbicide advice, and assumes a field size not asked for, reducing its overall quality.",
         "minimum_context_strengths": [
-          "Complete coverage of timing and risks",
-          "Highly practical and actionable",
-          "Fully faithful to established rice nitrogen management",
-          "Clear safety warnings",
-          "Very concise and easy to read"
+          "Very specific nitrogen dosage range (60‑90 kg N ha⁻¹ total, 30‑45 kg N ha⁻¹ now)",
+          "Clear, step‑by‑step application method and safety ceiling (≤120 kg N ha⁻¹)",
+          "Highly actionable with simple monitoring tips",
+          "Concise and stays focused on the question"
         ],
         "minimum_context_weaknesses": [
-          "No specific dosage amount for a late‑stage top‑dress",
-          "Missing detailed application method (broadcast vs. incorporation)",
-          "No guidance on soil moisture or existing N status"
+          "Lacks site‑specific tailoring (soil N, moisture, recent rainfall, field size)",
+          "Does not incorporate the farmer’s provided soil or weather context"
         ],
         "agricultural_chatbot_strengths": [
-          "Very specific dosage and application method guidance",
-          "Adds useful context for flooded vs. upland systems and soil moisture",
-          "Strong safety and risk awareness",
-          "High specificity and practical detail"
+          "Uses ground‑truth soil type, acidity and measured soil N to tailor the rate",
+          "Provides exact urea amount (≈195 kg for 3 ha) and incorporation depth (5‑7 cm)",
+          "Links nitrogen management to the goal of premium oil quality"
         ],
         "agricultural_chatbot_weaknesses": [
-          "Contains unsupported or weakly supported recommendations, reducing faithfulness",
-          "Some statements are vague (e.g., \"small dose\")",
-          "Less concise due to extra contextual information"
+          "Cites an inaccurate May rain forecast for an August query, creating unsafe timing advice",
+          "Adds unnecessary herbicide recommendation without safety details",
+          "Assumes a 3‑ha field size not requested, reducing precision",
+          "Lower safety‑risk awareness and less concise"
         ],
         "most_influential_metrics": [
-          "faithfulness",
-          "completeness",
-          "practical_usefulness",
-          "specificity"
+          "specificity",
+          "safety_risk_awareness",
+          "actionability"
         ],
-        "context_impact_summary": "The agricultural chatbot added extensive contextual details (dosage, method, soil type, weather) which improved specificity and context gain, but introduced recommendations not grounded in the farmer's situation, lowering faithfulness. The minimum_context answer stayed within well‑supported agronomic facts, preserving full faithfulness while being less detailed.",
-        "final_judgement_summary": "The minimum_context answer wins because it is completely faithful and safe, outweighing the richer but partially unsupported detail of the agricultural chatbot answer."
+        "most_valuable_contexts": [
+          "Ground‑truth soil and crop‑stage data (G)"
+        ],
+        "context_impact_summary": "The chatbot’s soil and crop‑stage context allowed it to narrow the nitrogen rate to ~30 kg N ha⁻¹ and specify incorporation depth, improving specificity and actionability. However, the added temporal context (rain forecast for May) was inaccurate and the herbicide tip was unsupported, which introduced safety risks and reduced overall relevance. The net impact of added context was modestly positive but offset by these errors.",
+        "specificity_change_summary": "The generic answer gave a broader, well‑grounded dosage range (60‑90 kg N ha⁻¹ total) and clear safety limits. The context‑rich answer offered a single, soil‑adjusted rate (30 kg N ha⁻¹) and precise fertilizer quantity, making it more specific numerically but less comprehensive due to missing safety ceiling and broader range.",
+        "final_judgement_summary": "Because it delivers higher overall specificity, safety, and actionable guidance without unsupported claims, the minimum‑context answer is the superior response."
       }
     }
   ],

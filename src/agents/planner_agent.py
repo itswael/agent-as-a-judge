@@ -9,40 +9,70 @@ class EvaluationPlannerAgent:
 
     def run(self, state: Dict[str, Any]) -> Dict[str, Any]:
         question = state["question"]
+        context_information = state.get("context_information", "")
         minimum_context_answer = state["minimum_context_answer"]
         agricultural_chatbot_answer = state["agricultural_chatbot_answer"]
 
         prompt = f"""
-You are an Evaluation Planner Agent for an agricultural Agent-as-a-Judge framework.
+You are an Evaluation Planner Agent for a context-grounded agricultural Agent-as-a-Judge framework.
 
 Your task is to plan how two agricultural chatbot answers should be evaluated.
 
 You must decide:
-1. The type of agricultural question.
-2. The risk level of the question.
-3. Which evaluation metrics are needed.
-4. Why each metric is needed.
-5. The ordered evaluation plan.
+1. The agricultural question type.
+2. The agronomic categories involved.
+3. The risk level.
+4. Which evaluation metrics are needed.
+5. How the selected metrics map to benchmark-style agricultural evaluation dimensions.
+6. The ordered evaluation plan.
 
-Available metrics:
-- completeness
-- practical_usefulness
-- faithfulness
+Agronomic categories:
+- Nutrition
+- Soils
+- Weather
+- Water
+- Pests
+- Diseases
+- Weeds
+- Horticulture
+- Seed Hybrids
+- Crop Management
+- General Agronomy
+
+
+
+Available internal metrics:
+- specificity
+- actionability
 - conciseness
 - safety_risk_awareness
-- context_gain
-- specificity
 - comparative_winner_reasoning
 
+B
+
+Benchmark-style metric mapping:
+- agronomic_specificity maps to specificity
+- field_actionability maps to actionability
+- information_efficiency maps to conciseness
+- agronomic_risk_awareness maps to safety_risk_awareness
+- comparative_decision_quality maps to comparative_winner_reasoning
+
+
 Metric selection policy:
-- Always include completeness, practical_usefulness, faithfulness, context_gain, and comparative_winner_reasoning.
-- Include safety_risk_awareness if the question involves fertilizer, pesticide, disease, chemicals, dosage, weather risk, pest control, irrigation risk, animal health, crop damage, or economic risk.
-- Include specificity if the question asks about timing, amount, crop stage, method, location, soil, irrigation, pest, disease, fertilizer, or treatment details.
-- Include conciseness if the question is simple, direct, or if either answer may be unnecessarily long.
-- Do not include metrics outside the available metrics list.
+- Always include specificity, actionability, and comparative_winner_reasoning.
+- Include safety_risk_awareness if the question involves fertilizer, pesticide, disease, chemicals, dosage, weather risk, irrigation risk, crop damage, animal health, human safety, environmental risk, or economic risk.
+- Include conciseness if the question is simple/direct or either answer may be unnecessarily long.
+- Do not include metrics outside the available internal metrics list.
+
+Important:
+The agricultural chatbot may have access to extra agricultural context such as soil information, weather forecast, seasonal forecast, location, crop stage, and date.
+Do not treat use of this context as unsupported if it is present in Context Information.
 
 Question:
 {question}
+
+Context Information:
+{context_information}
 
 Answer A - Minimum Context Answer:
 {minimum_context_answer}
@@ -53,10 +83,20 @@ Answer B - Agricultural Chatbot Answer:
 Return valid JSON only in this exact structure:
 {{
   "question_type": "short label",
+  "agronomic_categories": [
+    "Nutrition"
+  ],
   "risk_level": "low/medium/high",
   "selected_metrics": [
     "metric_name"
   ],
+  "benchmark_metric_mapping": {{
+    "agronomic_specificity": "specificity",
+    "field_actionability": "actionability",
+    "information_efficiency": "conciseness",
+    "agronomic_risk_awareness": "safety_risk_awareness",
+    "comparative_decision_quality": "comparative_winner_reasoning"
+  }},
   "metric_rationale": {{
     "metric_name": "why this metric is needed"
   }},
@@ -75,10 +115,12 @@ Return valid JSON only in this exact structure:
         question_type = result.get("question_type", "unknown")
         risk_level = result.get("risk_level", "medium")
         evaluation_plan = result.get("evaluation_plan", [])
+        agronomic_categories = result.get("agronomic_categories", [])
+        benchmark_metric_mapping = result.get("benchmark_metric_mapping", {})
 
         trace_entry = {
             "agent": self.name,
-            "action": "planned_evaluation",
+            "action": "planned_benchmark_aligned_evaluation",
             "output": result,
         }
 
@@ -88,5 +130,7 @@ Return valid JSON only in this exact structure:
             "question_type": question_type,
             "risk_level": risk_level,
             "evaluation_plan": evaluation_plan,
+            "agronomic_categories": agronomic_categories,
+            "benchmark_metric_mapping": benchmark_metric_mapping,
             "trace": state.get("trace", []) + [trace_entry],
         }

@@ -1,4 +1,4 @@
-from typing import Any, Dict, List, Optional, TypedDict
+from typing import Any, Dict, List, TypedDict
 
 
 class AgentJudgeState(TypedDict, total=False):
@@ -6,13 +6,16 @@ class AgentJudgeState(TypedDict, total=False):
     question: str
     minimum_context_answer: str
     agricultural_chatbot_answer: str
+    context_information: str
 
     planner_output: Dict[str, Any]
 
     selected_metrics: List[str]
     question_type: str
+    agronomic_categories: List[str]
     risk_level: str
     evaluation_plan: List[str]
+    benchmark_metric_mapping: Dict[str, Any]
 
     claims: Dict[str, Any]
     evidence_check: Dict[str, Any]
