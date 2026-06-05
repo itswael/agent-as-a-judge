@@ -17,11 +17,13 @@ class JudgeClient:
         reasoning_temperature: float = 0.2,
         seed: int = None,
         api_base: str = None,
+        parallelize: bool = True,
     ):
         self.api_key = os.getenv("OPENAI_API_KEY", "ollama")
         self.scoring_temperature = scoring_temperature
         self.reasoning_temperature = reasoning_temperature
         self.seed = seed
+        self.parallelize = parallelize
 
         # Default to local Ollama if no api_base provided
         if api_base is None:
