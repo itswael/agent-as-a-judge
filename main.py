@@ -15,6 +15,7 @@ def main():
         scoring_temperature=0.0,
         reasoning_temperature=0.2,
         seed=42,  # reproducible runs
+        parallelize=True,  # Enable parallel execution for speedup
     )
 
     graph = AgentJudgeGraph(
