@@ -1,3 +1,6 @@
+import concurrent.futures
+from typing import Any, Dict, List
+
 from langgraph.graph import END, START, StateGraph
 
 from src.agents.planner_agent import EvaluationPlannerAgent
@@ -10,8 +13,9 @@ from src.graph.agent_state import AgentJudgeState
 
 
 class AgentJudgeGraph:
-    def __init__(self, judge_client):
+    def __init__(self, judge_client, parallelize: bool = True):
         self.judge_client = judge_client
+        self.parallelize = parallelize
 
         self.planner_agent = EvaluationPlannerAgent(judge_client)
         self.claim_extractor_agent = ClaimExtractorAgent(judge_client)
@@ -98,22 +102,67 @@ class AgentJudgeGraph:
                 }],
             }
 
+    def parallel_evidence_metrics_context(self, state: AgentJudgeState) -> AgentJudgeState:
+        """Run evidence_checker, metric_tool, and context_impact in parallel."""
+        nodes_to_run = [
+            ("evidence_checker", self.evidence_checker_node),
+            ("metric_tool", self.metric_tool_node),
+            ("context_impact", self.context_impact_node),
+        ]
+
+        results = {}
+        errors = state.get("errors", [])
+        trace = state.get("trace", [])
+
+        with concurrent.futures.ThreadPoolExecutor(max_workers=3) as executor:
+            future_to_node = {
+                executor.submit(node_func, state): node_name
+                for node_name, node_func in nodes_to_run
+            }
+
+            for future in concurrent.futures.as_completed(future_to_node):
+                node_name = future_to_node[future]
+                try:
+                    result = future.result()
+                    results[node_name] = result
+                except Exception as error:
+                    errors.append(f"{node_name} failed: {str(error)}")
+                    trace.append({
+                        "agent": f"{node_name}_agent",
+                        "action": "error",
+                        "error": str(error),
+                    })
+
+        # Merge results sequentially
+        merged_state = state.copy()
+        for node_name, result in results.items():
+            if result:
+                # Merge trace and errors
+                merged_state["trace"] = merged_state.get("trace", []) + result.get("trace", [])
+                merged_state["errors"] = merged_state.get("errors", []) + result.get("errors", [])
+
+                # Merge output data
+                for key, value in result.items():
+                    if key not in ("trace", "errors"):
+                        merged_state[key] = value
+
+        return merged_state
+
     def build(self):
         graph = StateGraph(AgentJudgeState)
 
         graph.add_node("planner", self.planner_node)
         graph.add_node("claim_extractor", self.claim_extractor_node)
-        graph.add_node("evidence_checker", self.evidence_checker_node)
-        graph.add_node("metric_tool", self.metric_tool_node)
-        graph.add_node("context_impact", self.context_impact_node)
+        
+        # Parallel execution node for independent agents
+        graph.add_node("parallel_block", self.parallel_evidence_metrics_context)
+        
         graph.add_node("final_decision", self.final_decision_node)
 
         graph.add_edge(START, "planner")
         graph.add_edge("planner", "claim_extractor")
-        graph.add_edge("claim_extractor", "evidence_checker")
-        graph.add_edge("evidence_checker", "metric_tool")
-        graph.add_edge("metric_tool", "context_impact")
-        graph.add_edge("context_impact", "final_decision")
+        graph.add_edge("claim_extractor", "parallel_block")
+        graph.add_edge("parallel_block", "final_decision")
         graph.add_edge("final_decision", END)
 
         return graph.compile()
