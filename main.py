@@ -9,7 +9,13 @@ def main():
     loader = DatasetLoader("data/sample.xlsx")
     records = loader.load()
 
-    judge_client = JudgeClient()
+    # Scoring: temperature=0 (deterministic). Reasoning: temperature=0.2 (creative).
+    judge_client = JudgeClient(
+        model="llama3:70b",  # or "gpt-oss-120b" if using Ollama
+        scoring_temperature=0.0,
+        reasoning_temperature=0.2,
+        seed=42,  # reproducible runs
+    )
 
     graph = AgentJudgeGraph(
         judge_client
