@@ -1,5 +1,6 @@
 specificity: 0.30
 actionability: 0.35
 safety_risk_awareness: 0.20
-conciseness: 0.13
-comparative_winner_reasoning: 0.02
+conciseness: 0.15
+
+#weights should be dynamic and can be adjusted based on the specific use case or requirements of the evaluation.
