@@ -6,9 +6,10 @@ from src.export_results import ResultExporter
 
 
 class FullDatasetEvaluator:
-    def __init__(self, judge_client, delay_seconds: int = 2):
+    def __init__(self, judge_client, delay_seconds: int = 2, n_repeats: int = 1):
         self.judge_client = judge_client
         self.delay_seconds = delay_seconds
+        self.n_repeats = n_repeats
         self.graph = AgentJudgeGraph(judge_client).build()
         self.exporter = ResultExporter()
 

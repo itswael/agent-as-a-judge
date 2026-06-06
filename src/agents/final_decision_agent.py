@@ -1,11 +1,77 @@
+import yaml
 from typing import Any, Dict
 
 
 class FinalDecisionAgent:
     name = "final_decision_agent"
 
-    def __init__(self, judge_client):
+    def __init__(self, judge_client, config_path: str = None):
         self.judge_client = judge_client
+        self.config_path = config_path or "configs/metric_weights.yaml"
+        self.weights = self._load_weights()
+
+    def _load_weights(self) -> Dict[str, float]:
+        """Load metric weights from YAML file."""
+        with open(self.config_path, "r") as file:
+            weights = yaml.safe_load(file)
+        
+        total = sum(weights.values())
+        if round(total, 2) != 1.00:
+            raise ValueError(f"Metric weights must sum to 1.0, got {total}")
+        
+        return weights
+
+    def _compute_weighted_score(self, metric_results: Dict[str, Any]) -> Dict[str, float]:
+        """
+        Compute weighted scores for both answers deterministically.
+        Returns the weighted score and identifies winning answer.
+        """
+        # Extract scores from metric results
+        scores = {
+            "minimum_context_answer": {},
+            "agricultural_chatbot_answer": {}
+        }
+        
+        for metric_name, metric_data in metric_results.items():
+            if metric_name == "comparative_winner_reasoning":
+                continue  # Skip comparative metric for weighted scoring
+            
+            if isinstance(metric_data, dict):
+                min_score = metric_data.get("minimum_context_answer", {}).get("score", 0.0)
+                agro_score = metric_data.get("agricultural_chatbot_answer", {}).get("score", 0.0)
+                
+                scores["minimum_context_answer"][metric_name] = min_score
+                scores["agricultural_chatbot_answer"][metric_name] = agro_score
+        
+        # Compute weighted sum for each answer
+        weighted_scores = {
+            "minimum_context_answer": 0.0,
+            "agricultural_chatbot_answer": 0.0
+        }
+        
+        for answer_type in ["minimum_context_answer", "agricultural_chatbot_answer"]:
+            total_weighted = 0.0
+            for metric_name, weight in self.weights.items():
+                score = scores[answer_type].get(metric_name, 0.0)
+                total_weighted += score * weight
+            
+            weighted_scores[answer_type] = round(total_weighted, 4)
+        
+        # Determine winner deterministically
+        min_score = weighted_scores["minimum_context_answer"]
+        agro_score = weighted_scores["agricultural_chatbot_answer"]
+        
+        if abs(min_score - agro_score) < 0.001:
+            winner = "tie"
+        elif min_score > agro_score:
+            winner = "minimum_context_answer"
+        else:
+            winner = "agricultural_chatbot_answer"
+        
+        return {
+            "weighted_scores": weighted_scores,
+            "winner": winner
+        }
 
     def run(self, state: Dict[str, Any]) -> Dict[str, Any]:
         question = state["question"]
@@ -15,6 +81,20 @@ class FinalDecisionAgent:
         evidence_check = state.get("evidence_check", {})
         metric_results = state.get("metric_results", {})
         context_impact_analysis = state.get("context_impact_analysis", {})
+
+        # Compute weighted scores deterministically
+        weighted_scoring = self._compute_weighted_score(metric_results)
+        
+        # Get individual metric scores for reasoning
+        metric_scores = {}
+        for metric_name, metric_data in metric_results.items():
+            if metric_name == "comparative_winner_reasoning":
+                continue
+            if isinstance(metric_data, dict):
+                metric_scores[metric_name] = {
+                    "minimum_context": metric_data.get("minimum_context_answer", {}).get("score", 0.0),
+                    "agricultural_chatbot": metric_data.get("agricultural_chatbot_answer", {}).get("score", 0.0)
+                }
 
         prompt = f"""
 You are the Final Decision Agent in an agricultural Agent-as-a-Judge framework.
@@ -67,6 +147,14 @@ Metric Results:
 
 Context Impact Analysis:
 {context_impact_analysis}
+
+DETERMINISTIC WEIGHTED SCORES (computed from metric_scores using weights from metric_weights.yaml):
+- Weighted Score for minimum_context_answer: {weighted_scoring['weighted_scores']['minimum_context_answer']}
+- Weighted Score for agricultural_chatbot_answer: {weighted_scoring['weighted_scores']['agricultural_chatbot_answer']}
+- Deterministic Winner (based on weighted scores): {weighted_scoring['winner']}
+
+Individual Metric Scores:
+{metric_scores}
 
 Return valid JSON only in this exact structure:
 {{
