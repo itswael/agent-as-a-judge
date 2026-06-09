@@ -1,3 +1,5 @@
+import time
+
 from src.dataset_loader import DatasetLoader
 from src.judge_client import JudgeClient
 from src.graph.simplified_agent_judge_graph import create_fast_graph
@@ -12,9 +14,9 @@ def main():
 
     # Scoring: temperature=0 (deterministic). Reasoning: temperature=0.2 (creative).
     judge_client = JudgeClient(
-        # api_base="https://api.ai.it.ufl.edu/v1",
-        # model="gpt-oss-120b",  # Fast API model
-        model="llama3:70b",  # Local Ollama model
+        api_base="https://api.ai.it.ufl.edu/v1",
+        model="gpt-oss-120b",  # Fast API model
+        # model="llama3:70b",  # Local Ollama model
         scoring_temperature=0.0,
         reasoning_temperature=0.2,
         seed=42,  # reproducible runs
@@ -166,4 +168,6 @@ def main():
 
 
 if __name__ == "__main__":
+    print(time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()))
     main()
+    print(time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()))
