@@ -1,0 +1,17 @@
+flowchart TD
+    START --> Planner[Planner Agent<br/>~8s]
+    
+    Planner --> Decision{Routing Decision}
+    
+    Decision -->|Fast Path| Final1[Final Decision Agent<br/>~10s]
+    Decision -->|Medium Path| Claim1[Claim Extractor<br/>~8s]
+    Decision -->|Full Path| Claim2[Claim Extractor<br/>~8s]
+    
+    Claim1 --> Metrics1[Metric Fusion Agent<br/>2 calls in parallel<br/>~25s]
+    Claim2 --> Metrics2[Metric Fusion Agent + Evidence<br/>3 calls in parallel<br/>~35s]
+    
+    Metrics1 --> Final2[Final Decision Agent<br/>~10s]
+    Metrics2 --> Final2
+    
+    Final1 --> END
+    Final2 --> END

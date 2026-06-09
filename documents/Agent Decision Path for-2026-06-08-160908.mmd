@@ -1,0 +1,21 @@
+flowchart TD
+    A[START] --> B[Planner Agent]
+    B --> C{Question Type?}
+    
+    C -->|Simple Questions| D[Fast Path: Single LLM Call]
+    C -->|Complex Questions| E[Full Evaluation Path]
+    
+    D --> F[Final Decision Agent]
+    F --> G[END]
+    
+    E --> H[Claim Extractor]
+    H --> I[Parallel Analysis Block]
+    
+    I --> J[Metric Tool - 5 Metrics in Parallel]
+    I --> K[Evidence Checker]
+    I --> L[Context Impact]
+    
+    J --> M[Final Decision Agent]
+    K --> M
+    L --> M
+    M --> N[END]
