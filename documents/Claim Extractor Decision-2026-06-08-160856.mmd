@@ -1,0 +1,8 @@
+flowchart LR
+    A[Claim Extractor] --> B[Metric Fusion Agent]
+    
+    B --> C[Specificity + Actionability]
+    B --> D[Conciseness + Safety]
+    
+    C --> F[Final Decision]
+    D --> F
