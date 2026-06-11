@@ -84,6 +84,7 @@ class ResultExporter:
         return {
             "id": result.get("id"),
             "question": result.get("question"),
+            "routing_path": result.get("routing_path", "unknown"),  # Include routing path
 
             "final_decision": {
                 "winner": final_decision.get("winner"),
@@ -229,18 +230,20 @@ class ResultExporter:
         row = {
             "id": summary.get("id"),
             "question": summary.get("question"),
+            "path": summary.get("routing_path", "unknown"),  # Add path column
             "winner": final_decision.get("winner"),
             "confidence": final_decision.get("confidence"),
             "final_reason": final_decision.get("reason"),
+            # Context impact fields - only populated in full path, use defaults otherwise
             "context_value_score": context_impact.get(
-                "overall_context_value_score"
+                "overall_context_value_score", 0.0
             ),
             "most_valuable_gate_context": (
                 context_impact.get("most_valuable_gate_context", {}) or {}
-            ).get("category"),
+            ).get("category", "N/A"),
             "context_reason": (
                 context_impact.get("most_valuable_gate_context", {}) or {}
-            ).get("reason"),
+            ).get("reason", "Not analyzed (fast/medium path)"),
         }
 
         for metric_name, metric_value in metric_reasoning.items():
