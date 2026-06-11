@@ -24,8 +24,8 @@ class MetricToolAgent:
         
         # Metric fusion groups - reduces LLM calls by combining metrics
         self.metric_fusion_groups = [
-            ["specificity", "actionability"],  # Group 1: Core quality metrics
-            ["conciseness", "safety_risk_awareness"]  # Group 2: Efficiency & safety metrics
+            ["specificity", "actionability"],  # Group 1
+            ["conciseness", "safety_risk_awareness"]  # Group 2
         ]
 
     def _safe_run_single_metric(
