@@ -17,6 +17,8 @@ class AgentJudgeState(TypedDict, total=False):
     evaluation_plan: List[str]
     benchmark_metric_mapping: Dict[str, Any]
 
+    routing_path: str  # fast/medium/full paths for optimized execution
+
     claims: Dict[str, Any]
     evidence_check: Dict[str, Any]
     metric_results: Dict[str, Any]
