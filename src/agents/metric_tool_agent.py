@@ -19,7 +19,8 @@ class MetricToolAgent:
             "specificity": SpecificityMetric(judge_client),
             "actionability": ActionabilityMetric(judge_client),
             "conciseness": ConcisenessMetric(judge_client),
-            "safety_risk_awareness": SafetyRiskAwarenessMetric(judge_client)
+            "safety_risk_awareness": SafetyRiskAwarenessMetric(judge_client),
+            "comparative_winner_reasoning": ComparativeWinnerReasoningMetric(judge_client)
         }
         
         # Metric fusion groups - reduces LLM calls by combining metrics
