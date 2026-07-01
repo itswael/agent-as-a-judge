@@ -9,13 +9,14 @@ from src.graph.agent_judge_graph import AgentJudgeGraph
 
 def main():
 
-    loader = DatasetLoader("data/sample.xlsx")
+    loader = DatasetLoader("data/sample1.xlsx")
     records = loader.load()
 
     # Scoring: temperature=0 (deterministic). Reasoning: temperature=0.2 (creative).
     judge_client = JudgeClient(
         api_base="https://api.ai.it.ufl.edu/v1",
-        model="gpt-oss-120b",  # Fast API model
+        model="claude-4.6-sonnet",  # Fast API model
+        #model="gpt-oss-120b",
         # model="llama3:70b",  # Local Ollama model
         scoring_temperature=0.0,
         reasoning_temperature=0.2,
