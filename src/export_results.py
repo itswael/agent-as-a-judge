@@ -89,6 +89,7 @@ class ResultExporter:
                 "winner": final_decision.get("winner"),
                 "confidence": final_decision.get("confidence"),
                 "reason": final_decision.get("final_reason"),
+                "interpretation": final_decision.get("interpretation") or final_decision.get("final_reason"),
             },
 
             "metric_reasoning": self._build_metric_reasoning(metric_results),
@@ -232,6 +233,7 @@ class ResultExporter:
             "winner": final_decision.get("winner"),
             "confidence": final_decision.get("confidence"),
             "final_reason": final_decision.get("reason"),
+            "interpretation": final_decision.get("interpretation"),
             "context_value_score": context_impact.get(
                 "overall_context_value_score"
             ),
