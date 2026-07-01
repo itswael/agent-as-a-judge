@@ -112,10 +112,13 @@ Use the following evidence:
 5. Metric scores and reasons
 6. Context impact analysis
 
-IMPORTANT CONTEXT-GROUNDED DECISION RULE:
-The agricultural chatbot answer was generated with weather, seasonal, soil, predicted soil type, and crop growth stage context.
-Do NOT penalize the agricultural chatbot answer for mentioning soil, weather, seasonal, nutrient, or crop-stage information if that information is supported by the Context Information.
-Only penalize added context if it is unsupported, contradicted by the context, unsafe, vague, or irrelevant.
+IMPORTANT CONTEXT-GROUNDED DECISION RULES:
+The agricultural chatbot answer may include weather, seasonal, soil, predicted soil type, and crop growth stage context.
+1) Validate any added soil/weather/season/crop-stage/nutrient details against Context Information when available. Treat unverified details as speculative and do NOT reward them.
+2) Reward added context only when it demonstrably improves specificity, actionability, or safety for the farmer's decision.
+3) Penalize added context when it is unsupported by Context Information, contradicted, unsafe, vague, off-scope, or does not improve decision quality.
+4) If both answers are similarly specific/actionable but the context-rich answer adds speculative or risky elements, prefer the minimum-context answer.
+5) Use evidence from claims and evidence checking to corroborate or discount context-based assertions.
 
 Decision criteria:
 - Specificity is most important.
@@ -126,6 +129,11 @@ Decision criteria:
 - Penalize added context only if it is unsupported, vague, unsafe, unrelated, or contradicts the provided context.
 - Do not choose an answer only because it is longer.
 - Do not choose an answer only because it has more details.
+
+Confidence rubric:
+- ≥ 0.8 when at least three dimensions (specificity, actionability, safety, conciseness) clearly favor the winner and evidence checking shows minimal risks/speculation.
+- 0.6–0.79 when most dimensions favor the winner but there are minor caveats.
+- < 0.6 when dimensions conflict or speculative/unsupported context is present.
 
 Question:
 {question}
@@ -161,6 +169,7 @@ Return valid JSON only in this exact structure:
   "winner": "minimum_context_answer/agricultural_chatbot_answer/tie",
   "confidence": 0.0,
   "final_reason": "clear explanation of why this answer is better",
+    "interpretation": "succinct, plain-language justification aligned with expected interpretation",
   "minimum_context_strengths": [
     "strength"
   ],
