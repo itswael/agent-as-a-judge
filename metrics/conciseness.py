@@ -12,9 +12,9 @@ Conciseness does NOT mean the shortest answer is always best.
 It means the answer should be efficient, practical, and not unnecessarily complicated.
 
 Important context rule:
-- Do NOT penalize context-rich details when they are necessary for the farmer's decision.
-- Useful context should be rewarded when it helps the farmer make a better decision.
-- Penalize only context that is irrelevant, repetitive, distracting, speculative, or not decision-supportive.
+- Do NOT penalize context-rich details when they are necessary for the farmer's decision and supported by available Context Information when present.
+- Useful, supported context should be rewarded when it helps the farmer make a better decision.
+- Penalize context that is irrelevant, repetitive, distracting, speculative (unsupported by Context Information), or not decision-supportive.
 
 Evaluate whether the answer:
 - Gives the necessary information without excessive length.

@@ -33,9 +33,9 @@ Evaluate whether the answer includes specific details such as:
 - specific conditions or constraints when they are needed to answer the question precisely
 
 Context rule:
-- Reward added context only when it makes the answer more specific to the farmer's question.
+- Reward added context only when it makes the answer more specific to the farmer's question AND is supported by available Context Information when present.
 - Do NOT reward context merely because it is present.
-- Penalize context if it is vague, unrelated, speculative, excessive, or does not improve specificity.
+- Penalize context if it is vague, unrelated, speculative (unsupported by Context Information), excessive, or does not improve specificity.
 
 Question:
 {question}

@@ -18,9 +18,9 @@ Actionability means:
 - The answer uses available context effectively when that context improves the farmer's decision.
 
 Important context rule:
-- Reward context-rich answers when the added context improves timing, safety, field relevance, operational feasibility, or decision quality.
+- Reward context-rich answers only when the added context improves timing, safety, field relevance, operational feasibility, or decision quality AND is supported by available Context Information when present.
 - Do NOT penalize an answer merely because it uses more context.
-- Penalize added context only when it is irrelevant, speculative, unrealistic, unsafe, off-scope, repetitive, or disconnected from the farmer's decision.
+- Penalize added context when it is irrelevant, speculative (unsupported by Context Information), unrealistic, unsafe, off-scope, repetitive, or disconnected from the farmer's decision.
 - Context should make the recommendation easier to apply, not just longer.
 
 Evaluate the 4R agricultural decision components when relevant:

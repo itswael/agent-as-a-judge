@@ -60,8 +60,8 @@ Benchmark-style metric mapping:
 
 Metric selection policy:
 - Always include specificity, actionability, and comparative_winner_reasoning.
-- Include safety_risk_awareness if the question involves fertilizer, pesticide, disease, chemicals, dosage, weather risk, irrigation risk, crop damage, animal health, human safety, environmental risk, or economic risk.
-- Include conciseness if the question is simple/direct or either answer may be unnecessarily long.
+- Include safety_risk_awareness if the question involves fertilizer, manure/composting, pesticide, disease, chemicals, dosage, weather risk, irrigation risk, crop damage, food safety, animal health, human safety, environmental risk, or economic risk.
+- Include conciseness for most non-diagnostic questions to discourage unnecessary verbosity, and always include it when either answer appears long or lists many options.
 - Do not include metrics outside the available internal metrics list.
 
 Important:
